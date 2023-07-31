@@ -1,133 +1,60 @@
 {
-  "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
-  },
   "header.full": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
-  },
-  "header-layout.desktop": {
-    "children": [
-      "flex-layout.row#1-desktop",
-      "flex-layout.row#3-desktop",
-      "sticky-layout#4-desktop"
-    ]
+    "props": {
+      "Logo": "logo#newera",
+      "MegaMenu": "megamenu",
+      "SearchBar": "search-bar",
+      "CarouselHeader": "top-header",
+      "Login": "login",
+      "LoginContent": "login-content#default",
+      "Minicart": "minicart.v2",
+      "WelcomeModal": "flex-layout.row#newsletter"
+    }
   },
 
-  "flex-layout.row#1-desktop": {
-    "children": ["telemarketing"],
+
+  "flex-layout.row#newsletter": {
+    "children": [],
     "props": {
-      "fullWidth": true
+      "blockClass": "container-form"
     }
   },
-  
-  "flex-layout.row#3-desktop": {
+
+  "login": {
     "props": {
-      "blockClass": "menu-link",
-      "horizontalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.col#spacer",
-      "vtex.menu@2.x:menu#institutional"
-    ]
-  },
-  "flex-layout.col#spacer": {
-    "props": {
-      "width": "grow"
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Acess Code LOG-IN",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "mirrorTooltipToRight": false,
+      "showPasswordVerificationIntoTooltip": false
     }
   },
-  "sticky-layout#4-desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#4-desktop"]
-  },
-  "flex-layout.row#4-desktop": {
-    "props": {
-      "blockClass": "main-header",
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true
-    },
-    "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#category-menu",
-      "flex-layout.col#spacer",
-      "search-bar",
-      "locale-switcher",
-      "login",
-      "minicart.v2"
-    ]
-  },
-  "flex-layout.col#logo-desktop": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["logo#desktop"]
-  },
-  "flex-layout.col#category-menu": {
-    "props": {
-      "verticalAlign": "middle"
-    },
-    "children": ["vtex.menu@2.x:menu#category-menu"]
-  },
-  "logo#desktop": {
+  "logo#newera": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo.png",
-      "width": "180",
-      "height": "12"
+      "url": "",
+      "width": "80"
     }
   },
-  "header-layout.mobile": {
-    "children": ["sticky-layout#1-mobile"]
-  },
-  "sticky-layout#1-mobile": {
-    "children": ["flex-layout.row#1-mobile"]
-  },
-  "flex-layout.row#1-mobile": {
-    "children": [
-      "drawer",
-      "logo#mobile",
-      "flex-layout.col#spacer",
-      "login",
-      "minicart.v2"
-    ],
+  "top-header": {
+    //Custom Component en custom-header
     "props": {
-      "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
-    }
-  },
-  "drawer": {
-    "children": ["menu#drawer"]
-  },
-
-  "menu#drawer": {
-    "children": [
-      "menu-item#category-apparel",
-      "menu-item#category-home",
-      "menu-item#more"
-    ],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
-
-  "logo#mobile": {
-    "props": {
-      "title": "Logo",
-      "href": "/",
-      "url": "https://storecomponents.vteximg.com.br/arquivos/store-theme-logo-mobile.png",
-      "width": "77.5",
-      "height": "27.5"
+      "items": [
+        {
+          "title": "10% DE DESCUENTO EN TU PRIMERA COMPRA",
+          "titleMobile": "10% DE DESCUENTO EN TU PRIMERA COMPRA",
+          "hasCounter": false,
+          "date__count": ""
+        },
+        {
+          "title": "LANZAMIENTO DE PRODUCTOS MLB EN:",
+          "titleMobile": "LANZAMIENTO DE MLB EN:",
+          "hasCounter": true,
+          "date__count": "2022, 9, 04"
+        }
+      ]
     }
   }
 }

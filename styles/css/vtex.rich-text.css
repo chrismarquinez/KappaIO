@@ -1,22 +1,20 @@
-.container--deals {
-  color: #ffffff;
-  text-align: center;
-  justify-content: center;
-}
+/* Home */
 
 .container--shelfTitle {
-  color: #727273;
   justify-content: center;
   text-align: center;
+}
+
+.container--shelfTitle--border-top {
+  border-top: 1px solid #e6e6e6;
 }
 
 .headingLevel2--shelfTitle {
-  font-weight: 200;
+  font-weight: 400;
+  color: #000;
 }
 
-.container--deals .paragraph {
-  margin: 0;
-}
+/* Home */
 
 .container--link {
   justify-content: center;
@@ -31,7 +29,7 @@
   max-width: 540px;
   margin: 0 16px;
   padding-top: 120px;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--question .strong {
@@ -45,7 +43,7 @@
   max-width: 540px;
   padding-top: 36px;
   padding-bottom: 84px;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--link .strong {
@@ -58,14 +56,25 @@
   text-decoration: none;
   font-size: 36px;
   font-weight: 300;
-  color: #03034E;
+  color: #03034e;
 }
 
 .container--title {
-  color: #03034E;
+  color: #03034e;
   font-size: 28px;
   font-weight: 700;
 }
+
+/* Home - Responsieve */
+
+@media only screen and (max-width: 640px) {
+  .headingLevel2--shelfTitle {
+    padding: 0 1rem;
+    font-size: 2rem;
+  }
+}
+
+/* Home - Responsieve */
 
 @media only screen and (min-width: 640px) {
   .container--question .strong {
@@ -78,7 +87,7 @@
   }
 
   .container--title {
-    color: #03034E;
+    color: #03034e;
     font-size: 40px;
     font-weight: 700;
     max-width: 60%;

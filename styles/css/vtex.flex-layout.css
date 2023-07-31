@@ -1,3 +1,17 @@
+/* Home */
+
+.flexRowContent--departments-cards {
+  display: flex;
+}
+
+@media screen and (max-width: 628px) {
+  .flexRowContent--departments-cards {
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+}
+
+/* Home */
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
@@ -43,7 +57,7 @@
 }
 
 .flexRow--deals {
-  background-color: #0F3E99;
+  background-color: #0f3e99;
   padding: 14px 0px;
 }
 
