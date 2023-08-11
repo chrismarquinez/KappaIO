@@ -1,18 +1,54 @@
 {
   "footer": {
-    "blocks": ["footer-layout.desktop"]
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "footer-layout.desktop": {
-    "children": ["flex-layout.row#footer-desktop"]
+    "children": [
+      "flex-layout.row#footer-desktop",
+      "flex-layout.row#footer-desktop-payment"
+    ]
+  },
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-mobile",
+      "flex-layout.row#footer-desktop-payment"
+    ]
   },
   "flex-layout.row#footer-desktop": {
     "children": [
-
-    ],
+      "vtex.menu@2.x:menu#firts-column",
+      "vtex.menu@2.x:menu#second-column",
+      "vtex.menu@2.x:menu#third-column",
+      "vtex.menu@2.x:menu#fourth-column"
+    ]
+  },
+  "flex-layout.row#footer-desktop-payment": {
+    "children": ["flex-layout.col#means-payment", "flex-layout.col#powered-by"]
+  },
+  "flex-layout.row#footer-mobile": {
     "props": {
-      "blockClass": "menu-row",
-      "paddingTop": 6,
-      "paddingBottom": 3
+      "blockClass": "footer-container--mobile"
+    },
+    "children": ["vtex.menu@2.x:menu#footer-mobile"]
+  },
+  "newsletter-input-email": {
+    "props": {
+      "errorMessage": "Verifica el formato de tu email",
+      "placeholderText": "Ingresa tu E-mail"
+    }
+  },
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "ENVIAR"
+    }
+  },
+  "newsletter-checkbox-confirmation": {
+    "props": {
+      "checkboxLabel": "Acepto el tratamiento de mis datos personales de acuerdo con la {firstLabelLink}",
+      "firstLabelLink": {
+        "url": "/",
+        "text": "política de tratamiento de datos personales."
+      }
     }
   }
 }

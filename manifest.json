@@ -63,6 +63,8 @@
     "vtex.tab-layout": "0.x",
     "vtex.condition-layout": "2.x",
     "vtex.css-handles": "1.x",
+    "vtex.store-newsletter": "1.x",
+    "vtex.sandbox": "0.x",
     "dynamo.custom-header": "0.x",
     "dynamo.custom-megamenu": "0.x"
   },

@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.flexCol--col--buttonShowAll {
+  min-height: 41px;
+}
+
 @media screen and (max-width: 628px) {
   .flexRowContent--departments-cards {
     flex-direction: column;
@@ -12,6 +16,30 @@
 }
 
 /* Home */
+
+/* Footer */
+
+.flexRow--footer-container--mobile {
+  margin-bottom: 20px;
+}
+
+/* Footer */
+
+/* Shelf */
+
+.flexRowContent--productSkuSelectorContainer {
+  flex-direction: column;
+  position: relative;
+}
+
+.flexCol--productSkuSelector {
+  display: none;
+  height: fit-content;
+  position: absolute;
+  bottom: 0;
+}
+
+/* Shelf */
 .flexRowContent--menu-link,
 .flexRowContent--main-header {
   padding: 0 0.5rem;
