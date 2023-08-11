@@ -1,0 +1,83 @@
+/* Footer */
+:global(.vtex-store-footer-2-x-footerLayout) .styledLinkContent {
+  padding: 10px 15px;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  white-space: break-spaces;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .styledLinkContent--footer-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  cursor: auto;
+  letter-spacing: 0.2em;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .accordionIcon {
+  position: absolute;
+  right: 28px;
+  margin-top: -9px;
+  display: block;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .accordionIcon--isClosed {
+  font-size: 0;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .styledLinkContainer {
+  margin-left: 0;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .accordionIcon--isClosed::before,
+:global(.vtex-store-footer-2-x-footerLayout) .accordionIcon--isOpen::before {
+  display: block;
+  content: "";
+  width: 33px;
+  height: 33px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAHYAAAB2AH6XKZyAAAAGXRFWHRTb2Z0d2FyZQB3d3cuaW5rc2NhcGUub3Jnm+48GgAAAShJREFUeJzt2EFOwkAYhuFXXRgvIiTewZVNTLwHt/AMxqWHcOFl3HoCd9i4w01/AwRKKZ2BDu+TTEIg8M/3tSVpQZIkSZIkSZLOyNUB350Cz8Aj8AV8D7KjkcyfAnNg0awfoMo4v2pmxvw5MMk4n9el4bF+gacMsyug3jD/pc+PXfbcxGLDe9fAO2lLqIAP4KbjnpKZsHoKLq+aNJfDtiMfl+Btgpmt7ln9H0h5ObSFr4GHAWftJUcJJxs+pCzh5MOHFCWMJnwYsoTRhQ9DlDDa8OGQEkYfPvQpoZjwYZ8SigsfupRQbPiwK2DbZznvMJNqOxOKPfLrupZQZPiwq4Siw4dtJZxF+LD+SCv3I7V/F8cY2rgDZs3rN+DziHuRJEmSJEmSpPPwB5W/+3OZ7bv5AAAAAElFTkSuQmCC");
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .accordionIcon--isOpen::before {
+  transform: rotate(0);
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .accordionIcon--isOpen::before {
+  transform: rotate(180deg);
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .submenuAccordion {
+  justify-content: center;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout)
+  .menuContainer--footer-item
+  .styledLinkContent {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  white-space: break-spaces;
+  padding: 0 15px;
+  opacity: 0.5;
+}
+
+/* Footer */
+
+/* Responsive */
+
+/* Footer */
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-store-footer-2-x-footerLayout)
+    .menuContainer--footer-item
+    .styledLinkContent {
+    text-align: center;
+  }
+}
+
+/* Footer */
+
+/* Responsive */

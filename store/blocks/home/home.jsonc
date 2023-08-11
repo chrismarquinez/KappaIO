@@ -1,64 +1,64 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#demo",
-      /* You can make references to blocks defined in other files.
-       * For example, `flex-layout.row#deals` is defined in the `deals.json` file. */
-      "flex-layout.row#deals",
-      "__fold__",
+      "list-context.image-list#slider-home",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
-      "info-card#home",
-      "rich-text#question",
-      "rich-text#link",
-      "newsletter"
+      "flex-layout.row#button-shelf",
+      "rich-text#department-title",
+      "flex-layout.row#departments",
+      "rich-text#blog-title",
+      "flex-layout.row#feed-instagram"
     ]
   },
 
-  "list-context.image-list#demo": {
-    "children": ["slider-layout#demo-images"],
+  "list-context.image-list#slider-home": {
+    "title": "Banner Principal",
+    "children": ["slider-layout#slider-home"],
     "props": {
-      "height": 570,
+      "height": 637,
       "preload": true,
       "images": [
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-desktop.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/Class&Style-mobile.png"
+          "image": "assets/img/home/deportivo-cali-kappa-colombia-julio-desktop.webp",
+          "mobileImage": "assets/img/home/deportivo-cali-kappa-colombia-julio-mobile.webp"
         },
         {
-          "image": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration.png",
-          "mobileImage": "https://storecomponents.vteximg.com.br/arquivos/banner-decoration-mobile.png"
+          "image": "assets/img/home/verano-in-vista-kappa-col-desktop.webp",
+          "mobileImage": "assets/img/home/verano-in-vista-kappa-col-mobile.webp"
         }
       ]
     }
   },
-  "slider-layout#demo-images": {
+  "slider-layout#slider-home": {
     "props": {
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
         "phone": 1
       },
+      "autoplay": { "timeout": 5000, "stopOnHover": true },
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "blockClass": "carousel"
     }
   },
-
   "rich-text#shelf-title": {
+    "title": "Titulo vitrina",
     "props": {
-      "text": "## Summer",
+      "text": "## CONOCE NUESTRA ÚLTIMA COLECCIÓN",
       "blockClass": "shelfTitle"
     }
   },
   "flex-layout.row#shelf": {
-    "children": ["list-context.product-list#demo1"]
+    "children": ["list-context.product-list#latest-collection"]
   },
-  "list-context.product-list#demo1": {
-    "blocks": ["product-summary.shelf"],
+  "list-context.product-list#latest-collection": {
+    "blocks": ["product-summary.shelf#custom"],
     "children": ["slider-layout#demo-products"],
     "props": {
-      "orderBy": "OrderByTopSaleDESC"
+      "orderBy": "OrderByTopSaleDESC",
+      "category": "1"
     }
   },
   "slider-layout#demo-products": {
@@ -68,37 +68,133 @@
         "tablet": 3,
         "phone": 1
       },
+      // "autoplay": { "stopOnHover": true, "timeout": 3000 },
       "infinite": true,
       "fullWidth": false,
-      "blockClass": "shelf"
+      "blockClass": "shelf",
+      "showPaginationDots": "never"
     }
   },
-
-  "info-card#home": {
+  "flex-layout.row#button-shelf": {
+    "children": ["flex-layout.col#button-shelf"],
     "props": {
-      "id": "info-card-home",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "https://storecomponents.vteximg.com.br/arquivos/banner-infocard2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
-      "callToActionUrl": "/sale/d",
-      "blockClass": "info-card-home",
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#button-shelf": {
+    "children": ["link.product#button-shelf"],
+    "props": {
+      "horizontalAlign": "center",
+      "preventVerticalStretch": true,
+      "blockClass": ["col--buttonShowAll"]
+    }
+  },
+  "link.product#button-shelf": {
+    "title": "Boton ver todo",
+    "props": {
+      "blockClass": ["buttonShowAll"],
+      "href": "/",
+      "label": "VER TODO"
+    }
+  },
+  "rich-text#department-title": {
+    "title": "Titulo departamentos",
+    "props": {
+      "text": "## Bienvenido a Kappa",
+      "blockClass": ["shelfTitle", "shelfTitle--border-top"]
+    }
+  },
+  "flex-layout.row#departments": {
+    "title": "Contenedor tarjetas departamentos",
+    "props": {
+      "colJustify": "center",
+      "colGap": 5,
+      "blockClass": "departments-cards"
+    },
+    "children": [
+      "flex-layout.col#first-department",
+      "flex-layout.col#second-department",
+      "flex-layout.col#third-department"
+    ]
+  },
+  "flex-layout.col#first-department": {
+    "props": {
+      "width": "grow"
+    },
+    "children": ["info-card#firts-department"]
+  },
+  "info-card#firts-department": {
+    "title": "Primer departamento",
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/home/departamento-hombre-kappa-colombia-web-junio.webp",
+      "mobileImageUrl": "assets/img/home/departamento-hombre-kappa-colombia-mobile-junio.webp",
+      "callToActionMode": "none",
+      "imageActionUrl": "/sale/d",
+      "blockClass": "card-department",
       "textAlignment": "center"
     }
   },
-
-  "rich-text#question": {
+  "flex-layout.col#second-department": {
     "props": {
-      "text": "**This is an example store built using the VTEX platform.\nWant to know more?**",
-      "blockClass": "question"
+      "width": "grow"
+    },
+    "children": ["info-card#second-department"]
+  },
+  "info-card#second-department": {
+    "title": "Segundo departamento",
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/home/departamento-mujer-kappa-colombia-web-junio.webp",
+      "mobileImageUrl": "assets/img/home/departamento-mujer-kappa-colombia-mobile-junio.webp",
+      "callToActionMode": "none",
+      "imageActionUrl": "/sale/d",
+      "blockClass": "card-department",
+      "textAlignment": "center"
     }
   },
-
-  "rich-text#link": {
+  "flex-layout.col#third-department": {
     "props": {
-      "text": "\n**Reach us at**\nwww.vtex.com.br",
-      "blockClass": "link"
+      "width": "grow"
+    },
+    "children": ["info-card#third-department"]
+  },
+  "info-card#third-department": {
+    "title": "Tercer departamento",
+    "props": {
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "assets/img/home/departamento-ninos-kappa-colombia-web-junio.webp",
+      "mobileImageUrl": "assets/img/home/departamento-ninos-kappa-colombia-mobile-junio.webp",
+      "callToActionMode": "none",
+      "imageActionUrl": "/sale/d",
+      "blockClass": "card-department",
+      "textAlignment": "center"
+    }
+  },
+  "rich-text#blog-title": {
+    "title": "Titulo blog",
+    "props": {
+      "text": "## ÚLTIMAS NOTICIAS",
+      "blockClass": "shelfTitle"
+    }
+  },
+  "flex-layout.row#feed-instagram": {
+    "props": {
+      "fullWidth": true
+    },
+    "children": ["sandbox#feed-instagram"]
+  },
+  "sandbox#feed-instagram": {
+    "props": {
+      "width": "100%",
+      "height": "auto",
+      "initialContent": "<script src=\"https://cdn.lightwidget.com/widgets/lightwidget.js\"></script><iframe src=\"https://cdn.lightwidget.com/widgets/7bc059e277255fc996889196d53d5e62.html\" scrolling=\"no\" allowtransparency=\"true\" class=\"lightwidget-widget\" style=\"width:100%;height:390px;overflow:hidden;border:none;\"></iframe>",
+      "allowCookies": false
     }
   }
 }

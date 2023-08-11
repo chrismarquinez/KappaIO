@@ -1,0 +1,306 @@
+{
+  "megamenu": {
+    "title": "megamenú",
+    "props": {
+      "Login": "login-content#default",
+      "Logo": "logo#newera",
+      "MiniCart": "minicart.v2",
+      "menu":[
+        {
+          "__editorItemTitle": "GORRAS",
+          "icon":"",
+          "image": "https://neweraco.vtexassets.com/assets/vtex/assets-builder/neweraco.neweraco-theme/1.0.38/images/gorras___53010a2f70ee58ca518ca27e9cf8b105.svg",
+          "type":false,
+          "url":"",
+          "submenus":[
+            {
+              "__editorItemTitle":"Ligas",
+              "distribution": "normal",
+              "vermas":false,
+              "url_vermas": "",
+              "itemssubmenu":[
+                {
+                  "__editorItemTitle":"MLB",
+                  "url":"",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg"
+                  ,"type": "normal"
+                },
+                {
+                  "__editorItemTitle":"NBA",
+                  "url":"",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/6402c81b-6be8-4690-b884-d9b8fe29ea50___c84f98af6bfb0c81c1a60063e852afb0.svg"
+                  ,"type": "normal"
+                },
+                {
+                  "__editorItemTitle":"NFL",
+                  "url":"",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg"
+                  ,"type": "normal"
+                }
+              ]
+            },
+            {
+              "__editorItemTitle":"Siluetas",
+              "distribution": "cuadricula",
+              "vermas":true,
+              "url_vermas": "",
+              "itemssubmenu":[
+                {
+                  "__editorItemTitle":"59FIFTY",
+                  "url":"59FIFTY",
+                  "image":"",
+                  "type": "cuadro"
+                },
+                {
+                  "__editorItemTitle":"LOW PROFILE 59FIFTY",
+                  "url":"LOW-PROFILE-59FIFTY",
+                  "image":"",
+                  "type": "cuadro"
+                },
+                {
+                  "__editorItemTitle":"9FIFTY SNAPBACK",
+                  "url":"9FIFTY-SNAPBACK",
+                  "image":"",
+                  "type": "cuadro"
+                },
+                {
+                  "__editorItemTitle":"39THIRTY",
+                  "url":"39THIRTY",
+                  "image":"",
+                  "type": "cuadro"
+                },
+                {
+                  "__editorItemTitle":"9FORTY",
+                  "url":"9FORTY",
+                  "image":"",
+                  "type": "cuadro"
+                },
+                {
+                  "__editorItemTitle":"9TWENTY",
+                  "url":"9TWENTY",
+                  "image":"",
+                  "type": "cuadro"
+                },
+                {
+                  "__editorItemTitle":"CASUAL CLASSIC",
+                  "url":"CASUAL CLASSIC",
+                  "image":"",
+                  "type": "cuadro"
+                }
+
+              ]
+            },
+            {
+              "__editorItemTitle":"Tipos",
+              "distribution": "normal",
+              "vermas":true,
+              "url_vermas": "",
+              "itemssubmenu":[
+                {
+                  "__editorItemTitle":"Unisex",
+                  "url":"",
+                  "image":""
+                  ,"type": "normal"
+                },
+                {
+                  "__editorItemTitle":"Mujeres",
+                  "url":"",
+                  "image":""
+                  ,"type": "normal"
+                },
+                {
+                  "__editorItemTitle":"Niños",
+                  "url":"",
+                  "image":""
+                  ,"type": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "ROPA",
+          "icon":"",
+          "image": "https://neweraco.vtexassets.com/assets/vtex/assets-builder/neweraco.neweraco-theme/1.0.38/images/gorras___53010a2f70ee58ca518ca27e9cf8b105.svg",
+          "type":false,
+          "url":"",
+          "submenus":[
+            {
+              "__editorItemTitle":"Ligas",
+              "distribution": "horizontal",
+              "vermas":false,
+              "url_vermas": "",
+              "itemssubmenu":[
+                {
+                  "__editorItemTitle":"Ropa de MLB",
+                  "url":"",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg"
+                  ,"type": "normal"
+                },
+                {
+                  "__editorItemTitle":"Ropa de NBA",
+                  "url":"",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/6402c81b-6be8-4690-b884-d9b8fe29ea50___c84f98af6bfb0c81c1a60063e852afb0.svg"
+                  ,"type": "normal"
+                },
+                {
+                  "__editorItemTitle":"Ropa de NFL",
+                  "url":"",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg"
+                  ,"type": "normal"
+                }
+              ]
+            }
+
+          ]
+        },
+        {
+          "__editorItemTitle": "ACCESORIOS",
+          "icon":"",
+          "image": "https://neweraco.vtexassets.com/assets/vtex/assets-builder/neweraco.neweraco-theme/1.0.38/images/gorras___53010a2f70ee58ca518ca27e9cf8b105.svg",
+          "type":false,
+          "url":"",
+          "submenus":[
+            {
+              "__editorItemTitle":"Accesorios",
+              "distribution": "horizontal",
+              "vermas":false,
+              "url_vermas": "",
+              "itemssubmenu":[
+                {
+                  "__editorItemTitle":"BACKPACKS",
+                  "url":"/accesorios/accesorios-gorras",
+                  "image":"",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle":"BAGS",
+                  "url":"/accesorios/bags",
+                  "image":"",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle":"CAP CARRIERS",
+                  "url":"/accesorios/cap-carriers",
+                  "image":"",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle":"PINS",
+                  "url":"/accesorios/pins",
+                  "image":"",
+                  "type": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "MLB",
+          "icon":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+          "image": "https://neweraco.vtexassets.com/assets/vtex/assets-builder/neweraco.neweraco-theme/1.0.38/images/gorras___53010a2f70ee58ca518ca27e9cf8b105.svg",
+          "type":true,
+          "url":"",
+          "submenus":[
+            {
+              "__editorItemTitle":"Equipos",
+              "distribution": "horizontal",
+              "vermas":false,
+              "url_vermas": "",
+              "itemssubmenu":[
+                {
+                  "__editorItemTitle":"Arizona Diamondcacks",
+                  "url":"/Arizona%20Diamondbacks",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle":"Houston Astros",
+                  "url":"/Houston%20Astros",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle":"Philadelphia Phillies",
+                  "url":"/Philadelphia%20Phillies",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "type": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "NFL",
+          "icon":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg",
+          "image": "https://neweraco.vtexassets.com/assets/vtex/assets-builder/neweraco.neweraco-theme/1.0.38/images/gorras___53010a2f70ee58ca518ca27e9cf8b105.svg",
+          "type":true,
+          "url":"",
+          "submenus":[
+            {
+              "__editorItemTitle":"Equipos",
+              "distribution": "horizontal",
+              "vermas":false,
+              "url_vermas": "",
+              "itemssubmenu":[
+                {
+                  "__editorItemTitle":"Arizona Diamondcacks",
+                  "url":"/Arizona%20Diamondbacks",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle":"Houston Astros",
+                  "url":"/Houston%20Astros",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle":"Philadelphia Phillies",
+                  "url":"/Philadelphia%20Phillies",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "type": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__editorItemTitle": "NBA",
+          "icon":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/6402c81b-6be8-4690-b884-d9b8fe29ea50___c84f98af6bfb0c81c1a60063e852afb0.svg",
+          "image": "https://neweraco.vtexassets.com/assets/vtex/assets-builder/neweraco.neweraco-theme/1.0.38/images/gorras___53010a2f70ee58ca518ca27e9cf8b105.svg",
+          "type":true,
+          "url":"",
+          "submenus":[
+            {
+              "__editorItemTitle":"Equipos",
+              "distribution": "horizontal",
+              "vermas":false,
+              "url_vermas": "",
+              "itemssubmenu":[
+                {
+                  "__editorItemTitle":"Arizona Diamondcacks",
+                  "url":"/Arizona%20Diamondbacks",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle":"Houston Astros",
+                  "url":"/Houston%20Astros",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle":"Philadelphia Phillies",
+                  "url":"/Philadelphia%20Phillies",
+                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "type": "normal"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

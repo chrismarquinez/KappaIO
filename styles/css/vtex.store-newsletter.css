@@ -1,0 +1,35 @@
+.newsletterForm--footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.newsletterForm--footer .container {
+  text-align: center;
+}
+
+.newsletterForm--footer :global(.vtex-rich-text-0-x-paragraph--text-coupon) {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  opacity: 0.5;
+}
+
+.newsletterForm--footer .formSubmitContainer {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.newsletterForm--footer .confirmationCheckboxContainer {
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+  .newsletterForm--footer :global(.vtex-rich-text-0-x-paragraph--text-coupon) {
+    text-align: center;
+  }
+}
+
+/* Responsive */

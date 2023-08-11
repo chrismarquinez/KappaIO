@@ -1,90 +1,90 @@
-.container--deals {
-  color: #ffffff;
-  text-align: center;
-  justify-content: center;
-}
+/* Home */
 
 .container--shelfTitle {
-  color: #727273;
+  padding: 0 40px;
   justify-content: center;
   text-align: center;
+}
+
+.container--shelfTitle--border-top {
+  margin-top: 5rem;
+  border-top: 1px solid #e6e6e6;
 }
 
 .headingLevel2--shelfTitle {
-  font-weight: 200;
+  font-size: 2rem;
+  font-weight: 400;
+  color: #000;
 }
 
-.container--deals .paragraph {
-  margin: 0;
-}
+/* Home */
 
-.container--link {
-  justify-content: center;
-}
+/* Footer */
 
-.container--question {
-  justify-content: center;
-}
-
-.container--question .paragraph {
-  text-align: center;
-  max-width: 540px;
-  margin: 0 16px;
-  padding-top: 120px;
-  color: #03034E;
-}
-
-.container--question .strong {
-  font-size: 32px;
-  line-height: 2rem;
+:global(.vtex-store-footer-2-x-footerLayout) .paragraph--footer-title {
+  font-size: 0.8rem;
   font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  padding-left: 15px;
+  cursor: auto;
+  letter-spacing: 0.2em;
 }
 
-.container--link .paragraph {
-  text-align: center;
-  max-width: 540px;
-  padding-top: 36px;
-  padding-bottom: 84px;
-  color: #03034E;
+:global(.vtex-store-footer-2-x-footerLayout) .container--sub-title {
+  margin-top: 1rem;
 }
 
-.container--link .strong {
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
+:global(.vtex-store-footer-2-x-footerLayout) .paragraph--sub-title {
+  margin-bottom: 0;
 }
 
-.container--link .link {
+:global(.vtex-store-footer-2-x-footerLayout) .container--sub-title,
+:global(.vtex-store-footer-2-x-footerLayout) .container--text-sub-title {
+  font-size: 0.8rem;
+  padding-left: 15px;
+}
+
+:global(.vtex-store-footer-2-x-footerLayout) .link--text-sub-title {
+  color: #0f0f0f;
   text-decoration: none;
-  font-size: 36px;
-  font-weight: 300;
-  color: #03034E;
 }
 
-.container--title {
-  color: #03034E;
-  font-size: 28px;
-  font-weight: 700;
+:global(.vtex-store-footer-2-x-footerLayout) .wrapper--social-networks {
+  font-size: 0.9rem;
+  text-align: center;
+  letter-spacing: 0.2em;
+  margin-top: 1rem;
 }
 
-@media only screen and (min-width: 640px) {
-  .container--question .strong {
-    font-size: 40px;
-    line-height: 3rem;
+:global(.vtex-store-footer-2-x-footerLayout) .paragraph--powered-by {
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+}
+
+/* Footer */
+
+/* Responsive */
+
+/* Footer */
+
+@media screen and (max-width: 1024px) {
+  :global(.vtex-store-footer-2-x-footerLayout) .paragraph--powered-by {
+    font-size: 0.6rem;
   }
 
-  .container--about {
-    max-width: 85%;
+  :global(.vtex-store-footer-2-x-footerLayout) .container--sub-title,
+  :global(.vtex-store-footer-2-x-footerLayout) .container--text-sub-title {
+    font-size: 0.7rem;
+    text-align: center;
+    justify-content: center;
   }
 
-  .container--title {
-    color: #03034E;
-    font-size: 40px;
-    font-weight: 700;
-    max-width: 60%;
-  }
-
-  .container--title .paragraph {
-    line-height: 1.3em;
+  :global(.vtex-store-footer-2-x-footerLayout) .wrapper--social-networks {
+    margin-top: 4rem;
   }
 }
+
+/* Footer */
+
+/* Responsive */

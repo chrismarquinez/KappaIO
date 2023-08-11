@@ -6,12 +6,23 @@
   text-decoration: underline;
 }
 
-.infoCardContainer--info-card-home {
-  max-width: 1520px;
+/* Home */
+
+.infoCardContainer--card-department {
+  /* max-width: 435px; */
+  height: 435px;
   margin: 0 auto;
-  background-color: #e6f1e6;
   padding: 0px;
 }
+
+@media screen and (max-width: 768px) {
+  .infoCardContainer--card-department {
+    height: 200px;
+    background-position: top;
+  }
+}
+
+/* Home */
 
 .newsletter {
   background-color: #03054e;
@@ -70,7 +81,7 @@
     padding: 140px;
   }
   .label {
-     font-size: 40px;
+    font-size: 40px;
   }
   .infoCardContainer--info-card-home .infoCardTextContainer {
     width: 30%;
