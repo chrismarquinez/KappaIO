@@ -3,7 +3,7 @@
     "blocks": [
       "list-context.image-list#slider-home",
       "rich-text#shelf-title",
-      // "flex-layout.row#shelf",
+      "flex-layout.row#shelf",
       "rich-text#department-title",
       "flex-layout.row#departments",
       "rich-text#blog-title"
