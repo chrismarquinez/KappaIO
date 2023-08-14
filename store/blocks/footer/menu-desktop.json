@@ -1,0 +1,362 @@
+{
+  "vtex.menu@2.x:menu#firts-column": {
+    "props": { "orientation": "vertical", "blockClass": ["footer-item"] },
+    "children": [
+      "rich-text#firts-column",
+      "menu-item#us",
+      "menu-item#my-account",
+      "menu-item#size-guide",
+      "menu-item#releases",
+      "rich-text#stores",
+      "rich-text#firts-store",
+      "rich-text#second-store"
+    ]
+  },
+  "rich-text#firts-column": {
+    "title": "Titulo primer columna",
+    "props": {
+      "blockClass": ["footer-title"],
+      "text": "DESCUBRE"
+    }
+  },
+  "menu-item#us": {
+    "props": {
+      "id": "menu-item-us",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/nosotros",
+        "noFollow": false,
+        "tagTitle": "Nosotros",
+        "text": "Nosotros"
+      }
+    }
+  },
+  "menu-item#my-account": {
+    "props": {
+      "id": "menu-item-my-account",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/login",
+        "noFollow": false,
+        "tagTitle": "Mi cucuenta",
+        "text": "Mi cuenta"
+      }
+    }
+  },
+  "menu-item#size-guide": {
+    "props": {
+      "id": "menu-item-size-guide",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/login",
+        "noFollow": false,
+        "tagTitle": "Guía de tallas",
+        "text": "Guía de tallas"
+      }
+    }
+  },
+  "menu-item#releases": {
+    "props": {
+      "id": "menu-item-releases",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/comunicados",
+        "noFollow": false,
+        "tagTitle": "Comunicados",
+        "text": "Comunicados"
+      }
+    }
+  },
+  "rich-text#stores": {
+    "title": "Titulo tiendas",
+    "props": {
+      "blockClass": ["sub-title"],
+      "text": "**Nuestras Tiendas**"
+    }
+  },
+  "rich-text#firts-store": {
+    "title": "Direccion tenda 1",
+    "props": {
+      "blockClass": ["text-sub-title"],
+      "text": "C.C. Colina, Bogotá\n Carrera 58D # 146-51 LOCAL 2-33"
+    }
+  },
+  "rich-text#second-store": {
+    "title": "Direccion tenda 2",
+    "props": {
+      "blockClass": ["text-sub-title"],
+      "text": "C.C. Outlet de las Américas, Bogotá\n  Carrera 60 # 11 - 05"
+    }
+  },
+
+  "vtex.menu@2.x:menu#second-column": {
+    "props": { "orientation": "vertical", "blockClass": ["footer-item"] },
+    "children": [
+      "rich-text#second-column",
+      "menu-item#terms",
+      "menu-item#policies",
+      "menu-item#promotions",
+      "menu-item#means-payment",
+      "menu-item#sic"
+    ]
+  },
+  "rich-text#second-column": {
+    "title": "Titulo segunda columna",
+    "props": {
+      "blockClass": ["footer-title"],
+      "text": "POLÍTICAS"
+    }
+  },
+  "menu-item#terms": {
+    "props": {
+      "id": "menu-item-terms",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/terminos-y-condiciones",
+        "noFollow": false,
+        "tagTitle": "Términos y condiciones",
+        "text": "Términos y condiciones"
+      }
+    }
+  },
+  "menu-item#policies": {
+    "props": {
+      "id": "menu-item-policies",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/politicas-privacidad",
+        "noFollow": false,
+        "tagTitle": "Políticas de privacidad de datos personales",
+        "text": "Políticas de privacidad de datos personales"
+      }
+    }
+  },
+  "menu-item#promotions": {
+    "props": {
+      "id": "menu-item-promotions",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/promociones",
+        "noFollow": false,
+        "tagTitle": "Promociones",
+        "text": "Promociones"
+      }
+    }
+  },
+  "menu-item#means-payment": {
+    "props": {
+      "id": "menu-item-means-payment",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/medios-de-pago",
+        "noFollow": false,
+        "tagTitle": "Medios de pago",
+        "text": "Medios de pago"
+      }
+    }
+  },
+  "menu-item#sic": {
+    "props": {
+      "id": "menu-item-means-payment",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://www.sic.gov.co/",
+        "noFollow": false,
+        "tagTitle": "SIC",
+        "text": "SIC"
+      }
+    }
+  },
+
+  "vtex.menu@2.x:menu#third-column": {
+    "props": { "orientation": "vertical", "blockClass": ["footer-item"] },
+    "children": [
+      "rich-text#third-column",
+      "menu-item#contact",
+      "menu-item#exchanges",
+      "menu-item#track",
+      "rich-text#hours-operation",
+      "rich-text#schedule"
+    ]
+  },
+  "rich-text#third-column": {
+    "title": "Titulo tercer columna",
+    "props": {
+      "blockClass": ["footer-title"],
+      "text": "SERVICIO AL CLIENTE"
+    }
+  },
+  "menu-item#contact": {
+    "props": {
+      "id": "menu-item-contact",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/contacto",
+        "noFollow": false,
+        "tagTitle": "Contáctanos",
+        "text": "Contáctanos"
+      }
+    }
+  },
+  "menu-item#exchanges": {
+    "props": {
+      "id": "menu-item-exchanges",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/cambios",
+        "noFollow": false,
+        "tagTitle": "Formulario de Cambios, Devoluciones y Garantías",
+        "text": "Formulario de Cambios, Devoluciones y Garantías"
+      }
+    }
+  },
+  "menu-item#track": {
+    "props": {
+      "id": "menu-item-track",
+      "type": "custom",
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/envios",
+        "noFollow": false,
+        "tagTitle": "Rastrea tu Pedido",
+        "text": "Rastrea tu Pedido"
+      }
+    }
+  },
+  "rich-text#hours-operation": {
+    "title": "Titulo horario de atención",
+    "props": {
+      "blockClass": ["sub-title"],
+      "text": "**Horario de Atención:**"
+    }
+  },
+  "rich-text#schedule": {
+    "title": "Horario de atención",
+    "props": {
+      "blockClass": ["text-sub-title"],
+      "text": "L-V 10:00 am. A 5:00 pm.\n [Tel: (601) 4898397](tel:6014898397)"
+    }
+  },
+
+  "vtex.menu@2.x:menu#fourth-column": {
+    "props": { "orientation": "vertical", "blockClass": ["footer-item"] },
+    "children": [
+      "rich-text#fourth-column",
+      "newsletter-form",
+      "rich-text#social-networks",
+      "social-networks"
+    ]
+  },
+  "rich-text#fourth-column": {
+    "title": "Titulo cuarta columna",
+    "props": {
+      "blockClass": ["footer-title"],
+      "text": "ÚNETE CLUB KAPPA"
+    }
+  },
+  "newsletter-form": {
+    "props": {
+      "blockClass": ["footer"]
+    },
+    "children": [
+      "rich-text#title-coupon",
+      "newsletter-input-email",
+      "newsletter-submit",
+      "newsletter-checkbox-confirmation"
+    ]
+  },
+  "rich-text#title-coupon": {
+    "title": "Titulo porcentaje descuento",
+    "props": {
+      "blockClass": ["text-coupon"],
+      "text": "Recuerda que tienes el 20% de dcto para tu primera compra."
+    }
+  },
+  "rich-text#social-networks": {
+    "title": "Titulo redes sociales",
+    "props": {
+      "blockClass": ["social-networks"],
+      "text": "**SÍGUENOS EN NUESTRAS REDES SOCIALES**"
+    }
+  },
+  "social-networks": {
+    "props": {
+      "socialNetworks": [
+        {
+          "url": "https://www.facebook.com/kappa.colombia",
+          "name": "Facebook"
+        },
+        {
+          "url": "https://www.facebook.com/kappa.colombia",
+          "name": "Instagram"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.col#means-payment": {
+    "children": ["list-context.image-list#payment"]
+  },
+  "list-context.image-list#payment": {
+    "children": ["slider-layout#payment-images"],
+    "props": {
+      "preload": true,
+      "height": 33,
+      "images": [
+        {
+          "loading": "lazy",
+          "width": "auto",
+          "image": "assets/img/footer/means-payment-desktop.png",
+          "description": "Medios de pago"
+        }
+      ]
+    }
+  },
+  "slider-layout#payment-images": {
+    "props": {
+      "blockClass": "footer-payment-image",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+  "flex-layout.col#powered-by": {
+    "props": {
+      "horizontalAlign": "center"
+    },
+    "children": ["rich-text#powered-by"]
+  },
+  "rich-text#powered-by": {
+    "title": "Titulo derechos reservados",
+    "props": {
+      "blockClass": ["powered-by"],
+      "text": "Todos los derechos reservados Kappa 2023"
+    }
+  }
+}

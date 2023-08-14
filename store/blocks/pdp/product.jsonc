@@ -4,20 +4,11 @@
       "flex-layout.row#product-breadcrumb",
       "condition-layout.product#availability",
       "flex-layout.row#description",
-      "flex-layout.row#specifications-title",
       "product-specification-group#table",
       "shelf.relatedProducts",
       "product-reviews",
       "product-questions-and-answers"
     ]
-  },
-  "flex-layout.row#specifications-title": {
-    "children": ["rich-text#specifications"]
-  },
-  "rich-text#specifications": {
-    "props": {
-      "text": "##### Product Specifications"
-    }
   },
   "flex-layout.row#product-breadcrumb": {
     "props": {
@@ -90,7 +81,11 @@
         "desktop": "auto",
         "phone": "16:9"
       },
-      "displayThumbnailsArrows": true
+      "displayThumbnailsArrows": true,
+      "position": "right",
+      "showPaginationDots": false,
+      "zoomMode": "in-place-hover",
+      "showNavigationArrows": false
     }
   },
   "flex-layout.col#right-col": {
@@ -100,20 +95,18 @@
     },
     "children": [
       "flex-layout.row#product-name",
-      "product-rating-summary",
+      // "product-rating-summary",
+      "product-identifier.product",
       "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
       "product-installments",
       "product-separator",
-      "product-identifier.product",
       "sku-selector",
-      "product-quantity",
       "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
-      "availability-subscriber",
-      "shipping-simulator",
-      "share#default"
+      "flex-layout.row#description",
+      "availability-subscriber"
     ]
   },
 
@@ -134,7 +127,27 @@
   "flex-layout.row#buy-button": {
     "props": {
       "marginTop": 4,
-      "marginBottom": 7
+      "marginBottom": 7,
+      "preventHorizontalStretch": false
+    },
+    "children": [
+      "flex-layout.col#buy-button-left",
+      "flex-layout.col#buy-button-right"
+    ]
+  },
+
+  "flex-layout.col#buy-button-left": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "30%"
+    },
+    "children": ["product-quantity"]
+  },
+
+  "flex-layout.col#buy-button-right": {
+    "props": {
+      "verticalAlign": "middle",
+      "width": "70%"
     },
     "children": ["add-to-cart-button"]
   },
@@ -151,6 +164,7 @@
       "flex-layout.col#right-col-availability"
     ]
   },
+
   "flex-layout.col#right-col-availability": {
     "props": {
       "preventVerticalStretch": true,
@@ -169,16 +183,5 @@
       "blockClass": "message-availability"
     },
     "children": ["availability-subscriber"]
-  },
-
-  "share#default": {
-    "props": {
-      "social": {
-        "Facebook": true,
-        "WhatsApp": true,
-        "Twitter": false,
-        "Pinterest": true
-      }
-    }
   }
 }

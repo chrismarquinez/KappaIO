@@ -11,6 +11,16 @@
       "add-to-cart-button"
     ]
   },
+  "product-summary.shelf#custom": {
+    "children": [
+      "flex-layout.row#prodsum",
+      "product-summary-name",
+      "product-list-price#summary",
+      "flex-layout.row#selling-price-savings",
+      "product-installments#summary",
+      "add-to-cart-button"
+    ]
+  },
   "flex-layout.col#productRating": {
     "props": {
       "blockClass": "productRating"
@@ -18,19 +28,45 @@
     "children": ["product-rating-inline"]
   },
 
+  "flex-layout.row#prodsum": {
+    "props": {
+      "blockClass": "productSkuSelectorContainer",
+      "fullWidth": false,
+      "preventVerticalStretch": true
+    },
+    "children": ["flex-layout.col#prodsum", "flex-layout.col#sku-selector"]
+  },
+  "flex-layout.col#prodsum": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["stack-layout#prodsum"]
+  },
+  "flex-layout.col#sku-selector": {
+    "props": {
+      "width": "100%",
+      "blockClass": "productSkuSelector",
+      "preventVerticalStretch": true
+    },
+    "children": ["product-summary-sku-selector#shelf"]
+  },
+
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-      "vtex.product-highlights@2.x:product-highlights#collection",
-      "modal-trigger#quickview" // Check quickview.jsonc
+      "vtex.product-highlights@2.x:product-highlights#collection"
+      // "modal-trigger#quickview" // Check quickview.jsonc
     ]
   },
-
   "product-summary-image#shelf": {
     "props": {
       "showBadge": false,
       "aspectRatio": "1:1",
-      "maxHeight": 300
+      "maxHeight": 300,
+      "hoverImage": {
+        "criteria": "index",
+        "index": 2
+      }
     }
   },
 
@@ -81,10 +117,25 @@
   },
   "product-price-savings#summary": {
     "props": {
-      "markers": [
-        "discount"
-      ],
+      "markers": ["discount"],
       "blockClass": "summary"
+    }
+  },
+  "product-summary-sku-selector#shelf": {
+    "props": {
+      "disableUnavailableSelectOptions": true,
+      "thumbnailImage": "skuvariation",
+      "imageHeight": 28,
+      "blockClass": "quickview",
+      "visibility": "more-than-one"
+
+    }
+  },
+  "product-description": {
+    "props": {
+      "showTitle": true,
+      "collapseContent": true,
+      "title": "DESCRIPCIÓN"
     }
   }
 }

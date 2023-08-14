@@ -1,0 +1,144 @@
+{
+  "vtex.menu@2.x:menu#footer-mobile": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#firts-accordion-mobile",
+      "menu-item#second-accordion-mobile",
+      "menu-item#third-accordion-mobile",
+      "menu-item#fourth-accordion-mobile"
+    ]
+  },
+  "menu-item#firts-accordion-mobile": {
+    "props": {
+      "id": "menu-item-firts-accordion",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["footer-title"],
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "DESCUBRE",
+        "text": "DESCUBRE"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#firts-accordion"]
+  },
+  "vtex.menu@2.x:submenu.accordion#firts-accordion": {
+    "children": ["vtex.menu@2.x:menu#firts-accordion-accordion"]
+  },
+  "vtex.menu@2.x:menu#firts-accordion-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["footer-item"]
+    },
+    "children": [
+      "menu-item#us",
+      "menu-item#my-account",
+      "menu-item#size-guide",
+      "menu-item#releases",
+      "rich-text#stores",
+      "rich-text#firts-store",
+      "rich-text#second-store"
+    ]
+  },
+
+  "menu-item#second-accordion-mobile": {
+    "props": {
+      "id": "menu-item-second-accordion",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["footer-title"],
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "POLÍTICAS",
+        "text": "POLÍTICAS"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#second-accordion"]
+  },
+  "vtex.menu@2.x:submenu.accordion#second-accordion": {
+    "children": ["vtex.menu@2.x:menu#second-accordion-accordion"]
+  },
+  "vtex.menu@2.x:menu#second-accordion-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["footer-item"]
+    },
+    "children": [
+      "menu-item#terms",
+      "menu-item#policies",
+      "menu-item#promotions",
+      "menu-item#means-payment",
+      "menu-item#sic"
+    ]
+  },
+
+  "menu-item#third-accordion-mobile": {
+    "props": {
+      "id": "menu-item-third-accordion",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["footer-title"],
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "SERVICIO AL CLIENTE",
+        "text": "SERVICIO AL CLIENTE"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#third-accordion"]
+  },
+  "vtex.menu@2.x:submenu.accordion#third-accordion": {
+    "children": ["vtex.menu@2.x:menu#third-accordion-accordion"]
+  },
+  "vtex.menu@2.x:menu#third-accordion-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["footer-item"]
+    },
+    "children": [
+      "menu-item#contact",
+      "menu-item#exchanges",
+      "menu-item#track",
+      "rich-text#hours-operation",
+      "rich-text#schedule"
+    ]
+  },
+
+  "menu-item#fourth-accordion-mobile": {
+    "props": {
+      "id": "menu-item-fourth-accordion",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["footer-title"],
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "ÚNETE CLUB KAPPA",
+        "text": "ÚNETE CLUB KAPPA"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#fourth-accordion"]
+  },
+  "vtex.menu@2.x:submenu.accordion#fourth-accordion": {
+    "children": ["vtex.menu@2.x:menu#fourth-accordion-accordion"]
+  },
+  "vtex.menu@2.x:menu#fourth-accordion-accordion": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": ["footer-item"]
+    },
+    "children": [
+      "newsletter-form",
+      "rich-text#social-networks",
+      "social-networks"
+    ]
+  }
+}
