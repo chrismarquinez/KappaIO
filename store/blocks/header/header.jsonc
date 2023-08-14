@@ -1,7 +1,7 @@
 {
   "header.full": {
     "props": {
-      "Logo": "logo#newera",
+      "Logo": "logo#kappa",
       "MegaMenu": "megamenu",
       "SearchBar": "search-bar",
       "CarouselHeader": "top-header",
@@ -30,7 +30,7 @@
       "showPasswordVerificationIntoTooltip": false
     }
   },
-  "logo#newera": {
+  "logo#kappa": {
     "props": {
       "title": "Logo",
       "href": "/",
