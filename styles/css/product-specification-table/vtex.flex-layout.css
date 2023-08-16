@@ -3,18 +3,33 @@
 }
 
 .flexRow--productSpecificationGroupName {
-  background-color: #eaeaea;
+  font-size: 0.744rem;
   padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
 }
 
 .flexCol--productSpecificationName {
-  padding: 1rem;
+  border-right: 1px solid #d3d3d3;
+  padding: 0.5rem 1rem;
 }
 
 .flexCol--productSpecificationValue {
   padding: 1rem 1rem 1rem 0;
 }
 
+.flexRow--productSpecification {
+  border: 1px solid #d3d3d3;
+  font-size: 0.744rem;
+  letter-spacing: 0.1rem;
+}
+
+.flexRow--productSpecification:nth-child(odd) {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
 .flexRow--productSpecification:nth-child(even) {
-  background-color: #f9f9f9;
+  font-weight: normal;
+  border-top: none;
+  border-bottom: none;
 }

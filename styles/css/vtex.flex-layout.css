@@ -1,5 +1,9 @@
 /* Home */
 
+.flexRow--mainBanner {
+  margin-top: 160px;
+}
+
 .flexRowContent--departments-cards {
   display: flex;
 }
@@ -8,10 +12,20 @@
   min-height: 41px;
 }
 
+.flexRow--breadcrumb {
+  margin-top: 160px;
+}
+
 @media screen and (max-width: 628px) {
   .flexRowContent--departments-cards {
     flex-direction: column;
     row-gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .flexRow--mainBanner {
+    margin-top: 118px;
   }
 }
 
@@ -139,11 +153,10 @@
   padding-bottom: 1rem;
 }
 
-
-.flexRowContent--encabezados_home :global(.vtex-flex-layout-0-x-flexRowContent--logo-league) {
+.flexRowContent--encabezados_home
+  :global(.vtex-flex-layout-0-x-flexRowContent--logo-league) {
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10px 0 133px;
 }
-

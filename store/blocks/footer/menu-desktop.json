@@ -318,32 +318,19 @@
   },
 
   "flex-layout.col#means-payment": {
-    "children": ["list-context.image-list#payment"]
-  },
-  "list-context.image-list#payment": {
-    "children": ["slider-layout#payment-images"],
     "props": {
-      "preload": true,
-      "height": 33,
-      "images": [
-        {
-          "loading": "lazy",
-          "width": "auto",
-          "image": "assets/img/footer/means-payment-desktop.png",
-          "description": "Medios de pago"
-        }
-      ]
-    }
+      "horizontalAlign": "center"
+    },
+    "children": ["image#payment"]
   },
-  "slider-layout#payment-images": {
+  "image#payment": {
+    "title": "Metodos de pago",
     "props": {
       "blockClass": "footer-payment-image",
-      "itemsPerPage": {
-        "desktop": 1,
-        "tablet": 1,
-        "phone": 1
-      },
-      "infinite": true
+      "src": "assets/img/footer/means-payment-desktop.png",
+      "maxHeight": 33,
+      "alt": "Medios de pago",
+      "maxWidth": "100%"
     }
   },
   "flex-layout.col#powered-by": {

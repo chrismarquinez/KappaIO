@@ -1,0 +1,3 @@
+.sliderContainer :global(.vtex-slider-0-x-dotsContainer) {
+  display: none;
+}

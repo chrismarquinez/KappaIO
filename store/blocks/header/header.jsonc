@@ -32,9 +32,9 @@
   },
   "logo#kappa": {
     "props": {
-      "title": "Logo",
+      "title": "Kappa Colombia",
       "href": "/",
-      "url": "",
+      "url": "/assets/img/logo-kappa.png",
       "width": "80"
     }
   },

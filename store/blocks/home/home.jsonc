@@ -1,7 +1,7 @@
 {
   "store.home": {
     "blocks": [
-      "list-context.image-list#slider-home",
+      "flex-layout.row#slider-home",
       "rich-text#shelf-title",
       "flex-layout.row#shelf",
       "flex-layout.row#button-shelf",
@@ -12,6 +12,15 @@
     ]
   },
 
+  "flex-layout.row#slider-home": {
+    "title": "Contenedor banner principal",
+    "children": ["list-context.image-list#slider-home"],
+    "props": {
+      "fullWidth": true,
+      "preventVerticalStretch": true,
+      "blockClass": ["mainBanner"]
+    }
+  },
   "list-context.image-list#slider-home": {
     "title": "Banner Principal",
     "children": ["slider-layout#slider-home"],
@@ -51,9 +60,11 @@
     }
   },
   "flex-layout.row#shelf": {
+    "title": "Contenedor vitrina",
     "children": ["list-context.product-list#latest-collection"]
   },
   "list-context.product-list#latest-collection": {
+    "title": "Lista de productos",
     "blocks": ["product-summary.shelf#custom"],
     "children": ["slider-layout#demo-products"],
     "props": {
@@ -68,7 +79,7 @@
         "tablet": 3,
         "phone": 1
       },
-      // "autoplay": { "stopOnHover": true, "timeout": 3000 },
+      "autoplay": { "stopOnHover": true, "timeout": 3000 },
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf",
@@ -76,6 +87,7 @@
     }
   },
   "flex-layout.row#button-shelf": {
+    "title": "Contenedor boton vitrina",
     "children": ["flex-layout.col#button-shelf"],
     "props": {
       "horizontalAlign": "center",
@@ -177,19 +189,21 @@
     }
   },
   "rich-text#blog-title": {
-    "title": "Titulo blog",
+    "title": "Titulo feed instagram",
     "props": {
       "text": "## ÚLTIMAS NOTICIAS",
       "blockClass": "shelfTitle"
     }
   },
   "flex-layout.row#feed-instagram": {
+    "title": "Contenedor feed instagram",
     "props": {
       "fullWidth": true
     },
     "children": ["sandbox#feed-instagram"]
   },
   "sandbox#feed-instagram": {
+    "title": "Instagram",
     "props": {
       "width": "100%",
       "height": "auto",

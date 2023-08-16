@@ -1,0 +1,26 @@
+.arrow::before {
+  content: "/";
+  font-size: 0.7rem;
+}
+
+.homeLink::before {
+  content: "Inicio";
+  font-size: 0.688rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.caretIcon {
+  display: none;
+}
+
+.link,
+.term {
+  font-size: 0.688rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.link:hover {
+  color: #979899;
+}

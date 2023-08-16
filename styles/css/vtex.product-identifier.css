@@ -1,3 +1,5 @@
-.product-identifier--productReference {
-  margin-bottom: 1rem;
+.product-identifier {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }

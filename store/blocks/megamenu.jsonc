@@ -5,233 +5,282 @@
       "Login": "login-content#default",
       "Logo": "logo#kappa",
       "MiniCart": "minicart.v2",
-      "menu":[
+      "menu": [
         {
-          "__editorItemTitle": "NUEVA COLECCIÓN",
-          "icon":"",
+          "__editorItemTitle": "HOMBRE",
+          "icon": "",
           "image": "",
-          "type":false,
-          "url":"",
-          "submenus":
-          [
-          //   {
-          //     "__editorItemTitle":"Ligas",
-          //     "distribution": "normal",
-          //     "vermas":false,
-          //     "url_vermas": "",
-          //     "itemssubmenu":[
-          //       {
-          //         "__editorItemTitle":"MLB",
-          //         "url":"",
-          //         "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg"
-          //         ,"type": "normal"
-          //       },
-          //       {
-          //         "__editorItemTitle":"NBA",
-          //         "url":"",
-          //         "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/6402c81b-6be8-4690-b884-d9b8fe29ea50___c84f98af6bfb0c81c1a60063e852afb0.svg"
-          //         ,"type": "normal"
-          //       },
-          //       {
-          //         "__editorItemTitle":"NFL",
-          //         "url":"",
-          //         "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg"
-          //         ,"type": "normal"
-          //       }
-          //     ]
-          //   },
-          //   {
-          //     "__editorItemTitle":"Siluetas",
-          //     "distribution": "cuadricula",
-          //     "vermas":true,
-          //     "url_vermas": "",
-          //     "itemssubmenu":[
-          //       {
-          //         "__editorItemTitle":"59FIFTY",
-          //         "url":"59FIFTY",
-          //         "image":"",
-          //         "type": "cuadro"
-          //       },
-          //       {
-          //         "__editorItemTitle":"LOW PROFILE 59FIFTY",
-          //         "url":"LOW-PROFILE-59FIFTY",
-          //         "image":"",
-          //         "type": "cuadro"
-          //       },
-          //       {
-          //         "__editorItemTitle":"9FIFTY SNAPBACK",
-          //         "url":"9FIFTY-SNAPBACK",
-          //         "image":"",
-          //         "type": "cuadro"
-          //       },
-          //       {
-          //         "__editorItemTitle":"39THIRTY",
-          //         "url":"39THIRTY",
-          //         "image":"",
-          //         "type": "cuadro"
-          //       },
-          //       {
-          //         "__editorItemTitle":"9FORTY",
-          //         "url":"9FORTY",
-          //         "image":"",
-          //         "type": "cuadro"
-          //       },
-          //       {
-          //         "__editorItemTitle":"9TWENTY",
-          //         "url":"9TWENTY",
-          //         "image":"",
-          //         "type": "cuadro"
-          //       },
-          //       {
-          //         "__editorItemTitle":"CASUAL CLASSIC",
-          //         "url":"CASUAL CLASSIC",
-          //         "image":"",
-          //         "type": "cuadro"
-          //       }
-
-          //     ]
-          //   },
-          //   {
-          //     "__editorItemTitle":"Tipos",
-          //     "distribution": "normal",
-          //     "vermas":true,
-          //     "url_vermas": "",
-          //     "itemssubmenu":[
-          //       {
-          //         "__editorItemTitle":"Unisex",
-          //         "url":"",
-          //         "image":""
-          //         ,"type": "normal"
-          //       },
-          //       {
-          //         "__editorItemTitle":"Mujeres",
-          //         "url":"",
-          //         "image":""
-          //         ,"type": "normal"
-          //       },
-          //       {
-          //         "__editorItemTitle":"Niños",
-          //         "url":"",
-          //         "image":""
-          //         ,"type": "normal"
-          //       }
-          //     ]
-          //   }
+          "type": true,
+          "url": "/hombre",
+          "submenus": [
+            {
+              "__editorItemTitle": "ROPA",
+              "icon": "",
+              "vermas": true,
+              "titulovermas": "Ver mas",
+              "url_vermas": "/ropa-para-hombre",
+              "distribution": "columnas",
+              "itemssubmenu": [
+                {
+                  "__editorItemTitle": "Chaquetas",
+                  "url": "/ropa-para-hombre/ropa/chaquetas?PS=24&O=OrderByReleaseDateDESC",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Buzos",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Camisetas",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Polos",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Pantalones",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Jeans",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Pantalonetas",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                }
+              ]
+            },
+            {
+              "__editorItemTitle": "CONJUNTOS DEPORTIVOS",
+              "icon": "",
+              "vermas": true,
+              "titulovermas": "Ver mas",
+              "url_vermas": "/",
+              "distribution": "columnas",
+              "itemssubmenu": [
+                {
+                  "__editorItemTitle": "Set deportivos",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Sudaderas",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                }
+              ]
+            },
+            {
+              "__editorItemTitle": "ZAPATOS",
+              "icon": "",
+              "vermas": true,
+              "titulovermas": "Ver mas",
+              "url_vermas": "/",
+              "distribution": "columnas",
+              "itemssubmenu": [
+                {
+                  "__editorItemTitle": "Sneakers",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Botas",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Guayos",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Sandalias y chanclas",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Zapatillas deportivas",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                }
+              ]
+            },
+            {
+              "__editorItemTitle": "ACCESORIOS",
+              "icon": "",
+              "vermas": true,
+              "titulovermas": "Ver mas",
+              "url_vermas": "/",
+              "distribution": "columnas",
+              "itemssubmenu": [
+                {
+                  "__editorItemTitle": "Maletas y Morrales",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Bolsos y Riñoneras",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Gorras y Gorros",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Medias",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                },
+                {
+                  "__editorItemTitle": "Otros Accesorios",
+                  "url": "",
+                  "image": "",
+                  "type": "normal"
+                }
+              ]
+            }
           ]
         },
         {
-          "__editorItemTitle": "SPORTS",
-          "icon":"",
+          "__editorItemTitle": "MUJER",
+          "icon": "",
           "image": "",
-          "type":false,
-          "url":"",
-          "submenus":[
+          "type": true,
+          "url": "/mujer",
+          "submenus": [
             {
-              "__editorItemTitle":"",
+              "__editorItemTitle": "",
               "distribution": "columnas",
-              "vermas":false,
+              "vermas": true,
               "url_vermas": "",
-              "itemssubmenu":[
+              "itemssubmenu": [
                 {
-                  "__editorItemTitle":"Santa Fe",
-                  "url":"",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg"
-                  ,"type": "normal"
+                  "__editorItemTitle": "Santa Fe",
+                  "url": "",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Deportivo Cali",
-                  "url":"",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/6402c81b-6be8-4690-b884-d9b8fe29ea50___c84f98af6bfb0c81c1a60063e852afb0.svg"
-                  ,"type": "normal"
+                  "__editorItemTitle": "Deportivo Cali",
+                  "url": "",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/6402c81b-6be8-4690-b884-d9b8fe29ea50___c84f98af6bfb0c81c1a60063e852afb0.svg",
+                  "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"As Monaco",
-                  "url":"",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg"
-                  ,"type": "normal"
+                  "__editorItemTitle": "As Monaco",
+                  "url": "",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg",
+                  "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Brescia Calcio",
-                  "url":"",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg"
-                  ,"type": "normal"
+                  "__editorItemTitle": "Brescia Calcio",
+                  "url": "",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg",
+                  "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"ACF Fiorentina",
-                  "url":"",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg"
-                  ,"type": "normal"
+                  "__editorItemTitle": "ACF Fiorentina",
+                  "url": "",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg",
+                  "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"BWT Alpine F1",
-                  "url":"",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg"
-                  ,"type": "normal"
+                  "__editorItemTitle": "BWT Alpine F1",
+                  "url": "",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg",
+                  "type": "normal"
                 }
               ]
             }
-
           ]
         },
         {
-          "__editorItemTitle": "HOMBRES",
-          "icon":"",
-          "image": "https://neweraco.vtexassets.com/assets/vtex/assets-builder/neweraco.neweraco-theme/1.0.38/images/gorras___53010a2f70ee58ca518ca27e9cf8b105.svg",
-          "type":false,
-          "url":"",
-          "submenus":[
+          "__editorItemTitle": "NIÑOS",
+          "icon": "",
+          "image": "",
+          "type": false,
+          "url": "",
+          "submenus": [
             {
-              "__editorItemTitle":"",
+              "__editorItemTitle": "",
               "distribution": "columnas",
-              "vermas":false,
+              "vermas": false,
               "url_vermas": "",
-              "itemssubmenu":[
+              "itemssubmenu": [
                 {
-                  "__editorItemTitle":"Chaquetas",
-                  "url":"/accesorios/accesorios-gorras",
-                  "image":"",
+                  "__editorItemTitle": "Chaquetas",
+                  "url": "/accesorios/accesorios-gorras",
+                  "image": "",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Buzos",
-                  "url":"/accesorios/bags",
-                  "image":"",
+                  "__editorItemTitle": "Buzos",
+                  "url": "/accesorios/bags",
+                  "image": "",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Camisetas",
-                  "url":"/accesorios/cap-carriers",
-                  "image":"",
+                  "__editorItemTitle": "Camisetas",
+                  "url": "/accesorios/cap-carriers",
+                  "image": "",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Polos",
-                  "url":"/accesorios/pins",
-                  "image":"",
+                  "__editorItemTitle": "Polos",
+                  "url": "/accesorios/pins",
+                  "image": "",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Pantalones",
-                  "url":"/accesorios/pins",
-                  "image":"",
+                  "__editorItemTitle": "Pantalones",
+                  "url": "/accesorios/pins",
+                  "image": "",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Jeans",
-                  "url":"/accesorios/pins",
-                  "image":"",
+                  "__editorItemTitle": "Jeans",
+                  "url": "/accesorios/pins",
+                  "image": "",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Pantalonetas",
-                  "url":"/accesorios/pins",
-                  "image":"",
+                  "__editorItemTitle": "Pantalonetas",
+                  "url": "/accesorios/pins",
+                  "image": "",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Sudaderas",
-                  "url":"/accesorios/pins",
-                  "image":"",
+                  "__editorItemTitle": "Sudaderas",
+                  "url": "/accesorios/pins",
+                  "image": "",
                   "type": "normal"
                 }
               ]
@@ -239,34 +288,34 @@
           ]
         },
         {
-          "__editorItemTitle": "MLB",
-          "icon":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+          "__editorItemTitle": "DEPORTES",
+          "icon": "",
           "image": "https://neweraco.vtexassets.com/assets/vtex/assets-builder/neweraco.neweraco-theme/1.0.38/images/gorras___53010a2f70ee58ca518ca27e9cf8b105.svg",
-          "type":true,
-          "url":"",
-          "submenus":[
+          "type": true,
+          "url": "",
+          "submenus": [
             {
-              "__editorItemTitle":"Equipos",
+              "__editorItemTitle": "Equipos",
               "distribution": "horizontal",
-              "vermas":false,
+              "vermas": false,
               "url_vermas": "",
-              "itemssubmenu":[
+              "itemssubmenu": [
                 {
-                  "__editorItemTitle":"Arizona Diamondcacks",
-                  "url":"/Arizona%20Diamondbacks",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "__editorItemTitle": "Arizona Diamondcacks",
+                  "url": "/Arizona%20Diamondbacks",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Houston Astros",
-                  "url":"/Houston%20Astros",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "__editorItemTitle": "Houston Astros",
+                  "url": "/Houston%20Astros",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Philadelphia Phillies",
-                  "url":"/Philadelphia%20Phillies",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "__editorItemTitle": "Philadelphia Phillies",
+                  "url": "/Philadelphia%20Phillies",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
                   "type": "normal"
                 }
               ]
@@ -274,34 +323,34 @@
           ]
         },
         {
-          "__editorItemTitle": "NFL",
-          "icon":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/159516b6-776b-4f77-b4d0-dfb121655114___00ceeb53e5c3152a2dc209723ee89e16.svg",
+          "__editorItemTitle": "SALE",
+          "icon": "",
           "image": "https://neweraco.vtexassets.com/assets/vtex/assets-builder/neweraco.neweraco-theme/1.0.38/images/gorras___53010a2f70ee58ca518ca27e9cf8b105.svg",
-          "type":true,
-          "url":"",
-          "submenus":[
+          "type": true,
+          "url": "",
+          "submenus": [
             {
-              "__editorItemTitle":"Equipos",
+              "__editorItemTitle": "Equipos",
               "distribution": "horizontal",
-              "vermas":false,
+              "vermas": false,
               "url_vermas": "",
-              "itemssubmenu":[
+              "itemssubmenu": [
                 {
-                  "__editorItemTitle":"Arizona Diamondcacks",
-                  "url":"/Arizona%20Diamondbacks",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "__editorItemTitle": "Arizona Diamondcacks",
+                  "url": "/Arizona%20Diamondbacks",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Houston Astros",
-                  "url":"/Houston%20Astros",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "__editorItemTitle": "Houston Astros",
+                  "url": "/Houston%20Astros",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Philadelphia Phillies",
-                  "url":"/Philadelphia%20Phillies",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "__editorItemTitle": "Philadelphia Phillies",
+                  "url": "/Philadelphia%20Phillies",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
                   "type": "normal"
                 }
               ]
@@ -309,34 +358,34 @@
           ]
         },
         {
-          "__editorItemTitle": "NBA",
-          "icon":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/6402c81b-6be8-4690-b884-d9b8fe29ea50___c84f98af6bfb0c81c1a60063e852afb0.svg",
+          "__editorItemTitle": "MARCA",
+          "icon": "",
           "image": "https://neweraco.vtexassets.com/assets/vtex/assets-builder/neweraco.neweraco-theme/1.0.38/images/gorras___53010a2f70ee58ca518ca27e9cf8b105.svg",
-          "type":true,
-          "url":"",
-          "submenus":[
+          "type": true,
+          "url": "",
+          "submenus": [
             {
-              "__editorItemTitle":"Equipos",
+              "__editorItemTitle": "Equipos",
               "distribution": "horizontal",
-              "vermas":false,
+              "vermas": false,
               "url_vermas": "",
-              "itemssubmenu":[
+              "itemssubmenu": [
                 {
-                  "__editorItemTitle":"Arizona Diamondcacks",
-                  "url":"/Arizona%20Diamondbacks",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "__editorItemTitle": "Arizona Diamondcacks",
+                  "url": "/Arizona%20Diamondbacks",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Houston Astros",
-                  "url":"/Houston%20Astros",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "__editorItemTitle": "Houston Astros",
+                  "url": "/Houston%20Astros",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
                   "type": "normal"
                 },
                 {
-                  "__editorItemTitle":"Philadelphia Phillies",
-                  "url":"/Philadelphia%20Phillies",
-                  "image":"https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
+                  "__editorItemTitle": "Philadelphia Phillies",
+                  "url": "/Philadelphia%20Phillies",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/ee7c2e71-20cb-4c12-a75d-1f8d956dab70___9f1ebe4cbc81c69b488b938b59218cfc.svg",
                   "type": "normal"
                 }
               ]

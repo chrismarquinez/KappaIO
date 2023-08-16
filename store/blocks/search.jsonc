@@ -231,6 +231,7 @@
 
   "breadcrumb": {
     "props": {
+      "homeIconSize": 0,
       "showOnMobile": true
     }
   },
