@@ -1,3 +1,54 @@
 .quantitySelectorTitle {
   display: none;
 }
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper-container) {
+  display: grid;
+  width: fit-content;
+  grid-template-areas:
+    "input plus"
+    "input minus";
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__input) {
+  grid-area: input;
+  width: 2.5rem;
+  height: 100%;
+  border: 1px solid #211915;
+  z-index: 0;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button),
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button) {
+  width: 1.25rem !important;
+  height: 1.25rem;
+  border: none;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button__text),
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button__text) {
+  width: 1rem;
+  height: 1rem;
+  font-size: 0;
+  background-size: contain;
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button__text) {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGUvPjxnIGlkPSJjaGV2cm9uLXRvcCI+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMTYiIHgyPSIyNSIgeTE9IjExLjUiIHkyPSIyMC41Ii8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iNyIgeDI9IjE2IiB5MT0iMjAuNSIgeTI9IjExLjUiLz48L2c+PC9zdmc+");
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__minus-button__text) {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pjxzdmcgdmlld0JveD0iMCAwIDMyIDMyIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxzdHlsZT4uY2xzLTF7ZmlsbDpub25lO3N0cm9rZTojMDAwO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2Utd2lkdGg6MnB4O308L3N0eWxlPjwvZGVmcz48dGl0bGUvPjxnIGlkPSJjaGV2cm9uLXRvcCI+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iMTYiIHgyPSIyNSIgeTE9IjExLjUiIHkyPSIyMC41Ii8+PGxpbmUgY2xhc3M9ImNscy0xIiB4MT0iNyIgeDI9IjE2IiB5MT0iMjAuNSIgeTI9IjExLjUiLz48L2c+PC9zdmc+");
+  transform: rotate(180deg);
+}
+
+.quantitySelectorStepper :global(.vtex-numeric-stepper__plus-button-container) {
+  grid-area: plus;
+  z-index: 0;
+}
+
+.quantitySelectorStepper
+  :global(.vtex-numeric-stepper__minus-button-container) {
+  grid-area: minus;
+  z-index: 0;
+}

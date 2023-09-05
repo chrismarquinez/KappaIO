@@ -1,0 +1,104 @@
+{
+  "store.custom#terminos-y-condiciones": {
+    "title": "",
+    "props": {
+      "blockClass": "new-terminosCondiciones"
+    },
+
+    "children": ["custom-menu-static"]
+  },
+  "custom-menu-static": {
+    "props": {
+      "TitlePage": "rich-text#customer-service",
+      "arrayTabs": [
+        {
+          "content": {
+            "additionalDef": "htmlContent",
+            "htmlContent": "<div>Términos y condiciones</div>"
+          },
+          "tabTitle": "Términos y condiciones",
+          "idUrl": "#/"
+        },
+        {
+          "content": {
+            "additionalDef": "htmlContent",
+            "htmlContent": "<div>Política de privacidad de datos personales.</div>"
+          },
+          "tabTitle": "Políticas de privacidad",
+          "idUrl": "politicas-de-privacidad"
+        },
+        {
+          "content": {
+            "additionalDef": "htmlContent",
+            "htmlContent": "<div>Contenido de contacteno</div>"
+          },
+          "tabTitle": "Contáctenos",
+          "idUrl": "contactenos"
+        },
+        {
+          "content": {
+            "additionalDef": "objectDisclosureLayoutGroup",
+            "objectDisclosureLayoutGroup": {
+              "maxVisible": "many",
+              "arrayDisclosureLayout": [
+                {
+                  "tilteDisclosure": "01. Compra de producto",
+                  "contentDisclosure": "<div>01. Compra de producto</div>"
+                },
+                {
+                  "tilteDisclosure": "02. Cuenta de usuario",
+                  "contentDisclosure": "<div>02. Cuenta de usuario</div>"
+                },
+                {
+                  "tilteDisclosure": "03. Estado del pedido",
+                  "contentDisclosure": "<div>03. Estado del pedido</div>"
+                }
+              ]
+            }
+          },
+          "tabTitle": "Preguntas frecuentes",
+          "idUrl": "preguntas-frecuentes"
+        }
+      ]
+    }
+  },
+  "rich-text#customer-service": {
+    "title": "Titulo",
+    "props": {
+      "text": "# Servicio al cliente",
+      "blockClass": ["servicio-al-cliente"]
+    }
+  },
+  // / GLOBAL Blocks /
+  "sticky-layout#customer-service__breadcrumb-sticky": {
+    "title": "",
+    "props": {
+      "blockClass": ["customer-service__breadcrumb-sticky"],
+      "position": "TOP",
+      "zIndex": 5
+    },
+    "children": ["flex-layout.row#customer-service__breadcrumb"]
+  },
+  "flex-layout.row#customer-service__breadcrumb": {
+    "title": "",
+    "props": {
+      "blockClass": ["customer-service__breadcrumb"]
+    },
+    "children": ["breadcrumb#customer-service"]
+  },
+  "breadcrumb#customer-service": {
+    "title": "",
+    "props": {
+      "blockClass": ["customer-service__breadcrumb"],
+      "showOnMobile": true,
+      // "homeIconSize": 0,
+      // "caretIconSize": 9,
+      "categoryTree": [
+        {
+          "name": "Servicio al cliente",
+          "href": "/servicio-al-cliente"
+        }
+      ]
+    }
+  }
+}

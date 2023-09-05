@@ -1,0 +1,398 @@
+.infoStaticContent {
+  margin-top: 12rem;
+  background: #fff;
+}
+.containerInfoStaticTab {
+  display: flex;
+  max-width: 1040px;
+  margin: auto;
+  padding-bottom: 7.438rem;
+}
+.listContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  width: fit-content;
+  height: fit-content;
+  min-width: 294px;
+  max-width: 294px;
+  max-height: 700px;
+  flex-direction: column;
+  background: #ffffff;
+  border-radius: 0 0 8px 8px;
+  overflow: hidden auto;
+  margin-right: 25px;
+  padding: 28px 28px;
+  justify-content: flex-start;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.15));
+}
+.listItem {
+  width: 100%;
+}
+.listItem :global(.vtex-button) {
+  width: 100%;
+  border-radius: 8px;
+  transition: background 0.3s ease-in-out;
+  border: none;
+}
+.listItem :global(.vtex-button__label) {
+  width: 100%;
+  padding: 14px 19px 14px 12px !important;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 700;
+  color: #2c2d3c;
+  text-align: start;
+  text-transform: initial;
+}
+.listItem :global(.vtex-button):hover {
+  /* / background-color: #DBEC53; / */
+  background-color: #f5f2eb;
+}
+.listItem:hover :global(.vtex-button__label) {
+  color: black;
+}
+.listItemActive :global(.vtex-button__label) {
+  color: #fff;
+}
+.listItemActive:hover :global(.vtex-button__label) {
+  color: white;
+}
+
+.listItemActive:hover :global(.vtex-button) {
+  background-color: #ff0000;
+}
+.contentContainer {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1.375rem;
+  filter: drop-shadow(2px 2px 8px rgba(0, 0, 0, 0.15));
+  max-height: 700px;
+}
+
+.contentItem_disclouser .content {
+  transition: opacity 250ms ease-in-out, height 250ms ease-in-out,
+    transform 250ms ease-in-out;
+  opacity: 0;
+  height: 0;
+  transform: translate3d(0, -10%, 0);
+}
+.contentItem_disclouser .content[data-enter] {
+  opacity: 1;
+  height: fit-content;
+  transform: translate3d(0, 0, 0);
+}
+.contentItem_disclouser .content[data-leave] {
+  height: 0;
+  overflow: hidden;
+}
+.contentItem_disclouser .trigger {
+  position: relative;
+  display: flex;
+  height: 48px;
+  align-items: center;
+  cursor: pointer;
+  background: #ffffff;
+  border-top: 1px solid #dddddd;
+  padding-left: 0.5rem;
+}
+.contentItem_disclouser .trigger::before,
+.contentItem_disclouser .trigger--hidden::before {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 40px;
+  border: none;
+  min-height: 40px;
+  background-image: url("data:image/svg+xml,%3Csvg width='13' height='7' viewBox='0 0 13 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M6.47272 4.29283L2.10476 0.325865C1.87358 0.11715 1.56085 0 1.23487 0C0.908896 0 0.596165 0.11715 0.364982 0.325865C0.249331 0.430041 0.157537 0.553981 0.0948941 0.690538C0.0322513 0.827095 0 0.973565 0 1.1215C0 1.26943 0.0322513 1.4159 0.0948941 1.55246C0.157537 1.68902 0.249331 1.81296 0.364982 1.91713L5.59666 6.66853C5.71137 6.77356 5.84783 6.85693 5.99819 6.91382C6.14856 6.97071 6.30983 7 6.47272 7C6.63561 7 6.79688 6.97071 6.94724 6.91382C7.0976 6.85693 7.23407 6.77356 7.34878 6.66853L12.6422 1.91713C12.7565 1.81242 12.847 1.68824 12.9084 1.55171C12.9698 1.41518 13.0009 1.26898 13 1.1215C13.0009 0.97402 12.9698 0.827822 12.9084 0.691289C12.847 0.554757 12.7565 0.430575 12.6422 0.325865C12.411 0.11715 12.0982 0 11.7723 0C11.4463 0 11.1336 0.11715 10.9024 0.325865L6.47272 4.29283Z' fill='black'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: ease all 0.2s;
+  transform: rotate(0deg);
+}
+.contentItem_disclouser .trigger--visible::before {
+  transform: rotate(180deg);
+}
+
+/* / ** ** ** ** ** ** ** ** ** */
+/* .container {} */
+.container :global(.vtex-rich-text-0-x-container--servicio-al-cliente) {
+  margin: auto;
+  max-width: 1040px;
+}
+.container
+  :global(.vtex-rich-text-0-x-container--servicio-al-cliente)
+  :global(.vtex-rich-text-0-x-wrapper--servicio-al-cliente) {
+  width: 294px;
+  border-radius: 12px 12px 0px 0px;
+  background-color: #0f0f0f;
+}
+.container
+  :global(.vtex-rich-text-0-x-container--servicio-al-cliente)
+  :global(.vtex-rich-text-0-x-wrapper--servicio-al-cliente)
+  :global(.vtex-rich-text-0-x-headingLevel1--servicio-al-cliente) {
+  margin: 0;
+  padding: 0.8rem 1rem !important;
+  font-size: 20px;
+  color: white;
+}
+.listItem {
+  margin-top: 5px;
+}
+.listItemFirstElement {
+  margin: 0;
+}
+.info_Text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  color: #313131;
+}
+.contentItem {
+  max-height: 600px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+  text-align: justify;
+  color: #333;
+  padding-right: 10px;
+}
+.trigger {
+  color: #313131;
+}
+/* / Scrollbar de Mega Menu / */
+.listContainer::-webkit-scrollbar,
+.contentItem::-webkit-scrollbar,
+.contentItem_disclouser::-webkit-scrollbar {
+  width: 3px;
+}
+.listContainer::-webkit-scrollbar-track,
+.contentItem::-webkit-scrollbar-track,
+.contentItem_disclouser::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+.listContainer::-webkit-scrollbar-thumb,
+.contentItem::-webkit-scrollbar-thumb,
+.contentItem_disclouser::-webkit-scrollbar-thumb {
+  background: black;
+}
+.listContainer::-webkit-scrollbar-thumb:hover,
+.contentItem::-webkit-scrollbar-thumb:hover,
+.contentItem_disclouser::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    padding-bottom: 4rem;
+  }
+  .containerInfoStaticTab {
+    display: flex;
+    position: relative;
+    padding-top: 0;
+    overflow: hidden;
+    padding-bottom: 0;
+  }
+  .listContainer {
+    transform: translateX(-100%);
+    width: 0%;
+    opacity: 0;
+    transition: transform ease 0.8s;
+    min-width: auto;
+    margin: 0;
+    border: 0;
+  }
+  .listContainer--Active {
+    width: 100%;
+    transform: translateX(0%);
+    transition: opacity ease 0.8s;
+    opacity: 1;
+    margin-left: 2rem;
+  }
+
+  .contentContainer {
+    transform: translateX(100%);
+    width: 0;
+    transition: transform ease 0.8s;
+    background: transparent;
+  }
+
+  .contentContainer--Active {
+    transform: translateX(0%);
+    width: 100%;
+    background: transparent;
+    padding: 0;
+    margin: 0 2rem;
+    padding: 0;
+  }
+
+  .contentItem {
+    border-radius: 8px;
+    height: 100%;
+    padding: 1.375rem;
+    background: #fff;
+  }
+  .info_buttom {
+    display: flex;
+    align-items: center;
+  }
+  .info_buttom::before {
+    content: url(/arquivos/chevronLeft-small.svg);
+    margin-right: 8.75px;
+  }
+  .info_buttom :global(.vtex-button) {
+    background-color: transparent;
+    border: transparent;
+  }
+
+  .info_buttom :global(.vtex-button__label) {
+    text-decoration: underline;
+    padding: 0 !important;
+    font-size: 14px;
+    color: #231f20;
+    text-transform: initial;
+  }
+
+  .info_buttom-icon {
+    display: none;
+    margin-right: 1rem;
+  }
+
+  .listItemFirstElement {
+    background: #fff;
+  }
+
+  .listItemFirstElement :global(.vtex-button) {
+    overflow: hidden;
+    background: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  .info_Text {
+    margin-top: 40px;
+    margin-bottom: 38px;
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+  }
+  :global(.vtex-flex-layout-0-x-flexRow--customer-service__breadcrumb) {
+    display: none;
+  }
+  .container :global(.vtex-rich-text-0-x-container--servicio-al-cliente) {
+    margin: 0;
+    background-color: #fff;
+    position: relative;
+    top: 0;
+  }
+  .container
+    :global(.vtex-rich-text-0-x-container--servicio-al-cliente)
+    :global(.vtex-rich-text-0-x-wrapper--servicio-al-cliente) {
+    width: 100%;
+    border-radius: 0;
+    background-color: #fff;
+  }
+  .container
+    :global(.vtex-rich-text-0-x-container--servicio-al-cliente)
+    :global(.vtex-rich-text-0-x-wrapper--servicio-al-cliente)
+    :global(.vtex-rich-text-0-x-headingLevel1--servicio-al-cliente) {
+    text-align: center;
+    color: #333;
+    font-size: 22px;
+    padding-bottom: 38px !important;
+  }
+  .listContainer,
+  .contentContainer--Active {
+    max-width: 320px;
+    margin: 0;
+    padding: 0;
+    transform: translateX(7.5%);
+    filter: unset;
+    background-color: #fff;
+  }
+  .contentContainer--Active {
+    transform: translateX(10.5%);
+  }
+  .contentItem {
+    background-color: #fff;
+    max-height: unset;
+    padding: 0;
+  }
+  .listItem {
+    margin: 0;
+  }
+  .listItem :global(.vtex-button) {
+    background-color: #fff;
+    border-radius: 0;
+  }
+  .listItem:nth-child(0n + 2),
+  .listItem:nth-child(0n + 2) :global(.vtex-button) {
+    border-radius: 8px 8px 0 0;
+  }
+  .listItem :global(.vtex-button__label) {
+    justify-content: space-between;
+  }
+  .listItem :global(.vtex-button__label)::after {
+    content: url(/arquivos/chevronRight.svg);
+  }
+  .contentItem {
+    border-radius: 0;
+  }
+  .contentItem_disclouser .trigger {
+    background-color: #fff;
+    padding-right: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+  }
+}
+
+/* / Erratic and dilusional Media Queries / */
+@media screen and (min-width: 300px) and (max-width: 340px) {
+  .contentContainer--Active {
+    max-width: 280px;
+  }
+}
+@media screen and (min-width: 340px) and (max-width: 360px) {
+  .contentContainer--Active {
+    max-width: 300px;
+  }
+}
+@media screen and (min-width: 369px) and (max-width: 380px) {
+  .listContainer,
+  .contentContainer--Active {
+    transform: translateX(7.5vw);
+  }
+}
+@media screen and (min-width: 380px) and (max-width: 390px) {
+  .listContainer,
+  .contentContainer--Active {
+    transform: translateX(8.5vw);
+  }
+}
+@media screen and (min-width: 390px) and (max-width: 400px) {
+  .listContainer {
+    transform: translateX(10vw);
+  }
+}
+@media screen and (min-width: 400px) and (max-width: 415px) {
+  .listContainer,
+  .contentContainer--Active {
+    transform: translateX(11vw);
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 450px) {
+  .listContainer,
+  .contentContainer--Active {
+    transform: translateX(14vw);
+  }
+}
+@media screen and (min-width: 450px) and (max-width: 1024px) {
+  .listContainer,
+  .contentContainer--Active {
+    transform: translateX(18vw);
+  }
+}

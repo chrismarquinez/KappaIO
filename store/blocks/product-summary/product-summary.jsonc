@@ -17,7 +17,7 @@
       "product-summary-name",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
+      // "product-installments#summary",
       "add-to-cart-button"
     ]
   },

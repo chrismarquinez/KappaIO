@@ -1,0 +1,11 @@
+.var-wrap {
+  border: 1px solid transparent;
+}
+
+.var-wrap:hover {
+  border-color: black;
+}
+
+.img {
+  margin: 0.5rem;
+}

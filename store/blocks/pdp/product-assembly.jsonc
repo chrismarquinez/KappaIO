@@ -21,7 +21,7 @@
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["assembly-option-input-values"]
+    "children": ["assembly-option-input-values","assembly-option-item-price","assembly-option-item-customize","assembly-option-item-quantity-selector"]
   },
   "assembly-option-input-values": {
     "props": {

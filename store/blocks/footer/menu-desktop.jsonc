@@ -122,7 +122,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/terminos-y-condiciones",
+        "href": "/terminos-y-condiciones#/",
         "noFollow": false,
         "tagTitle": "Términos y condiciones",
         "text": "Términos y condiciones"
@@ -136,7 +136,7 @@
       "highlight": false,
       "itemProps": {
         "type": "internal",
-        "href": "/politicas-privacidad",
+        "href": "/terminos-y-condiciones#/politicas-de-privacidad",
         "noFollow": false,
         "tagTitle": "Políticas de privacidad de datos personales",
         "text": "Políticas de privacidad de datos personales"

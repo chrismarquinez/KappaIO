@@ -88,7 +88,8 @@
   "flex-layout.col#right-col": {
     "props": {
       "preventVerticalStretch": true,
-      "rowGap": 0
+      "rowGap": 0,
+      "blockClass": ["productInfoContainer"]
     },
     "children": [
       "flex-layout.row#product-name",
@@ -96,10 +97,13 @@
       "product-identifier.product",
       // "flex-layout.row#list-price-savings",
       "flex-layout.row#selling-price",
-      "product-installments",
+      // "product-installments",
       "product-separator",
+      "similar-products-variants",
       "sku-selector",
-      "product-assembly-options",
+      "product-custom-info",
+      "extra-product",
+      // "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
       "flex-layout.row#description",
@@ -113,6 +117,12 @@
       "marginBottom": 3
     },
     "children": ["vtex.store-components:product-name"]
+  },
+
+  "size-guide-slider": {
+    "props": {
+      "categoryNames": ["Adultos"]
+    }
   },
 
   "sku-selector": {
@@ -137,7 +147,8 @@
   "flex-layout.col#buy-button-left": {
     "props": {
       "verticalAlign": "middle",
-      "width": "30%"
+      "width": "15%",
+      "paddingRight": 0
     },
     "children": ["product-quantity"]
   },
@@ -145,7 +156,8 @@
   "flex-layout.col#buy-button-right": {
     "props": {
       "verticalAlign": "middle",
-      "width": "70%"
+      "width": "85%",
+      "blockClass":["atcContainer"]
     },
     "children": ["add-to-cart-button"]
   },
@@ -176,12 +188,14 @@
       "flex-layout.row#availability"
     ]
   },
+
   "flex-layout.row#availability": {
     "props": {
       "blockClass": "message-availability"
     },
     "children": ["availability-subscriber"]
   },
+
   "flex-layout.row#relatedProducts": {
     "title": "Contenedor Productos relacionados",
     "props": {
@@ -190,11 +204,39 @@
     },
     "children": ["shelf.relatedProducts"]
   },
+
   "product-identifier.product": {
     "props": {
-      "label": "custom", //'default' | 'custom' | 'hide'
-      "customLabel": "Ref", // text if label is custom
-      "idField": "skuReferenceId" //'itemId' | 'productId' | 'productReference' | 'skuEan' | 'skuReferenceId'
+      "label": "custom",
+      "customLabel": "Ref",
+      "idField": "skuReferenceId"
+    }
+  },
+
+  "similar-products-variants": {
+    "props": {
+      "imageLabel": "swatch"
+    }
+  },
+
+  "extra-product": {
+    "props": {
+      "items": [
+        {
+          "departmentId": 1,
+          "skuId": 416,
+          "labelCheck": "Extra",
+          "initialDescription": "Te gustaria",
+          "finalDescription": "?"
+        },
+        {
+          "departmentId": 4,
+          "skuId": 7,
+          "labelCheck": "Extra 2",
+          "initialDescription": "Te gustaria 2",
+          "finalDescription": "Te gustaria 2"
+        }
+      ]
     }
   }
 }

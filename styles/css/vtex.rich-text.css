@@ -19,6 +19,16 @@
 
 /* Home */
 
+/* Departamento */
+
+.paragraph--departmentHead-text {
+  padding: 0 0.2rem;
+  line-height: 2rem;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Departamento */
+
 /* Footer */
 
 :global(.vtex-store-footer-2-x-footerLayout) .paragraph--footer-title {

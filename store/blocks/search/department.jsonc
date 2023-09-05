@@ -1,0 +1,154 @@
+{
+  "search-result-layout#department": {
+    "blocks": [
+      "search-result-layout.mobile#department",
+      "search-result-layout.desktop#department",
+      "search-not-found-layout"
+    ]
+  },
+
+  "search-result-layout.desktop#department": {
+    "children": [
+      "flex-layout.row#department-head",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#custom",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "infinity",
+      "preventRouteChange": false,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "search-result-layout.mobile#department": {
+    "children": [
+      "flex-layout.row#department-head",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "flex-layout.row#department-head": {
+    "title": "Contenedor banner",
+    "props": {
+      "blockClass": "departmentHead"
+    },
+    "children": [
+      "flex-layout.col#department-head-img",
+      "flex-layout.col#department-head-text"
+    ]
+  },
+
+  "flex-layout.col#department-head-img": {
+    "props": {
+      "width": "100%"
+    },
+    "children": ["list-context.image-list#department-head-img"]
+  },
+
+  "flex-layout.col#department-head-text": {
+    "children": ["rich-text#department-banner"]
+  },
+
+  "list-context.image-list#department-head-img": {
+    "title": "Banner",
+    "children": ["slider-layout#department-head-img"],
+    "props": {
+      "preload": true,
+      "height": 650,
+      "images": [
+        {
+          "image": "assets/img/header/dep-hombre.webp",
+          "mobileImage": "assets/img/header/dep-hombre-m.webp",
+          "description": "Departamento"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#department-head-img": {
+    "title": "Configuracion",
+    "props": {
+      "showPaginationDots": "never",
+      "showNavigationArrows": "never",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": true
+    }
+  },
+
+  "rich-text#department-banner": {
+    "title": "Titulo departamento",
+    "props": {
+      "text": "ROPA PARA HOMBRE",
+      "blockClass": ["departmentHead-text"]
+    }
+  },
+
+  "flex-layout.row#custom": {
+    "children": ["flex-layout.col#custom"],
+    "props": {
+      "horizontalAlign": "center",
+      "marginBottom": 7
+    }
+  },
+
+  "flex-layout.col#custom": {
+    "props": {
+      "width": {
+        "desktop": "85%",
+        "tablet": "60%",
+        "mobile": "80%"
+      }
+    },
+    "children": ["slider-layout#categories"]
+  },
+
+  "slider-layout#categories": {
+    "props": {
+      "fullWidth": false,
+      "usePagination": true,
+      "itemsPerPage": {
+        "desktop": 7,
+        "tablet": 3,
+        "phone": 1
+      },
+      "infinite": true,
+      "showNavigationArrows": "mobileOnly",
+      "showPaginationDots": "never",
+      "blockClass": "categoriesInDepartment"
+    },
+    "children": [
+      "link#foo",
+      "link#foo",
+      "link#foo",
+      "link#foo",
+      "link#foo",
+      "link#foo",
+      "link#foo"
+    ]
+  },
+
+  "link#foo": {
+    "props": {
+      "href": "/",
+      "label": "Accesorios"
+    }
+  }
+}

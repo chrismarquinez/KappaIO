@@ -19,6 +19,12 @@
   filter: grayscale(1);
 }
 
+.searchBarContainer {
+  width: 90%;
+  padding: 0;
+  margin: 0 auto 20px;
+}
+
 /* Home */
 
 /* PDP */
