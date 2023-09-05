@@ -33,35 +33,46 @@
   background-color: #e8e8e1;
 }
 
+:global(.vtex-product-summary-2-x-container)
+  :global(.vtex-store-components-3-x-skuSelectorName),
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf)
   :global(.vtex-store-components-3-x-skuSelectorName) {
   display: none;
 }
 
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf)
+  :global(.vtex-store-components-3-x-skuSelectorNameContainer),
+:global(.vtex-product-summary-2-x-container)
   :global(.vtex-store-components-3-x-skuSelectorNameContainer) {
   margin: 0 auto;
-  z-index: 999;
+  z-index: 3;
   max-width: 100%;
 }
 
 /* Shelf */
 
 :global(.vtex-slider-layout-0-x-slideChildrenContainer--shelf):hover
+  :global(.vtex-flex-layout-0-x-flexCol--productSkuSelector),
+:global(.vtex-product-summary-2-x-container):hover
   :global(.vtex-flex-layout-0-x-flexCol--productSkuSelector) {
   display: flex;
 }
 
+:global(.vtex-product-summary-2-x-container) .skuSelectorContainer,
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf)
   .skuSelectorContainer {
   margin: 0;
 }
 
+:global(.vtex-product-summary-2-x-container)
+  :global(.vtex-store-components-3-x-skuSelectorSubcontainer),
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf)
   :global(.vtex-store-components-3-x-skuSelectorSubcontainer) {
   margin: 0;
 }
 
+:global(.vtex-product-summary-2-x-container)
+  :global(.vtex-store-components-3-x-skuSelectorOptionsList),
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf)
   :global(.vtex-store-components-3-x-skuSelectorOptionsList) {
   margin: 0;
@@ -70,15 +81,23 @@
   border: 1px solid black;
 }
 
+:global(.vtex-product-summary-2-x-container)
+  :global(.vtex-store-components-3-x-skuSelectorItem),
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf)
   :global(.vtex-store-components-3-x-skuSelectorItem) {
   border: none;
   width: auto;
 }
 
+:global(.vtex-product-summary-2-x-container)
+  :global(.vtex-store-components-3-x-skuSelectorItem):hover,
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer--shelf)
   :global(.vtex-store-components-3-x-skuSelectorItem):hover {
   background-color: #e8e8e1;
+}
+
+.imageContainer:hover .image--hover {
+  z-index: 2;
 }
 
 /* Shelf */
@@ -108,10 +127,16 @@
 
 .brandName {
   font-size: 14px;
-  letter-spacing: 2px;
+  letter-spacing: 0.2rem;
   text-transform: capitalize;
   color: #0f0f0f;
   line-height: 18px;
+  min-height: 54px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .container {

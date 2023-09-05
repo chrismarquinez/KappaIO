@@ -1,10 +1,3 @@
-/* Footer */
-
-.sliderTrack--footer-payment-image .slide--footer-payment-image {
-  filter: grayscale(1);
-}
-/* Footer */
-
 .sliderLayoutContainer {
   justify-content: center;
 }
@@ -43,3 +36,15 @@
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
+/* Slider categorias en departamentos */
+
+.slide--categoriesInDepartment :global(.vtex-store-link-0-x-link) {
+  font-size: .8rem;
+  letter-spacing: 0.2rem;
+  color: #0f0f0f;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/* Slider categorias en departamentos */

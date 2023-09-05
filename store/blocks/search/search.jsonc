@@ -23,7 +23,7 @@
   },
 
   "store.search#department": {
-    "blocks": ["search-result-layout"],
+    "blocks": ["search-result-layout#department"],
     "props": {
       "context": {
         "skusFilter": "ALL",
@@ -54,24 +54,21 @@
 
   "search-result-layout": {
     "blocks": [
-      "search-result-layout.desktop",
       "search-result-layout.mobile",
+      "search-result-layout.desktop",
       "search-not-found-layout"
     ]
   },
 
   "search-result-layout.desktop": {
-    "children": [
-      "flex-layout.row#searchbread",
-      "flex-layout.row#searchtitle",
-      "flex-layout.row#result"
-    ],
+    "children": ["flex-layout.row#searchbread", "flex-layout.row#result"],
     "props": {
-      "pagination": "show-more",
+      "pagination": "infinity",
       "preventRouteChange": false,
       "defaultGalleryLayout": "grid"
     }
   },
+
   "flex-layout.row#searchbread": {
     "children": ["breadcrumb.search"],
     "props": {
@@ -79,13 +76,13 @@
       "fullWidth": true
     }
   },
-  "flex-layout.row#searchtitle": {
-    "children": ["search-title.v2"]
+  "breadcrumb.search": {
+    "props": { "homeIconSize": 0 }
   },
+
   "flex-layout.row#result": {
-    "children": ["flex-layout.col#filter", "flex-layout.col#content"],
+    "children": ["flex-layout.col#content"],
     "props": {
-      "preventHorizontalStretch": true,
       "fullWidth": true
     }
   },
@@ -95,6 +92,28 @@
       "blockClass": "filterCol"
     }
   },
+
+  "filter-navigator.v3": {
+    "blocks": ["sidebar-close-button"],
+    "props": {
+      "layout": "desktop",
+      "openFiltersMode": "many",
+      "navigationTypeOnMobile": "collapsible",
+      "initiallyCollapsed": false,
+      "drawerDirectionMobile": "drawerRight",
+      "preventRouteChange": true,
+      "showProductsCount": true,
+      "showFacetQuantity": true,
+      "truncateFilters": true,
+      "showClearByFilter": false,
+      "fullWidthOnMobile": true,
+      "appliedFiltersOverview": "show",
+      "totalProductsOnMobile": "hide",
+      "updateOnFilterSelectionOnMobile": true,
+      "showClearAllFiltersOnDesktop": true
+    }
+  },
+
   "flex-layout.col#content": {
     "children": [
       "flex-layout.row#searchinfo",
@@ -103,13 +122,24 @@
       "flex-layout.row#fetchmore"
     ],
     "props": {
-      "width": "grow",
+      "width": "100%",
       "preventVerticalStretch": true
     }
   },
   "flex-layout.row#searchinfo": {
-    "children": ["flex-layout.col#productCount", "flex-layout.row#orderByAndSwitcher"]
+    "children": [
+      "flex-layout.row#countAndFilter",
+      "flex-layout.row#orderByAndSwitcher"
+    ]
   },
+
+  "flex-layout.row#countAndFilter": {
+    "props": {
+      "preventHorizontalStretch": true
+    },
+    "children": ["flex-layout.col#filter", "flex-layout.col#productCount"]
+  },
+
   "flex-layout.row#orderByAndSwitcher": {
     "children": ["order-by.v2", "gallery-layout-switcher"],
     "props": {
@@ -172,6 +202,7 @@
       "defaultGalleryLayout": "grid"
     }
   },
+
   "flex-layout.row#contentmobile": {
     "children": ["search-content"],
     "props": {
@@ -231,6 +262,7 @@
 
   "breadcrumb": {
     "props": {
+      "homeIconSize": 0,
       "showOnMobile": true
     }
   },
@@ -243,7 +275,7 @@
           "component": "GridSummary",
           "itemsPerRow": {
             "(min-width:1300px)": 4,
-            "desktop": 3,
+            "desktop": 4,
             "tablet": 3,
             "phone": 2
           }
@@ -255,7 +287,7 @@
         }
       ],
       "ListSummary": "product-summary.shelf#listLayout",
-      "GridSummary": "product-summary.shelf"
+      "GridSummary": "product-summary.shelf#custom"
     }
   },
   "gallery-layout-switcher": {
@@ -272,40 +304,30 @@
     "props": {
       "name": "grid"
     },
-    "children": [
-      "icon-grid",
-      "responsive-layout.desktop#textOptionGrid"
-    ]
+    "children": ["icon-grid", "responsive-layout.desktop#textOptionGrid"]
   },
   "gallery-layout-option#list": {
     "props": {
       "name": "list"
     },
-    "children": [
-      "icon-inline-grid",
-      "responsive-layout.desktop#textOptionList"
-    ]
+    "children": ["icon-inline-grid", "responsive-layout.desktop#textOptionList"]
   },
   "responsive-layout.desktop#textOptionGrid": {
-    "children": [
-      "rich-text#option-grid"
-    ]
+    "children": ["rich-text#option-grid"]
   },
   "responsive-layout.desktop#textOptionList": {
-    "children": [
-      "rich-text#option-list"
-    ]
+    "children": ["rich-text#option-list"]
   },
   "rich-text#option-grid": {
     "props": {
-      "text": "Grid",
+      "text": "Cuadrícula",
       "textColor": "c-auto",
       "blockClass": "layout-option"
     }
   },
   "rich-text#option-list": {
     "props": {
-      "text": "List",
+      "text": "Lista",
       "textColor": "c-auto",
       "blockClass": "layout-option"
     }

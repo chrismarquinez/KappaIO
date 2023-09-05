@@ -1,12 +1,21 @@
+.container--layout {
+  margin-top: 10rem;
+}
+
+.orderByOptionItem--selected {
+  color: #ffffff;
+  background-color: #0f0f0f;
+}
+
 .galleryLayoutOptionButton {
-  background-color: #F0F0F0;
-  color: #3F3F40;
+  background-color: #ffffff;
+  color: #0f0f0f;
   padding: 0.375rem 0.75rem 0.375rem 0.75rem;
 }
 
 .galleryLayoutOptionButton--selected {
-  background-color: #3F3F40;
-  color: #FFFFFF;
+  background-color: #0f0f0f;
+  color: #ffffff;
 }
 
 .galleryLayoutSwitcher {
@@ -14,9 +23,90 @@
   justify-content: center;
   overflow: hidden;
   width: auto !important;
-  align-self: center
+  align-self: center;
 }
 
 .galleryItem--list {
-  border-bottom: 1px #E7E9EE solid;
+  border-bottom: 1px #e7e9ee solid;
 }
+
+.filter__container--tabla-de-tallas,
+.accordionFilterOpen--tabla-de-tallas,
+.accordionFilterContainer--tabla-de-tallas,
+.accordionFilterContainer--marca,
+.accordionFilterOpen--marca,
+.filter__container--brand {
+  display: none;
+}
+
+.totalProducts--layout {
+  text-align: left;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar{
+  width: 3px;
+}
+
+.accordionFilter::-webkit-scrollbar {
+  width: 6px;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar-track,
+.accordionFilter::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar-thumb,
+.accordionFilter::-webkit-scrollbar-thumb {
+  background: #0f0f0f;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar-thumb:hover,
+.accordionFilter::-webkit-scrollbar-thumb:hover {
+  background: #0f0f0f;
+}
+
+/* Filtros */
+
+.filterBreadcrumbsContent {
+  margin-right: 0.5rem;
+}
+
+.accordionFilter,
+.accordionFilterOpen,
+.accordionFilterItemOptions {
+  overflow: auto;
+  height: fit-content;
+}
+
+.filterBreadcrumbsText,
+.filterBreadcrumbsItemName {
+  font-size: 1.3rem;
+}
+
+.accordionFilterContainer {
+  border-bottom: 1px solid #e8e8e1;
+}
+
+.filterAccordionItemBox {
+  border: none;
+  min-height: 1.75rem;
+}
+
+/* Filtros */
+
+/* Responsive */
+
+@media (max-width: 740px) {
+  .container--layout {
+    margin-top: 9rem;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  .sidebar {
+    width: 21rem;
+  }
+}
+
+/* Responsive */

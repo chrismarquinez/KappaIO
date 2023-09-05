@@ -15,6 +15,7 @@
     ]
   },
   "flex-layout.row#footer-desktop": {
+    "title": "Pie de pagina",
     "children": [
       "vtex.menu@2.x:menu#firts-column",
       "vtex.menu@2.x:menu#second-column",
@@ -23,9 +24,13 @@
     ]
   },
   "flex-layout.row#footer-desktop-payment": {
+    "props": {
+      "fullWidth": true
+    },
     "children": ["flex-layout.col#means-payment", "flex-layout.col#powered-by"]
   },
   "flex-layout.row#footer-mobile": {
+    "title": "Pie de pagina mobile",
     "props": {
       "blockClass": "footer-container--mobile"
     },
@@ -46,7 +51,7 @@
     "props": {
       "checkboxLabel": "Acepto el tratamiento de mis datos personales de acuerdo con la {firstLabelLink}",
       "firstLabelLink": {
-        "url": "/",
+        "url": "/#",
         "text": "política de tratamiento de datos personales."
       }
     }

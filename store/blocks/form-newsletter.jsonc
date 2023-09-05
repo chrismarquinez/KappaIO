@@ -1,0 +1,49 @@
+{
+  "flex-layout.row#newsletter": {
+    "children": ["flex-layout.col#image_newsletter", "flex-layout.col#form"],
+    "props": {
+      "blockClass": "container-form"
+    }
+  },
+  "flex-layout.col#form": {
+    "children": ["form-newsletter"],
+    "props": {
+      "blockClass": "container-form__inputs"
+    }
+  },
+  "flex-layout.col#image_newsletter": {
+    "children": ["list-context.image-list#welcome"],
+    "props": {
+      "blockClass": "container-form__image",
+      "width": "48%"
+    }
+  },
+  "list-context.image-list#welcome": {
+    "children": ["slider-layout#welcome-images"],
+    "props": {
+      "preload": true,
+      "height": 1000,
+      "width": "100%",
+      "images": [
+        {
+          "image": "assets/img/header/KP-CO-POP-UP-SUBSCRIPCION-V3.webp",
+          "mobileImage": "",
+          "description": "Suscribete"
+        }
+      ]
+    }
+  },
+  "slider-layout#welcome-images": {
+    "props": {
+      "fullWidth": true,
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "infinite": false,
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
+    }
+  }
+}

@@ -17,7 +17,7 @@
       "product-summary-name",
       "product-list-price#summary",
       "flex-layout.row#selling-price-savings",
-      "product-installments#summary",
+      // "product-installments#summary",
       "add-to-cart-button"
     ]
   },
@@ -128,7 +128,6 @@
       "imageHeight": 28,
       "blockClass": "quickview",
       "visibility": "more-than-one"
-
     }
   },
   "product-description": {
@@ -136,6 +135,16 @@
       "showTitle": true,
       "collapseContent": true,
       "title": "DESCRIPCIÓN"
+    }
+  },
+  "shelf.relatedProducts": {
+    "title": "Productos relacionados",
+    "blocks": ["product-summary.shelf#custom"],
+    "props": {
+      "productList": {
+        "titleText": "TAMBIÉN TE PUEDE INTERESAR",
+        "gap": "ph7"
+      }
     }
   }
 }

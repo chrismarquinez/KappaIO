@@ -12,14 +12,6 @@
     }
   },
 
-
-  "flex-layout.row#newsletter": {
-    "children": [],
-    "props": {
-      "blockClass": "container-form"
-    }
-  },
-
   "login": {
     "props": {
       "emailAndPasswordTitle": "LOG-IN",
@@ -32,9 +24,9 @@
   },
   "logo#kappa": {
     "props": {
-      "title": "Logo",
+      "title": "Kappa Colombia",
       "href": "/",
-      "url": "",
+      "url": "assets/img/logo-kappa.png",
       "width": "80"
     }
   },
@@ -55,6 +47,11 @@
           "date__count": "2022, 9, 04"
         }
       ]
+    }
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "Digite aquí"
     }
   }
 }
