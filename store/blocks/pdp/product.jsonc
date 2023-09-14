@@ -78,10 +78,11 @@
         "desktop": "auto",
         "phone": "16:9"
       },
+      "thumbnailVisibility": "visible",
       "displayThumbnailsArrows": true,
       "position": "right",
       "showPaginationDots": false,
-      "zoomMode": "in-place-hover",
+      "zoomMode": "in-place-click",
       "showNavigationArrows": false
     }
   },
@@ -95,8 +96,9 @@
       "flex-layout.row#product-name",
       // "product-rating-summary",
       "product-identifier.product",
+      "flex-layout.row#selling-list-price",
       // "flex-layout.row#list-price-savings",
-      "flex-layout.row#selling-price",
+      // "flex-layout.row#selling-price",
       // "product-installments",
       "product-separator",
       "similar-products-variants",
@@ -119,7 +121,7 @@
     "children": ["vtex.store-components:product-name"]
   },
 
-  "size-guide-slider": {
+  "size-guide-slider#page-calzado": {
     "props": {
       "categoryNames": ["Adultos"]
     }
@@ -136,7 +138,9 @@
     "props": {
       "marginTop": 4,
       "marginBottom": 7,
-      "preventHorizontalStretch": false
+      "preserveLayoutOnMobile": true,
+      "colJustify": "between",
+      "blockClass": "buyContainer"
     },
     "children": [
       "flex-layout.col#buy-button-left",
@@ -146,8 +150,8 @@
 
   "flex-layout.col#buy-button-left": {
     "props": {
-      "verticalAlign": "middle",
       "width": "15%",
+      "verticalAlign": "middle",
       "paddingRight": 0
     },
     "children": ["product-quantity"]
@@ -155,11 +159,10 @@
 
   "flex-layout.col#buy-button-right": {
     "props": {
-      "verticalAlign": "middle",
       "width": "85%",
-      "blockClass":["atcContainer"]
+      "blockClass": ["atcContainer"]
     },
-    "children": ["add-to-cart-button"]
+    "children": ["add-to-cart-button#desktop"]
   },
 
   "flex-layout.row#product-availability": {

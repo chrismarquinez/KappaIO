@@ -70,7 +70,8 @@
     "dynamo.custom-megamenu": "0.x",
     "dynamo.forms": "0.x",
     "dynamo.product-info": "0.x",
-    "dynamo.custom-menu-static": "0.x"
+    "dynamo.custom-menu-static": "0.x",
+    "dynamo.landings-component-custom": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

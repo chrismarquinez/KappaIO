@@ -29,3 +29,20 @@
 .minicartQuantityBadge {
   background-color: #ff0000;
 }
+
+.minicartContentContainer--minicart-base-content {
+  justify-content: flex-start;
+  row-gap: 2rem;
+}
+
+.minicartCheckoutButton :global(.vtex-button) {
+  font-size: 0;
+  background-color: #ec2127;
+  border-color: #ec2127;
+}
+
+.minicartCheckoutButton :global(.vtex-button__label)::before {
+  content: "Finalizar Compra";
+  color: #fff;
+  font-size: 16px;
+}

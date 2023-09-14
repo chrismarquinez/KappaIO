@@ -167,22 +167,26 @@
 /* / Scrollbar de Mega Menu / */
 .listContainer::-webkit-scrollbar,
 .contentItem::-webkit-scrollbar,
-.contentItem_disclouser::-webkit-scrollbar {
+.contentItem_disclouser::-webkit-scrollbar,
+:global(.vtex-store-components-3-x-resultsList)::-webkit-scrollbar {
   width: 3px;
 }
 .listContainer::-webkit-scrollbar-track,
 .contentItem::-webkit-scrollbar-track,
-.contentItem_disclouser::-webkit-scrollbar-track {
+.contentItem_disclouser::-webkit-scrollbar-track,
+:global(.vtex-store-components-3-x-resultsList)::-webkit-scrollbar-track {
   background: #e0e0e0;
 }
 .listContainer::-webkit-scrollbar-thumb,
 .contentItem::-webkit-scrollbar-thumb,
-.contentItem_disclouser::-webkit-scrollbar-thumb {
+.contentItem_disclouser::-webkit-scrollbar-thumb,
+:global(.vtex-store-components-3-x-resultsList)::-webkit-scrollbar-thumb {
   background: black;
 }
 .listContainer::-webkit-scrollbar-thumb:hover,
 .contentItem::-webkit-scrollbar-thumb:hover,
-.contentItem_disclouser::-webkit-scrollbar-thumb:hover {
+.contentItem_disclouser::-webkit-scrollbar-thumb:hover,
+:global(.vtex-store-components-3-x-resultsList)::-webkit-scrollbar-thumb:hover {
   background: black;
 }
 

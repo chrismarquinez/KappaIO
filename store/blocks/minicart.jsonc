@@ -1,16 +1,184 @@
 {
-  "add-to-cart-button": {
+  "minicart.v2": {
     "props": {
-      "addToCartFeedback": "customEvent",
-      "customPixelEventId": "add-to-cart-button",
+      "itemCountMode": "total",
+      "openOnHover": false,
+      "backdropMode": "visible"
+    },
+    "children": ["minicart-base-content"]
+  },
+
+  "minicart-base-content": {
+    "props": {
+      "blockClass": "minicart-base-content"
+    },
+    "blocks": ["minicart-empty-state"],
+    "children": [
+      "flex-layout.row#minicart-product-list",
+      "flex-layout.row#minicart-footer"
+    ]
+  },
+
+  "flex-layout.row#minicart-product-list": {
+    "props": {
+      "blockClass": "minicart-product-list"
+    },
+    "children": ["minicart-product-list"]
+  },
+
+  "flex-layout.row#minicart-footer": {
+    "props": {
+      "blockClass": "minicart-footer"
+    },
+    "children": ["flex-layout.col#minicart-footer"]
+  },
+
+  "flex-layout.col#minicart-footer": {
+    "props": {
+      "blockClass": "minicart-footer"
+    },
+    "children": ["minicart-summary", "minicart-checkout-button"]
+  },
+
+  "minicart-product-list": {
+    "props": {
+      "blockClass": "minicart-product-list"
+    },
+    "blocks": ["product-list#minicart"]
+  },
+
+  "product-list#minicart": {
+    "props": {
+      "blockClass": "minicart-product-list"
+    },
+    "blocks": ["product-list-content-mobile"]
+  },
+
+  "product-list-content-mobile": {
+    "children": ["flex-layout.row#product-list"],
+    "props": {
+      "preserveLayoutOnMobile": "true",
+      "colSizing": "auto"
+    }
+  },
+
+  "flex-layout.row#price-quantity-remove": {
+    "children": ["flex-layout.col#remove-button.desktop"]
+  },
+
+  "flex-layout.row#product-list": {
+    "children": [
+      "flex-layout.col#image.mobile",
+      "flex-layout.col#description-info.mobile"
+    ],
+    "props": {
+      "blockClass": "product-list",
+      "colSizing": "auto",
+      "preventHorizontalStretch": true
+    }
+  },
+
+  "flex-layout.col#remove-button.desktop": {
+    "children": ["price", "product-quantity-label", "remove-button"],
+    "props": {
+      "verticalAlign": "middle",
+      "preserveLayoutOnMobile": "true",
+      "blockClass": "ContainerPrice"
+    }
+  },
+
+  "flex-layout.col#image.mobile": {
+    "children": ["product-list-image"],
+    "props": { "width": "grow" }
+  },
+
+  "flex-layout.col#description-info.mobile": {
+    "children": [
+      "vtex.product-list:product-name",
+      "product-variations",
+      "flex-layout.row#price-quantity-remove"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": "true"
+    }
+  },
+
+  "minicart-summary": {
+    "props": {
+      "blockClass": "minicart-summary"
+    },
+    "blocks": ["checkout-summary.compact#minicart"]
+  },
+
+  "minicart-checkout-button": {
+    "props": {
+      "finishShoppingButtonLink": "/checkout/#/cart"
+    }
+  },
+
+  "checkout-summary.compact#minicart": {
+    "children": ["summary-totalizers#minicart"],
+    "props": {
+      "blockClass": "summary-compact-minicart",
+      "totalizersToShow": ["Items"]
+    }
+  },
+
+  "summary-totalizers#minicart": {
+    "props": {
+      "blockClass": "summary-totalizers",
+      "showTotal": true,
+      "showDeliveryTotal": true
+    }
+  },
+
+  "minicart-empty-state": {
+    "children": ["flex-layout.row#empty-state"]
+  },
+
+  "flex-layout.row#empty-state": {
+    "props": {
+      "blockClass": "empty-state"
+    },
+    "children": ["flex-layout.col#empty-state"]
+  },
+
+  "flex-layout.col#empty-state": {
+    "children": [
+      "icon-cart#minicart-empty-state",
+      "rich-text#minicart-default-empty-state"
+    ],
+    "props": {
+      "blockClass": "empty-state",
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "rowGap": 5
+    }
+  },
+
+  "icon-cart#minicart-empty-state": {
+    "props": {
+      "size": 64,
+      "blockClass": "minicart-empty-state"
+    }
+  },
+
+  "rich-text#minicart-default-empty-state": {
+    "props": {
+      "text": "Tú carro esta vacio"
+    }
+  },
+
+  "add-to-cart-button#desktop": {
+    "props": {
       "text": "COMPRAR"
     }
   },
 
-  "minicart.v2": {
+  "add-to-cart-button#mobile": {
     "props": {
-      "customPixelEventId": "add-to-cart-button"
-    },
-    "children": ["minicart-base-content"]
+      "text": "COMPRAR",
+      "onClickBehavior": "go-to-product-page"
+    }
   }
 }

@@ -1,0 +1,78 @@
+{
+  "store.custom#calzado": {
+    "children": [
+      "lp-footwear",
+      "video#calzado",
+      "rich-text#title-size-guide",
+      "rich-text#description-size-guide",
+      "size-guide-slider#page-calzado"
+    ]
+  },
+
+  "lp-footwear": {
+    "props": {
+      "gallery": [
+        {
+          "title": "",
+          "description": "",
+          "image": "",
+          "alt": "",
+          "textButton": "",
+          "linkButton": ""
+        }
+      ]
+    },
+    "children": ["flex-layout.row#title"]
+  },
+
+  "flex-layout.row#title": {
+    "children": ["flex-layout.col#title"],
+    "props": {
+      "blockClass": "titleFootwearContainer"
+    }
+  },
+
+  "flex-layout.col#title": {
+    "children": ["rich-text#title", "rich-text#description"]
+  },
+
+  "rich-text#title": {
+    "title": "Titulo de pagina",
+    "props": {
+      "text": "# CALZADO KAPPA",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#description": {
+    "title": "Parrafo de pagina",
+    "props": {
+      "text": "Tenemos las mejores opciones en calzado para ti",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#title-size-guide": {
+    "props": {
+      "text": "## ESCOGE TU TALLA"
+    }
+  },
+
+  "rich-text#description-size-guide": {
+    "props": {
+      "text": "Según tu talla COLOMBIANA, **elige un número más en talla EUROPEA.**"
+    }
+  },
+
+  "video#calzado": {
+    "props": {
+      "src": "https://www.youtube.com/watch?v=8m4qdTOznic",
+      "width": "654px",
+      "height": "368px",
+      "muted": true,
+      "autoPlay": true,
+      "controlsType": "custom-vtex",
+      "loop": true
+    }
+  }
+}

@@ -1,6 +1,7 @@
 /* Home */
 
-.flexRow--mainBanner {
+.flexRow--mainBanner,
+.flexRow--breadcrumb {
   margin-top: 160px;
 }
 
@@ -10,10 +11,6 @@
 
 .flexCol--col--buttonShowAll {
   min-height: 41px;
-}
-
-.flexRow--breadcrumb {
-  margin-top: 160px;
 }
 
 /* Home */
@@ -66,6 +63,12 @@
   border: 1px solid transparent;
 }
 
+.flexRowContent--priceContainerCustom {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 /* PDP */
 
 /* Footer */
@@ -80,6 +83,9 @@
 
 .flexRowContent--productSkuSelectorContainer {
   flex-direction: column;
+}
+
+:global(.vtex-search-result-3-x-galleryItem) {
   position: relative;
 }
 
@@ -87,7 +93,7 @@
   display: none;
   height: fit-content;
   position: absolute;
-  bottom: 0;
+  bottom: 11rem;
 }
 
 /* Shelf */
@@ -168,6 +174,29 @@
 
 /* Departamento */
 
+/* Pages */
+
+.flexRow--titleFootwearContainer {
+  margin-top: 160px;
+}
+
+.flexCol--ContainerPrice {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Pages */
+
+/* Mincart */
+
+.flexRow--minicart-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Mincart */
+
 /* Responsive */
 
 /* Home */
@@ -214,5 +243,27 @@
 }
 
 /* Departamento */
+
+/* PDP */
+
+@media (max-width: 767px) {
+  .flexRow--buyContainer {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    padding: 0 1rem;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .flexRowContent--buyContainer {
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+/* PDP */
 
 /* Responsive */
