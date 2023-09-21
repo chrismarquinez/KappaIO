@@ -1,8 +1,9 @@
-.var-wrap {
+.img {
   border: 1px solid transparent;
+  padding: 0.7rem 0.4rem;
 }
 
-.var-wrap:hover {
+.img:hover {
   border-color: black;
 }
 

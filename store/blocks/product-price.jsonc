@@ -20,5 +20,34 @@
       "marginTop": 5
     },
     "children": ["product-list-price", "product-price-savings"]
+  },
+
+  "flex-layout.row#selling-list-price": {
+    "props": {
+      "colGap": 2,
+      "preserveLayoutOnMobile": true,
+      "preventHorizontalStretch": true,
+      "colJustify": "center",
+      "marginBottom": 4,
+      "marginTop": 7,
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "blockClass": "priceContainerCustom"
+    },
+    "children": ["flex-layout.col#selling-list-price-col"]
+  },
+
+  "flex-layout.col#selling-list-price-col": {
+    "children": [
+      "product-list-price",
+      "product-selling-price",
+      "product-price-savings"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "fullWidth": true,
+      "width": "100%",
+      "blockClass": ["itemPrice"]
+    }
   }
 }

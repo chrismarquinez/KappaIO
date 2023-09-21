@@ -1,11 +1,18 @@
-.videoContainer {
-  width: 100%;
-  height: 300px;
-  margin-top: 2%;
+:global(.vtex-flex-layout-0-x-flexRowContent--calzadoVideoContainer)
+  .videoContainer {
+  display: block;
+  max-width: 720px;
+  margin: 3rem auto;
 }
 
-@media only screen and (min-width: 640px) {
-  .videoContainer {
-    height: 700px;
+:global(.vtex-flex-layout-0-x-flexRowContent--calzadoVideoContainer)
+  .videoElement {
+  height: 405px;
+}
+
+@media screen and (max-width: 768px) {
+  :global(.vtex-flex-layout-0-x-flexRowContent--calzadoVideoContainer)
+    .videoElement {
+    height: 210px;
   }
 }

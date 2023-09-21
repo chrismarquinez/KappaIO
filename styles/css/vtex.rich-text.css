@@ -74,6 +74,19 @@
 
 /* Footer */
 
+/* Pages */
+
+.paragraph--whoWearText {
+  font-weight: 200;
+  font-size: 1.12rem;
+  line-height: 157.47%;
+  text-align: center;
+  letter-spacing: 0.09em;
+  color: #ffffff;
+}
+
+/* Pages */
+
 /* Responsive */
 
 /* Footer */
@@ -96,5 +109,19 @@
 }
 
 /* Footer */
+
+/* Pages */
+
+@media screen and (max-width: 1024px) {
+  .paragraph--whoWearText {
+    font-size: 0.7rem;
+  }
+
+  .wrapper--whoWearText {
+    margin: 1rem 0;
+  }
+}
+
+/* Pages */
 
 /* Responsive */

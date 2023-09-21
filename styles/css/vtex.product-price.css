@@ -2,3 +2,76 @@
   font-size: 2.3rem;
   letter-spacing: 0.2rem;
 }
+
+:global(.vtex-flex-layout-0-x-flexColChild--productInfoContainer)
+  .sellingPrice {
+  display: block;
+  width: 100%;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productInfoContainer)
+  .sellingPrice--hasListPrice {
+  border-bottom: solid 1px #e8e8e1;
+  padding-bottom: 2rem;
+}
+
+.currencyDecimal,
+.currencyFraction {
+  display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productInfoContainer)
+  .listPriceValue {
+  text-decoration: none;
+  letter-spacing: 0.2rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productInfoContainer)
+  .listPriceValue
+  .currencyContainer::before {
+  content: "ANTES: ";
+  text-decoration: line-through;
+  color: #bbb;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productInfoContainer)
+  .sellingPrice--hasListPrice
+  .sellingPriceValue
+  .currencyContainer::before {
+  content: "AHORA: ";
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productInfoContainer) .savings {
+  font-size: 0;
+  display: flex;
+  max-width: fit-content;
+  margin: 1.3rem auto;
+  margin-top: -0.6rem;
+  gap: 0.2rem;
+  padding: 0.5rem;
+  background-color: #999;
+  color: white;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productInfoContainer)
+  .savingsValue {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productInfoContainer)
+  .savings::before {
+  content: "AHORRO: ";
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+:global(.vtex-flex-layout-0-x-flexColChild--productInfoContainer)
+  :global(.vtex-flex-layout-0-x-flexColChild--itemPrice) {
+  width: 100%;
+}
+
+.currencyLiteral {
+  letter-spacing: normal;
+}

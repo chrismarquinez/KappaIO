@@ -79,7 +79,7 @@
         "tablet": 3,
         "phone": 1
       },
-      "autoplay": { "stopOnHover": true, "timeout": 3000 },
+      "autoplay": { "timeout": 5000, "stopOnHover": true },
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf",

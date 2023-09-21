@@ -96,7 +96,7 @@
   "filter-navigator.v3": {
     "blocks": ["sidebar-close-button"],
     "props": {
-      "layout": "desktop",
+      "layout": "phone",
       "openFiltersMode": "many",
       "navigationTypeOnMobile": "collapsible",
       "initiallyCollapsed": false,

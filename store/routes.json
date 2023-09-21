@@ -10,5 +10,8 @@
   },
   "store.custom#terminos-y-condiciones": {
     "path": "/terminos-y-condiciones"
+  },
+  "store.custom#calzado": {
+    "path": "/kappa-calzado"
   }
 }

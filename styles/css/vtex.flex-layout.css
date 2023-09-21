@@ -1,6 +1,7 @@
 /* Home */
 
-.flexRow--mainBanner {
+.flexRow--mainBanner,
+.flexRow--breadcrumb {
   margin-top: 160px;
 }
 
@@ -10,10 +11,6 @@
 
 .flexCol--col--buttonShowAll {
   min-height: 41px;
-}
-
-.flexRow--breadcrumb {
-  margin-top: 160px;
 }
 
 /* Home */
@@ -66,6 +63,12 @@
   border: 1px solid transparent;
 }
 
+.flexRowContent--priceContainerCustom {
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
 /* PDP */
 
 /* Footer */
@@ -80,6 +83,9 @@
 
 .flexRowContent--productSkuSelectorContainer {
   flex-direction: column;
+}
+
+:global(.vtex-search-result-3-x-galleryItem) {
   position: relative;
 }
 
@@ -87,7 +93,7 @@
   display: none;
   height: fit-content;
   position: absolute;
-  bottom: 0;
+  bottom: 11rem;
 }
 
 /* Shelf */
@@ -168,6 +174,111 @@
 
 /* Departamento */
 
+/* Pages */
+
+.flexRow--titleFootwearContainer {
+  margin-top: 160px;
+}
+
+.flexRow--titleGuideSizeContainer {
+  padding: 0 2rem;
+}
+
+.flexRow--titleFootwearContainer :global(.vtex-rich-text-0-x-headingLevel1),
+.flexRow--titleGuideSizeContainer :global(.vtex-rich-text-0-x-headingLevel2) {
+  letter-spacing: 0.2rem;
+  margin-bottom: 0;
+}
+
+.flexRow--titleFootwearContainer :global(.vtex-rich-text-0-x-paragraph),
+.flexRow--titleGuideSizeContainer :global(.vtex-rich-text-0-x-paragraph) {
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.flexRowContent--sizeGuideContainer,
+.flexRow--highlightsSliderContainer {
+  padding: 0 2rem;
+}
+
+.flexCol--ContainerPrice {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flexRow--highlightsSliderContainer
+  :global(.vtex-store-components-3-x-container) {
+  border: 16px solid darkgrey;
+}
+
+.flexRow--highlightsSliderContainer :global(.vtex-rich-text-0-x-wrapper) {
+  padding: 0 2.5rem;
+}
+
+.flexRow--highlightsSliderContainer :global(.vtex-rich-text-0-x-headingLevel3),
+.flexRow--highlightsSliderContainer :global(.vtex-rich-text-0-x-headingLevel2) {
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+
+.flexRow--highlightsSliderContainer :global(.vtex-rich-text-0-x-headingLevel3) {
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+.flexRow--highlightsSliderContainer :global(.vtex-rich-text-0-x-headingLevel2) {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.flexRowContent--whoWearContainer {
+  flex-direction: column;
+}
+
+.flexRowContent--whoWearContainer :global(.vtex-rich-text-0-x-headingLevel2) {
+  color: #fff;
+  letter-spacing: 0.1rem;
+}
+
+.flexRowContent--whoWearContainer :global(.vtex-product-summary-2-x-element) {
+  background-color: #fff;
+  padding: 1rem;
+}
+
+.flexRowContent--whoWearContainer :global(.vtex-product-summary-2-x-container) {
+  border-radius: 0;
+}
+
+.flexRowContent--whoWearBottom {
+  justify-content: space-evenly;
+}
+
+.flexColChild--whoWearImage {
+  margin-right: 13rem;
+}
+
+.flexRow--whoWearContainer {
+  background-color: #282a2b;
+  padding: 2rem;
+}
+
+.flexCol--whoWearColCenter :global(.vtex-rich-text-0-x-wrapper) {
+  max-width: 900px;
+  color: #fff;
+}
+
+/* Pages */
+
+/* Mincart */
+
+.flexRow--minicart-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Mincart */
+
 /* Responsive */
 
 /* Home */
@@ -214,5 +325,79 @@
 }
 
 /* Departamento */
+
+/* PDP */
+
+@media (max-width: 767px) {
+  .flexRow--buyContainer {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    left: 0;
+    bottom: 0;
+    padding: 0 1rem;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .flexRowContent--buyContainer {
+    justify-content: space-between;
+    gap: 3rem;
+  }
+}
+
+/* PDP */
+
+/* Pages */
+
+@media (max-width: 767px) {
+  .flexRow--titleGuideSizeContainer {
+    margin-top: 3rem;
+  }
+
+  .flexRow--titleFootwearContainer :global(.vtex-rich-text-0-x-headingLevel1),
+  .flexRow--titleGuideSizeContainer :global(.vtex-rich-text-0-x-headingLevel2) {
+    font-size: 1.75rem;
+    margin: 0;
+  }
+
+  .flexRow--titleFootwearContainer :global(.vtex-rich-text-0-x-wrapper),
+  .flexRow--titleGuideSizeContainer :global(.vtex-rich-text-0-x-wrapper) {
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .flexRow--titleFootwearContainer :global(.vtex-rich-text-0-x-paragraph),
+  .flexRow--titleGuideSizeContainer :global(.vtex-rich-text-0-x-paragraph) {
+    font-size: 0.8rem;
+  }
+
+  .flexRow--titleGuideSizeContainer :global(.vtex-rich-text-0-x-container) {
+    justify-content: center;
+  }
+
+  .flexRow--highlightsSliderContainer {
+    padding: 0;
+  }
+
+  .flexRowContent--highlightsSliderContainer
+    :global(.vtex-rich-text-0-x-container) {
+    justify-content: center;
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  .flexRowContent--whoWearContainer :global(.vtex-rich-text-0-x-headingLevel2) {
+    font-size: 1.3rem;
+  }
+
+  .flexColChild--whoWearImage {
+    margin-right: 0;
+    margin: 0 auto;
+    max-width: 60%;
+  }
+}
+
+/* Pages */
 
 /* Responsive */
