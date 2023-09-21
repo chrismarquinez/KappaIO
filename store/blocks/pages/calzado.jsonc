@@ -1,46 +1,40 @@
 {
   "store.custom#calzado": {
     "children": [
-      "lp-footwear",
-      "video#calzado",
-      "rich-text#title-size-guide",
-      "rich-text#description-size-guide",
-      "size-guide-slider#page-calzado"
+      "flex-layout.row#title",
+      "slider-custom",
+      "flex-layout.row#calzado-video",
+      "soccer-shoes",
+      "flex-layout.row#highlights-slider",
+      "flex-layout.row#title-size-guide",
+      "flex-layout.row#calzado-size-guide",
+      "flex-layout.row#who-wear-kappa"
     ]
   },
 
-  "lp-footwear": {
-    "props": {
-      "gallery": [
-        {
-          "title": "",
-          "description": "",
-          "image": "",
-          "alt": "",
-          "textButton": "",
-          "linkButton": ""
-        }
-      ]
-    },
-    "children": ["flex-layout.row#title"]
-  },
-
   "flex-layout.row#title": {
+    "title": "Contenedor textos principales",
     "children": ["flex-layout.col#title"],
     "props": {
-      "blockClass": "titleFootwearContainer"
+      "blockClass": "titleFootwearContainer",
+      "fullWidth": true
     }
   },
 
   "flex-layout.col#title": {
-    "children": ["rich-text#title", "rich-text#description"]
+    "children": ["rich-text#title", "rich-text#description"],
+    "props": {
+      "width": "100%",
+      "horizontalAlign": "center"
+    }
   },
 
   "rich-text#title": {
     "title": "Titulo de pagina",
     "props": {
       "text": "# CALZADO KAPPA",
-      "textPosition": "CENTER"
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
     }
   },
 
@@ -48,31 +42,296 @@
     "title": "Parrafo de pagina",
     "props": {
       "text": "Tenemos las mejores opciones en calzado para ti",
-      "textPosition": "CENTER"
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "flex-layout.row#title-size-guide": {
+    "title": "Contenedor textos guia de tallas",
+    "children": ["flex-layout.col#title-size-guide"],
+    "props": {
+      "blockClass": "titleGuideSizeContainer",
+      "fullWidth": true
+    }
+  },
+
+  "flex-layout.col#title-size-guide": {
+    "children": [
+      "rich-text#title-size-guide",
+      "rich-text#description-size-guide"
+    ],
+    "props": {
+      "width": "100%"
     }
   },
 
   "rich-text#title-size-guide": {
+    "title": "Titulo",
     "props": {
       "text": "## ESCOGE TU TALLA"
     }
   },
 
   "rich-text#description-size-guide": {
+    "title": "Descripcion",
     "props": {
       "text": "Según tu talla COLOMBIANA, **elige un número más en talla EUROPEA.**"
     }
   },
 
+  "flex-layout.row#calzado-video": {
+    "title": "Contenedor video YouTube",
+    "children": ["video#calzado"],
+    "props": {
+      "blockClass": "calzadoVideoContainer"
+    }
+  },
+
   "video#calzado": {
+    "title": "Video YouTube",
     "props": {
       "src": "https://www.youtube.com/watch?v=8m4qdTOznic",
-      "width": "654px",
-      "height": "368px",
+      "width": "100%",
       "muted": true,
       "autoPlay": true,
       "controlsType": "custom-vtex",
       "loop": true
+    }
+  },
+
+  "slider-custom": {
+    "title": "Slider categorias calzado",
+    "props": {
+      "categories": [
+        {
+          "title": "BOTAS",
+          "description": "Que la comodidad y el estilo se vuelvan una costumbre todos los días.",
+          "image": "assets/img/kappa-calzado/GIFF-BOTAS-desktop.gif",
+          "alt": "Botas",
+          "textButton": "VER MAS",
+          "linkButton": "/"
+        },
+        {
+          "title": "GUAYOS",
+          "description": "Nosotros nos encargamos del calzado, tú pones la magia en la cancha.",
+          "image": "assets/img/kappa-calzado/GIFF-GUAYOS-desktop.gif",
+          "alt": "Guayos",
+          "textButton": "VER MAS",
+          "linkButton": "/"
+        },
+        {
+          "title": "CHANCLAS Y SANDALIAS",
+          "description": "Existen distintas maneras de recorrer el mundo, pero todas ellas comienzan con un par de sandalias.",
+          "image": "assets/img/kappa-calzado/GIFF-SANDALIAS-desktop.gif",
+          "alt": "Guayos",
+          "textButton": "VER MAS",
+          "linkButton": "/"
+        },
+        {
+          "title": "ZAPATILLAS DEPORTIVAS",
+          "description": "Deja que tus zapatos te muestren el camino.",
+          "image": "assets/img/kappa-calzado/GIFF-SNEAKERS-desktop.gif",
+          "alt": "Guayos",
+          "textButton": "VER MAS",
+          "linkButton": "/"
+        },
+        {
+          "title": "SNEAKERS",
+          "description": "Estamos contigo para que lleves comodidad a todas partes y en todo momento.",
+          "image": "assets/img/kappa-calzado/GIFF-TRAINING-desktop.gif",
+          "alt": "Guayos",
+          "textButton": "VER MAS",
+          "linkButton": "/"
+        }
+      ]
+    }
+  },
+
+  "soccer-shoes": {
+    "title": "Configuracion compoennete guayos",
+    "props": {
+      "firtsCol": {
+        "title": "GUAYOS TERRENO FIRME",
+        "description": "Agarre potenciado para superficies cubiertas de cespéd, te brindarán mayor estabilidad en los terrenos más difíciles.",
+        "image": "assets/img/kappa-calzado/guayos1.png",
+        "link": "/"
+      },
+      "secondCol": {
+        "title": "GUAYOS PARA PASTO SINTÉTICO",
+        "description": "Diseñados para césped con poca profundidad para una mejor movilidad con el agarre ideal para este tipo de terrenos.",
+        "image": "assets/img/kappa-calzado/guayos2.png",
+        "link": "/"
+      },
+      "thirdCol": {
+        "title": "GUAYOS PARA CANCHA CUBIERTA",
+        "description": "Creados para brindarte estabilidad, equilibrio y agarre en cualquier superficie en la que te encuentres.",
+        "image": "assets/img/kappa-calzado/guayos3.png",
+        "link": "/"
+      },
+      "fourthCol": {
+        "title": "GUAYOS KAPPA",
+        "textButton": "ENCUENTRA LOS TUYOS",
+        "linkButton": "/"
+      }
+    }
+  },
+
+  "flex-layout.row#highlights-slider": {
+    "children": [
+      "flex-layout.col#highlights-slider-text",
+      "flex-layout.col#highlights-slider"
+    ],
+    "props": {
+      "blockClass": "highlightsSliderContainer"
+    }
+  },
+
+  "flex-layout.col#highlights-slider-text": {
+    "children": ["rich-text#highlights-slider"],
+    "props": {
+      "width": "20%",
+      "verticalAlign": "middle"
+    }
+  },
+
+  "rich-text#highlights-slider": {
+    "props": {
+      "text": "### DESTACADOS EN \n ## ESTA CATEGORÍA"
+    }
+  },
+
+  "flex-layout.col#highlights-slider": {
+    "children": ["list-context.product-list#highlights-category"],
+    "props": {
+      "width": "80%"
+    }
+  },
+
+  "list-context.product-list#highlights-category": {
+    "title": "Lista de productos",
+    "blocks": ["product-summary.shelf#custom"],
+    "children": ["slider-layout#demo-products"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "category": "4"
+    }
+  },
+
+  "flex-layout.row#calzado-size-guide": {
+    "title": "Contenedor calculadora",
+    "children": ["size-guide-slider#page-calzado"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "sizeGuideContainer"
+    }
+  },
+
+  "flex-layout.row#who-wear-kappa": {
+    "title": "Contenedor who wear kappa",
+    "children": [
+      "flex-layout.col#who-wear-top",
+      "flex-layout.col#who-wear-bottom"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "whoWearContainer",
+      "preventHorizontalStretch": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#who-wear-top": {
+    "children": ["rich-text#who-wear-title"],
+    "props": {
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.col#who-wear-bottom": {
+    "children": ["flex-layout.row#who-wear-content"],
+    "props": {
+      "width": "100%"
+    }
+  },
+
+  "flex-layout.row#who-wear-content": {
+    "children": [
+      "flex-layout.col#who-wear-left",
+      "flex-layout.col#who-wear-center",
+      "flex-layout.col#who-wear-right"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "whoWearBottom",
+      "preventVerticalStretch": true,
+      "horizontalAlign": "right"
+    }
+  },
+
+  "flex-layout.col#who-wear-left": {
+    "children": ["image#who-wear-left"],
+    "props": {
+      "verticalAlign": "middle",
+      "horizontalAlign": "right",
+      "blockClass":["whoWearImage"]
+    }
+  },
+
+  "image#who-wear-left": {
+    "props": {
+      "src": "assets/img/kappa-calzado/who-wears-kappa.webp"
+    }
+  },
+
+  "flex-layout.col#who-wear-center": {
+    "children": ["rich-text#who-wear-description"],
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "middle",
+      "preventVerticalStretch": true,
+      "blockClass": ["whoWearColCenter"]
+    }
+  },
+
+  "rich-text#who-wear-title": {
+    "props": {
+      "text": "## WHO WEARS KAPPA",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "rich-text#who-wear-description": {
+    "props": {
+      "text": "El estilo y la moda son dos palabras que definen a Christopher Reina, influenciador de moda bogotano, que diario comparte con sus seguidores las mejores ideas de outfits para hombres apostándole a un contenido distinto que le ha dado gran reconocimiento en redes como TikTok e Instagram.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass":["whoWearText"]
+    }
+  },
+
+  "flex-layout.col#who-wear-right": {
+    "children": ["list-context.product-list#who-wear"]
+  },
+
+  "list-context.product-list#who-wear": {
+    "title": "Lista de productos",
+    "blocks": ["product-summary.shelf#custom"],
+    "children": ["slider-layout#who-wear"]
+  },
+
+  "slider-layout#who-wear": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showNavigationArrows": "never",
+      "showPaginationDots": "never"
     }
   }
 }
