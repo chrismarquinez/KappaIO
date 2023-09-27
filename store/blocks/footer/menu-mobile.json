@@ -136,7 +136,8 @@
       "blockClass": ["footer-item"]
     },
     "children": [
-      "newsletter-form",
+      "rich-text#title-coupon",
+      "newsletter-form-custom",
       "rich-text#social-networks",
       "social-networks"
     ]

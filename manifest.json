@@ -66,12 +66,13 @@
     "vtex.store-newsletter": "1.x",
     "vtex.sandbox": "0.x",
     "vtex.similar-products-variants": "0.x",
+    "vtex.iframe": "0.x",
     "dynamo.custom-header": "0.x",
     "dynamo.custom-megamenu": "0.x",
     "dynamo.forms": "0.x",
-    "dynamo.product-info": "0.x",
     "dynamo.custom-menu-static": "0.x",
-    "dynamo.custom-landings": "0.x"
+    "dynamo.custom-landings": "0.x",
+    "dynamo.footer-components-custom": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

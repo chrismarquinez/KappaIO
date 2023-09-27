@@ -78,12 +78,9 @@
         "desktop": "auto",
         "phone": "16:9"
       },
-      "thumbnailVisibility": "visible",
-      "displayThumbnailsArrows": true,
       "position": "right",
       "showPaginationDots": false,
-      "zoomMode": "in-place-click",
-      "showNavigationArrows": false
+      "thumbnailVisibility": "visible"
     }
   },
   "flex-layout.col#right-col": {
@@ -103,8 +100,7 @@
       "product-separator",
       "similar-products-variants",
       "sku-selector",
-      "product-custom-info",
-      "extra-product",
+      // "extra-product",
       // "product-assembly-options",
       "product-gifts",
       "flex-layout.row#buy-button",
@@ -121,11 +117,11 @@
     "children": ["vtex.store-components:product-name"]
   },
 
-  "size-guide-slider#page-calzado": {
-    "props": {
-      "categoryNames": ["Adultos"]
-    }
-  },
+  // "size-guide-slider#page-calzado": {
+  //   "props": {
+  //     "categoryNames": ["Adultos"]
+  //   }
+  // },
 
   "sku-selector": {
     "props": {
@@ -220,26 +216,26 @@
     "props": {
       "imageLabel": "swatch"
     }
-  },
-
-  "extra-product": {
-    "props": {
-      "items": [
-        {
-          "departmentId": 1,
-          "skuId": 416,
-          "labelCheck": "Extra",
-          "initialDescription": "Te gustaria",
-          "finalDescription": "?"
-        },
-        {
-          "departmentId": 4,
-          "skuId": 7,
-          "labelCheck": "Extra 2",
-          "initialDescription": "Te gustaria 2",
-          "finalDescription": "Te gustaria 2"
-        }
-      ]
-    }
   }
+
+  // "extra-product": {
+  //   "props": {
+  //     "items": [
+  //       {
+  //         "departmentId": 1,
+  //         "skuId": 416,
+  //         "labelCheck": "Extra",
+  //         "initialDescription": "¿Te gustaría añadir",
+  //         "finalDescription": "?"
+  //       },
+  //       {
+  //         "departmentId": 4,
+  //         "skuId": 7,
+  //         "labelCheck": "Extra 2",
+  //         "initialDescription": "Te gustaria 2",
+  //         "finalDescription": "Te gustaria 2"
+  //       }
+  //     ]
+  //   }
+  // }
 }

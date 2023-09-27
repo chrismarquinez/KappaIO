@@ -1,0 +1,91 @@
+{
+  "store.custom#envios": {
+    "children": [
+      "flex-layout.row#title-envios",
+      "flex-layout.row#paragraph-1",
+      "flex-layout.row#paragraph-2"
+    ]
+  },
+
+  "flex-layout.row#title-envios": {
+    "title": "Contenedor textos principales",
+    "children": ["flex-layout.col#title-envios"],
+    "props": {
+      "blockClass": "titleFootwearContainer",
+      "fullWidth": true,
+      "marginBottom": { "desktop": 8 }
+    }
+  },
+
+  "flex-layout.col#title-envios": {
+    "children": ["rich-text#title-envios"],
+    "props": {
+      "width": "100%",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "rich-text#title-envios": {
+    "title": "Titulo de pagina",
+    "props": {
+      "text": "# ENVÍOS",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "flex-layout.row#paragraph-1": {
+    "title": "Contenedor textos principales",
+    "children": ["flex-layout.col#paragraph-1"]
+  },
+
+  "flex-layout.col#paragraph-1": {
+    "children": ["rich-text#sub-title-1", "rich-text#text-1"],
+    "props": {
+      "width": "100%"
+    }
+  },
+
+  "rich-text#sub-title-1": {
+    "title": "Sub titulo 1",
+    "props": {
+      "text": "### Tiempos y Cargos de Envío"
+    }
+  },
+
+  "rich-text#text-1": {
+    "title": "Parrafo 1",
+    "props": {
+      "text": "Los productos ofrecidos por [www.kappa-col.com](https://www.kappa-col.com/) son válidos para entrega únicamente en el territorio Nacional (República de Colombia). De igual manera, aplican restricciones según el lugar de entrega registrado, lo cual será comunicado al cliente a través de correo electrónico a la dirección que haya facilitado durante la fase de registro. El tiempo que tarda la compra desde que es efectuada hasta que llega a la dirección señalada por el cliente dependerá de la ciudad, localidad o municipio en el que se encuentre, sin embargo, el tiempo máximo puede estar de 5 a 15 días hábiles a partir de la fecha en que el Sitio acepte la correspondiente oferta de compra, siempre y cuando no se presenten causas ajenas a la voluntad de www.kappa-col.com en las que se pudieran retrasar los tiempos de entrega, como cualquier evento de caso fortuito o fuerza mayor. Del mismo modo, las tarifas son variables dependiendo del tamaño del producto y el lugar del envío. Las fechas y horarios de entrega son efectivos una vez aprobado el proceso de validación de compra y stock."
+    }
+  },
+
+  "flex-layout.row#paragraph-2": {
+    "title": "Contenedor textos principales",
+    "children": ["flex-layout.col#paragraph-2"],
+    "props": {
+      "marginBottom": { "desktop": 8 }
+    }
+  },
+
+  "flex-layout.col#paragraph-2": {
+    "children": ["rich-text#sub-title-2", "rich-text#text-2"],
+    "props": {
+      "width": "100%"
+    }
+  },
+
+  "rich-text#sub-title-2": {
+    "title": "Sub titulo 2",
+    "props": {
+      "text": "### Condiciones de entrega"
+    }
+  },
+
+  "rich-text#text-2": {
+    "title": "Parrafo 2",
+    "props": {
+      "text": "a. La entrega de los pedidos se realiza dentro de ciudades, regiones y/ó zonas consideradas como seguras para la operación del transporte, a criterio del transportista. \n b. Las entregas no se realizarán en un horario exacto. \n c. El producto podrá ser recibido e inspeccionado por cualquier persona mayor de edad que habite o esté presente en el lugar de entrega, para lo cual bastará la firma en el documento de transporte, a menos que el cliente manifieste expresamente al momento de la compra, que el producto debe ser entregado únicamente al comprador o a un tercero autorizado, esta se deberá indicar en la casilla de observaciones del formulario de despacho. \n d. En caso de no estar nadie presente en el sitio de entrega para recibir el producto despachado, o no estar presente la persona autorizada, el pedido será devuelto al lugar de despacho. KAPPA reprogramará la entrega del mismo y/o el cliente deberá comunicarse y reprogramar la entrega del producto. Si el producto no es recibido después de dos visitas realizadas por parte de la transportadora, KAPPA procederá con la devolución de los productos. En este caso, si el cliente desea que le reenvíen el pedido, es obligación del cliente contactarse con Servicio al Cliente para programar el reenvío del pedido, lo cual incurre en un costo que deberá asumir el cliente. \n e. El cliente y el transportista deben revisar que el producto entregado se encuentre en buenas condiciones. Si no se registra algún reclamo por parte del cliente en el documento de transporte correspondiente, se entenderá que el recibo del producto fue satisfactorio. \n f. Si al momento de la entrega del producto, el cliente rechaza el recibimiento del mismo por una razón ajena a la responsabilidad de KAPPA el costo del envío no le será devuelto. \n g. Luego de recibido el producto, bajo ninguna circunstancia, ni el transportador ni terceros están autorizados para volver a retirar el producto del domicilio. \n h. El costo de envío no se cobrará al cliente si el producto recibido por el cliente no corresponde al publicado y/ó si el producto está dañado al momento de la entrega."
+    }
+  }
+}

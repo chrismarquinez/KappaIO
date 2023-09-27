@@ -1,12 +1,19 @@
 .productHighlightWrapper--collection {
   position: absolute;
   top: 10px;
-  left: 5px;
+  left: 11rem;
   width: 200px;
 }
 
 .productHighlightText {
-  background: antiquewhite;
+  background-color: #000;
+  color: white;
   border-radius: 20px;
   padding: 5px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .productHighlightWrapper--collection {
+    left: 10rem;
+  }  
 }
