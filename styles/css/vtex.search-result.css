@@ -49,6 +49,7 @@
     .vtex-store-components-3-x-skuSelectorOptionsList
   )::-webkit-scrollbar {
   width: 3px;
+  height: 6px;
 }
 
 .accordionFilter::-webkit-scrollbar {

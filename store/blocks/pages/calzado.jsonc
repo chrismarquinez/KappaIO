@@ -7,7 +7,7 @@
       "soccer-shoes",
       "flex-layout.row#highlights-slider",
       "flex-layout.row#title-size-guide",
-      "flex-layout.row#calzado-size-guide",
+      // "flex-layout.row#calzado-size-guide",
       "flex-layout.row#who-wear-kappa"
     ]
   },
@@ -211,21 +211,36 @@
   "list-context.product-list#highlights-category": {
     "title": "Lista de productos",
     "blocks": ["product-summary.shelf#custom"],
-    "children": ["slider-layout#demo-products"],
+    "children": ["slider-layout#calzado-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "category": "4"
     }
   },
 
-  "flex-layout.row#calzado-size-guide": {
-    "title": "Contenedor calculadora",
-    "children": ["size-guide-slider#page-calzado"],
+  "slider-layout#calzado-products": {
     "props": {
-      "fullWidth": true,
-      "blockClass": "sizeGuideContainer"
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 3,
+        "phone": 1
+      },
+      "autoplay": { "timeout": 5000, "stopOnHover": true },
+      "infinite": true,
+      "fullWidth": false,
+      "blockClass": "shelf",
+      "showPaginationDots": "never"
     }
   },
+
+  // "flex-layout.row#calzado-size-guide": {
+  //   "title": "Contenedor calculadora",
+  //   "children": ["size-guide-slider#page-calzado"],
+  //   "props": {
+  //     "fullWidth": true,
+  //     "blockClass": "sizeGuideContainer"
+  //   }
+  // },
 
   "flex-layout.row#who-wear-kappa": {
     "title": "Contenedor who wear kappa",

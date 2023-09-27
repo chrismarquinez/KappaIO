@@ -1,0 +1,257 @@
+.container :global(.vtex-button) {
+  width: 40px;
+  height: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("data:image/svg+xml,%3Csvg width='23' height='27' viewBox='0 0 23 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11.2796 12.6447C13.0168 12.6447 14.5208 12.0217 15.7501 10.7924C16.9789 9.56336 17.6022 8.05954 17.6022 6.32217C17.6022 4.58542 16.979 3.08138 15.7499 1.85192C14.5206 0.623052 13.0166 0 11.2796 0C9.54224 0 8.0384 0.623053 6.80934 1.85211C5.58028 3.08117 4.95703 4.58523 4.95703 6.32217C4.95703 8.05954 5.58028 9.56357 6.80934 10.7926C8.0388 12.0215 9.54284 12.6447 11.2796 12.6447ZM7.89721 2.93979C8.84028 1.99671 9.9466 1.53829 11.2796 1.53829C12.6124 1.53829 13.7189 1.99671 14.6622 2.93979C15.6053 3.88307 16.0639 4.98956 16.0639 6.32217C16.0639 7.65518 15.6053 8.76148 14.6622 9.70477C13.7189 10.6481 12.6124 11.1065 11.2796 11.1065C9.947 11.1065 8.84068 10.6478 7.89721 9.70477C6.95394 8.76169 6.49532 7.65518 6.49532 6.32217C6.49532 4.98956 6.95394 3.88307 7.89721 2.93979Z' fill='black'/%3E%3Cpath d='M22.3474 20.1849C22.312 19.6733 22.2403 19.1153 22.1347 18.5262C22.0282 17.9326 21.891 17.3714 21.7268 16.8585C21.5569 16.3284 21.3264 15.8048 21.041 15.3032C20.7452 14.7824 20.3975 14.329 20.0074 13.9559C19.5995 13.5656 19.1001 13.2518 18.5224 13.0229C17.9468 12.7952 17.3089 12.6798 16.6266 12.6798C16.3587 12.6798 16.0996 12.7898 15.5991 13.1156C15.2911 13.3165 14.9308 13.5488 14.5286 13.8057C14.1848 14.0248 13.7189 14.2301 13.1435 14.416C12.5822 14.5976 12.0122 14.6897 11.4495 14.6897C10.8871 14.6897 10.3171 14.5976 9.75535 14.416C9.18058 14.2303 8.71454 14.025 8.37127 13.8059C7.97294 13.5514 7.61246 13.3191 7.29982 13.1154C6.79974 12.7895 6.5406 12.6796 6.27264 12.6796C5.5901 12.6796 4.95244 12.7952 4.37706 13.0231C3.79987 13.2516 3.30019 13.5654 2.89185 13.9561C2.50172 14.3294 2.15405 14.7827 1.85844 15.3032C1.57345 15.8048 1.34275 16.3282 1.17291 16.8586C1.00888 17.3716 0.8717 17.9326 0.76516 18.5262C0.659408 19.1146 0.58792 19.6726 0.552465 20.1854C0.517622 20.6866 0.5 21.2084 0.5 21.7355C0.5 23.1058 0.935593 24.2151 1.79456 25.0332C2.64291 25.8405 3.76522 26.2498 5.13048 26.2498H17.7701C19.1349 26.2498 20.2572 25.8405 21.1057 25.0332C21.965 24.2156 22.4006 23.106 22.4006 21.7354C22.4004 21.2063 22.3825 20.6847 22.3474 20.1849ZM20.0451 23.9187C19.4845 24.4522 18.7404 24.7116 17.7699 24.7116H5.13048C4.15976 24.7116 3.41555 24.4522 2.8552 23.9188C2.30544 23.3956 2.03829 22.6812 2.03829 21.7355C2.03829 21.2436 2.05451 20.758 2.08695 20.2918C2.11859 19.8343 2.18329 19.3319 2.27921 18.798C2.37394 18.2705 2.49451 17.7756 2.6379 17.3276C2.77549 16.8982 2.96314 16.4728 3.19586 16.0629C3.41795 15.6725 3.6735 15.3374 3.95548 15.0674C4.21924 14.8149 4.55169 14.6082 4.94343 14.4532C5.30571 14.3098 5.71287 14.2313 6.15486 14.2195C6.20875 14.2481 6.30468 14.3028 6.46008 14.4041C6.77631 14.6102 7.14081 14.8453 7.54375 15.1027C7.99796 15.3923 8.58316 15.6538 9.28231 15.8795C9.99708 16.1107 10.7261 16.2279 11.4496 16.2279C12.1732 16.2279 12.9024 16.1107 13.6168 15.8797C14.3165 15.6536 14.9015 15.3923 15.3563 15.1023C15.7687 14.8387 16.123 14.6104 16.4392 14.4041C16.5946 14.303 16.6905 14.2481 16.7444 14.2195C17.1866 14.2313 17.5938 14.3098 17.9563 14.4532C18.3477 14.6082 18.6802 14.8151 18.944 15.0674C19.2261 15.3372 19.4816 15.6723 19.7036 16.0633C19.9366 16.4728 20.1245 16.8984 20.2619 17.3275C20.4054 17.7762 20.5261 18.2707 20.6206 18.7976C20.7164 19.3326 20.7813 19.8354 20.813 20.292V20.2923C20.8457 20.7568 20.862 21.2422 20.8623 21.7355C20.862 22.6814 20.5949 23.3956 20.0451 23.9187Z' fill='black'/%3E%3C/svg%3E%0A");
+}
+
+.container :global(.vtex-button__label) {
+  display: none;
+}
+
+.content {
+  margin-top: 16rem;
+  margin-bottom: 2rem;
+}
+
+.loginOptionsContainer :global(.vtex-login-2-x-formTitle) {
+  letter-spacing: 0.1rem;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button) {
+  border-radius: 0;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  height: 60px;
+}
+
+.emailVerification :global(.vtex-login-2-x-formTitle) {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0 26px 0;
+  padding: 0;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  color: #333333;
+  grid-area: 1;
+}
+
+.emailAndPasswordForm :global(.vtex-login-2-x-formTitle) {
+  font-size: 16px;
+  text-align: center;
+  margin: 0 0 26px 0;
+  padding: 0;
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  color: #333333;
+}
+
+.inputContainerEmail :global(.vtex-input)::before {
+  content: "Email";
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 0.1rem;
+}
+
+.inputContainerPassword :global(.vtex-input)::before {
+  content: "Contraseña";
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  letter-spacing: 0.1rem;
+}
+
+.inputContainerPassword :global(.vtex-input-prefix__group) {
+  border-radius: 0;
+}
+
+.inputContainerEmail :global(.vtex-input-prefix__group) {
+  border-radius: 0;
+}
+
+.accessCodeOptionBtn :global(.vtex-button) {
+  border-radius: 0;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  height: 60px;
+}
+
+.eyeIcon--visible {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='18' viewBox='0 0 20 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.70711 0.292893C2.31658 -0.0976311 1.68342 -0.0976311 1.29289 0.292893C0.902369 0.683417 0.902369 1.31658 1.29289 1.70711L3.71706 4.13127C2.28639 5.20737 1.03925 6.68543 0.105573 8.55279C-0.0351909 8.83432 -0.0351909 9.16569 0.105573 9.44722C2.26379 13.7637 6.09687 16 10 16C11.5552 16 13.0992 15.645 14.5306 14.9448L17.2929 17.7071C17.6834 18.0976 18.3166 18.0976 18.7071 17.7071C19.0976 17.3166 19.0976 16.6834 18.7071 16.2929L2.70711 0.292893ZM13.0138 13.428C12.0343 13.8112 11.0134 14 10 14C7.03121 14 3.99806 12.3792 2.12966 9C2.94721 7.52136 3.98778 6.3794 5.14838 5.56259L7.29237 7.70659C7.10495 8.09822 7 8.53686 7 9.00001C7 10.6569 8.34315 12 10 12C10.4631 12 10.9018 11.8951 11.2934 11.7076L13.0138 13.428Z' fill='%23333333'/%3E%3Cpath d='M16.5523 10.8955C17.0353 10.3402 17.4784 9.70876 17.8703 9C16.0019 5.62078 12.9687 4 9.99996 4C9.88796 4 9.77586 4.00231 9.66374 4.00693L7.87939 2.22258C8.57741 2.07451 9.28752 2 9.99996 2C13.9031 2 17.7362 4.23635 19.8944 8.55279C20.0352 8.83431 20.0352 9.16569 19.8944 9.44721C19.3504 10.5352 18.7 11.491 17.9689 12.3121L16.5523 10.8955Z' fill='%23333333'/%3E%3C/svg%3E%0A");
+}
+
+.eyeIcon--invisible {
+  background-size: 20px;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='iso-8859-1'%3F%3E%3C!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='442.04px' height='442.04px' viewBox='0 0 442.04 442.04' style='enable-background:new 0 0 442.04 442.04;' xml:space='preserve'%3E%3Cg%3E%3Cg%3E%3Cpath d='M221.02,341.304c-49.708,0-103.206-19.44-154.71-56.22C27.808,257.59,4.044,230.351,3.051,229.203 c-4.068-4.697-4.068-11.669,0-16.367c0.993-1.146,24.756-28.387,63.259-55.881c51.505-36.777,105.003-56.219,154.71-56.219 c49.708,0,103.207,19.441,154.71,56.219c38.502,27.494,62.266,54.734,63.259,55.881c4.068,4.697,4.068,11.669,0,16.367 c-0.993,1.146-24.756,28.387-63.259,55.881C324.227,321.863,270.729,341.304,221.02,341.304z M29.638,221.021 c9.61,9.799,27.747,27.03,51.694,44.071c32.83,23.361,83.714,51.212,139.688,51.212s106.859-27.851,139.688-51.212 c23.944-17.038,42.082-34.271,51.694-44.071c-9.609-9.799-27.747-27.03-51.694-44.071 c-32.829-23.362-83.714-51.212-139.688-51.212s-106.858,27.85-139.688,51.212C57.388,193.988,39.25,211.219,29.638,221.021z'/%3E%3C/g%3E%3Cg%3E%3Cpath d='M221.02,298.521c-42.734,0-77.5-34.767-77.5-77.5c0-42.733,34.766-77.5,77.5-77.5c18.794,0,36.924,6.814,51.048,19.188 c5.193,4.549,5.715,12.446,1.166,17.639c-4.549,5.193-12.447,5.714-17.639,1.166c-9.564-8.379-21.844-12.993-34.576-12.993 c-28.949,0-52.5,23.552-52.5,52.5s23.551,52.5,52.5,52.5c28.95,0,52.5-23.552,52.5-52.5c0-6.903,5.597-12.5,12.5-12.5 s12.5,5.597,12.5,12.5C298.521,263.754,263.754,298.521,221.02,298.521z'/%3E%3C/g%3E%3Cg%3E%3Cpath d='M221.02,246.021c-13.785,0-25-11.215-25-25s11.215-25,25-25c13.786,0,25,11.215,25,25S234.806,246.021,221.02,246.021z'/%3E%3C/g%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3Cg%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+:global(.vtex-login-2-x-eyeSightIcon) {
+  opacity: 0;
+}
+
+.sendButton :global(.vtex-button) {
+  border-radius: 0;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  height: 60px;
+}
+
+.backButton {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 40px;
+  align-items: center;
+}
+
+.backButton :global(.vtex-button) {
+  color: #000;
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 0;
+  border: 1px solid #000;
+  font-weight: 300;
+}
+
+.sendButton {
+  width: 100%;
+}
+
+.sendButton :global(.vtex-button) {
+  width: 100%;
+}
+
+.sendButton :global(.vtex-button__label .t-small) {
+  letter-spacing: 0.1rem;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.emailAndPasswordForm form {
+  display: grid;
+  grid-template-columns: 100%;
+}
+
+.forgotPasswordLink {
+  letter-spacing: 0.1rem;
+  font-weight: 300;
+  font-size: 14px;
+  color: #333333;
+  text-decoration: underline;
+}
+
+.inputContainer:nth-child(1n) {
+  margin-bottom: 16px;
+  /*   grid-area: 1 / 1; */
+  margin-bottom: 9;
+}
+
+.inputContainer:nth-child(2n) {
+  margin-top: 9;
+  margin-bottom: 0;
+  /*   grid-area: 2 / 1; */
+  position: relative;
+}
+
+.formLinkContainer:nth-child(1n) {
+  /* grid-area: 3 / 1; */
+  justify-content: end;
+}
+
+.formLinkContainer:nth-child(2n) {
+  grid-area: 4 / 1;
+  justify-content: end;
+}
+
+.formFooter {
+  grid-area: 5 / 1;
+  flex-direction: column-reverse;
+}
+
+.contentFormVisible {
+  padding: 0;
+  height: auto;
+}
+
+@media (max-width: 740px) {
+  .content {
+    margin-top: 170px;
+  }
+}
+
+.tooltipContainerLeft {
+  position: absolute;
+  left: 0%;
+  top: -70px;
+  z-index: 9999999999;
+  height: 150px;
+}
+
+.tooltipContainerLeft::after {
+  content: none;
+}
+
+.dontHaveAccount {
+  font-weight: 300;
+  font-size: 0;
+  color: #333333;
+  text-decoration: underline;
+  margin-top: 20px;
+  position: relative;
+}
+
+.dontHaveAccount::before {
+  content: "¿No tiene una cuenta? ";
+  font-size: 14px;
+}
+
+.dontHaveAccount::after {
+  content: "Regístrese";
+  color: #000;
+  font-size: 14px;
+  right: 1px;
+  font-weight: 700;
+}
+
+.contentAlwaysWithOptions {
+  min-height: 18rem;
+  max-width: 60%;
+}
+
+@media (max-width: 740px) {
+  .container {
+    display: none;
+  }
+
+  .content {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-height: fit-content;
+    margin: auto;
+    margin-top: 10rem;
+  }
+}

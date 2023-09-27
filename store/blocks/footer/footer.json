@@ -5,7 +5,8 @@
   "footer-layout.desktop": {
     "children": [
       "flex-layout.row#footer-desktop",
-      "flex-layout.row#footer-desktop-payment"
+      "flex-layout.row#footer-desktop-payment",
+      "whatsapp-button"
     ]
   },
   "footer-layout.mobile": {
@@ -36,24 +37,26 @@
     },
     "children": ["vtex.menu@2.x:menu#footer-mobile"]
   },
-  "newsletter-input-email": {
+
+  "newsletter-form-custom": {
+    "title": "Configuracion boton Newsletter",
     "props": {
-      "errorMessage": "Verifica el formato de tu email",
-      "placeholderText": "Ingresa tu E-mail"
-    }
-  },
-  "newsletter-submit": {
-    "props": {
-      "submitButtonLabel": "ENVIAR"
-    }
-  },
-  "newsletter-checkbox-confirmation": {
-    "props": {
-      "checkboxLabel": "Acepto el tratamiento de mis datos personales de acuerdo con la {firstLabelLink}",
+      "placeholder": "Ingresa tu E-mail",
+      "checkboxLabel": "Acepto el tratamiento de mis datos personales de acuerdo con la {firstLink}.",
+      "labelButton": "ENVIAR",
       "firstLabelLink": {
-        "url": "/#",
-        "text": "política de tratamiento de datos personales."
+        "url": "/",
+        "text": "política de tratamiento de datos personales"
       }
+    }
+  },
+
+  "whatsapp-button": {
+    "title": "Configuracion boton WhatsApp",
+    "props": {
+      "url": "https://api.whatsapp.com/send?phone=57 324 5969498&text=Hola! quisiera asesoría en mi proceso de compra",
+      "image": "assets/img/home/whatsapp-btn.png",
+      "textPopUp": "¡Te ayudamos con tu compra!"
     }
   }
 }

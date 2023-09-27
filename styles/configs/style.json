@@ -342,6 +342,9 @@
             "fontSize": "1rem",
             "textTransform": "initial",
             "letterSpacing": "0"
+          },
+          "vtex-toast-container": {
+            "backgroundColor": "#f2f4f5 !important"
           }
         }
       },

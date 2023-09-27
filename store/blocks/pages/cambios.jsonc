@@ -1,0 +1,5 @@
+{
+  "store.custom#cambios": {
+    "children": ["form-garantias"]
+  }
+}

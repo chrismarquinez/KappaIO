@@ -46,3 +46,26 @@
   color: #fff;
   font-size: 16px;
 }
+
+.minicartProductListContainer {
+  overflow: hidden;
+}
+
+.minicartProductListContainer--minicart-product-list
+  :global(.vtex-product-list-0-x-quantitySelectorButton) {
+  padding: 0.3rem;
+  border-radius: 0;
+  font-size: 0.1rem;
+}
+
+.minicartProductListContainer--minicart-product-list
+  :global(.vtex-product-list-0-x-inputContainer) {
+  width: 2rem;
+  font-size: 0.8rem;
+  padding: 0;
+}
+
+.minicartProductListContainer--minicart-product-list
+  :global(.vtex-product-list-0-x-quantitySelectorIncrease) {
+  color: #ec2127;
+}

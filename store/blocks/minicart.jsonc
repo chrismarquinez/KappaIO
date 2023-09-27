@@ -74,22 +74,37 @@
     "props": {
       "blockClass": "product-list",
       "colSizing": "auto",
-      "preventHorizontalStretch": true
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
     }
   },
 
   "flex-layout.col#remove-button.desktop": {
-    "children": ["price", "product-quantity-label", "remove-button"],
+    "children": ["price", "quantity-selector", "remove-button"],
     "props": {
       "verticalAlign": "middle",
-      "preserveLayoutOnMobile": "true",
+      "preserveLayoutOnMobile": false,
       "blockClass": "ContainerPrice"
+    }
+  },
+
+  "quantity-selector": {
+    "props": {
+      "mode": "stepper",
+      "preserveLayoutOnMobile": "true",
+      "size": "small"
     }
   },
 
   "flex-layout.col#image.mobile": {
     "children": ["product-list-image"],
     "props": { "width": "grow" }
+  },
+
+  "product-list-image": {
+    "props": {
+      "width": 55
+    }
   },
 
   "flex-layout.col#description-info.mobile": {
@@ -99,7 +114,7 @@
       "flex-layout.row#price-quantity-remove"
     ],
     "props": {
-      "preserveLayoutOnMobile": "true"
+      "preserveLayoutOnMobile": false
     }
   },
 
@@ -120,7 +135,7 @@
     "children": ["summary-totalizers#minicart"],
     "props": {
       "blockClass": "summary-compact-minicart",
-      "totalizersToShow": ["Items"]
+      "totalizersToShow": ["Items", "Discounts"]
     }
   },
 

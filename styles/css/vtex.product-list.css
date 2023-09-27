@@ -1,13 +1,7 @@
 .currencyDecimal,
 .currencyFraction,
-.productPriceCurrency,
 .productBrandName {
   display: none;
-}
-
-.productImage {
-  width: 71px;
-  height: 71px;
 }
 
 .price {
@@ -16,7 +10,8 @@
 
 .productName,
 .productVariationsItem,
-.price {
+.price,
+.productPriceCurrency {
   font-size: 14px;
   letter-spacing: 0.1rem;
 }

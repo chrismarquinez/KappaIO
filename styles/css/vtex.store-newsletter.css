@@ -8,7 +8,7 @@
   text-align: center;
 }
 
-.newsletterForm--footer :global(.vtex-rich-text-0-x-paragraph--text-coupon) {
+:global(.vtex-rich-text-0-x-paragraph--text-coupon) {
   font-size: 0.8rem;
   letter-spacing: 0.1em;
   opacity: 0.5;
@@ -27,7 +27,7 @@
 
 /* Responsive */
 @media screen and (max-width: 1024px) {
-  .newsletterForm--footer :global(.vtex-rich-text-0-x-paragraph--text-coupon) {
+  :global(.vtex-rich-text-0-x-paragraph--text-coupon) {
     text-align: center;
   }
 }

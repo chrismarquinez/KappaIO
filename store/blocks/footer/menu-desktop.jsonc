@@ -265,7 +265,8 @@
     "props": { "orientation": "vertical", "blockClass": ["footer-item"] },
     "children": [
       "rich-text#fourth-column",
-      "newsletter-form",
+      "rich-text#title-coupon",
+      "newsletter-form-custom",
       "rich-text#social-networks",
       "social-networks"
     ]
@@ -276,17 +277,6 @@
       "blockClass": ["footer-title"],
       "text": "ÚNETE CLUB KAPPA"
     }
-  },
-  "newsletter-form": {
-    "props": {
-      "blockClass": ["footer"]
-    },
-    "children": [
-      "rich-text#title-coupon",
-      "newsletter-input-email",
-      "newsletter-submit",
-      "newsletter-checkbox-confirmation"
-    ]
   },
   "rich-text#title-coupon": {
     "title": "Titulo porcentaje descuento",
