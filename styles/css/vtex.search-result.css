@@ -2,7 +2,20 @@
   margin-top: 10rem;
 }
 
+.orderByOptionItem {
+  font-family: Montserrat-Regular, arial, sans-serif;
+}
+
+.orderByOptionItem:hover {
+  background-color: #e8e8e1;
+}
+
 .orderByOptionItem--selected {
+  color: #ffffff;
+  background-color: #0f0f0f;
+}
+
+.orderByOptionItem--selected:hover {
   color: #ffffff;
   background-color: #0f0f0f;
 }
@@ -120,18 +133,31 @@
 .orderByOptionsContainer .orderByOptionItem:nth-child(n + 7) {
   display: none;
 }
+
 .orderByOptionsContainer .orderByOptionItem:nth-child(-n + 2) {
   font-size: 0;
 }
+
 .orderByOptionsContainer .orderByOptionItem:nth-child(-n + 2)::before {
   content: "Más vendidos";
   font-size: 1rem;
 }
+
 .orderByOptionsContainer .orderByOptionItem:first-child {
   font-size: 1rem;
 }
+
 .orderByOptionsContainer .orderByOptionItem:first-child::before {
   content: " ";
+}
+
+.filterClearButtonWrapper :global(.vtex-button) {
+  color: #000;
+}
+
+.filterApplyButtonWrapper :global(.vtex-button) {
+  background-color: #000;
+  color: #ffffff;
 }
 
 /* Filtros */

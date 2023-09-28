@@ -317,6 +317,10 @@
   .flexColChild--container-form__inputs {
     padding: 0;
   }
+
+  .flexRow--container-form {
+    max-height: fit-content;
+  }
 }
 
 /* Newsletter */
