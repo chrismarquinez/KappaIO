@@ -7,7 +7,7 @@
       "soccer-shoes",
       "flex-layout.row#highlights-slider",
       "flex-layout.row#title-size-guide",
-      // "flex-layout.row#calzado-size-guide",
+      "flex-layout.row#calzado-size-guide",
       "flex-layout.row#who-wear-kappa"
     ]
   },
@@ -233,14 +233,14 @@
     }
   },
 
-  // "flex-layout.row#calzado-size-guide": {
-  //   "title": "Contenedor calculadora",
-  //   "children": ["size-guide-slider#page-calzado"],
-  //   "props": {
-  //     "fullWidth": true,
-  //     "blockClass": "sizeGuideContainer"
-  //   }
-  // },
+  "flex-layout.row#calzado-size-guide": {
+    "title": "Contenedor calculadora",
+    "children": ["size-guide-slider#page-calzado"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "sizeGuideContainer"
+    }
+  },
 
   "flex-layout.row#who-wear-kappa": {
     "title": "Contenedor who wear kappa",

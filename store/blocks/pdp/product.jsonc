@@ -91,17 +91,13 @@
     },
     "children": [
       "flex-layout.row#product-name",
-      // "product-rating-summary",
       "product-identifier.product",
       "flex-layout.row#selling-list-price",
-      // "flex-layout.row#list-price-savings",
-      // "flex-layout.row#selling-price",
-      // "product-installments",
       "product-separator",
       "similar-products-variants",
       "sku-selector",
-      // "extra-product",
-      // "product-assembly-options",
+      "size-guide",
+      "extra-product",
       "product-gifts",
       "flex-layout.row#buy-button",
       "flex-layout.row#description",
@@ -117,11 +113,11 @@
     "children": ["vtex.store-components:product-name"]
   },
 
-  // "size-guide-slider#page-calzado": {
-  //   "props": {
-  //     "categoryNames": ["Adultos"]
-  //   }
-  // },
+  "size-guide-slider#page-calzado": {
+    "props": {
+      "categoryNames": ["Adultos"]
+    }
+  },
 
   "sku-selector": {
     "props": {
@@ -216,26 +212,26 @@
     "props": {
       "imageLabel": "swatch"
     }
-  }
+  },
 
-  // "extra-product": {
-  //   "props": {
-  //     "items": [
-  //       {
-  //         "departmentId": 1,
-  //         "skuId": 416,
-  //         "labelCheck": "Extra",
-  //         "initialDescription": "¿Te gustaría añadir",
-  //         "finalDescription": "?"
-  //       },
-  //       {
-  //         "departmentId": 4,
-  //         "skuId": 7,
-  //         "labelCheck": "Extra 2",
-  //         "initialDescription": "Te gustaria 2",
-  //         "finalDescription": "Te gustaria 2"
-  //       }
-  //     ]
-  //   }
-  // }
+  "extra-product": {
+    "props": {
+      "items": [
+        {
+          "departmentId": 1,
+          "skuId": 416,
+          "labelCheck": "Extra",
+          "initialDescription": "¿Te gustaría añadir",
+          "finalDescription": "?"
+        },
+        {
+          "departmentId": 4,
+          "skuId": 7,
+          "labelCheck": "Extra 2",
+          "initialDescription": "Te gustaria 2",
+          "finalDescription": "Te gustaria 2"
+        }
+      ]
+    }
+  }
 }

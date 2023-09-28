@@ -368,10 +368,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .wrapper_mobile .o_modal_body {
-    width: 100%;
-  }
 }
 
 @media (max-height: 660px) {
