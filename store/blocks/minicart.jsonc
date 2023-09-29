@@ -37,7 +37,7 @@
     "props": {
       "blockClass": "minicart-footer"
     },
-    "children": ["minicart-summary", "minicart-checkout-button"]
+    "children": ["minicart-summary", "minicart-checkout-button", "send-free"]
   },
 
   "minicart-product-list": {
@@ -194,6 +194,12 @@
     "props": {
       "text": "COMPRAR",
       "onClickBehavior": "go-to-product-page"
+    }
+  },
+
+  "send-free": {
+    "props": {
+      "minimumAmount": "162000"
     }
   }
 }

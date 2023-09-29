@@ -1,0 +1,37 @@
+{
+  "store.custom#guia-tallas": {
+    "children": ["flex-layout.row#title", "flex-layout.row#size-guide"]
+  },
+
+  "flex-layout.row#title": {
+    "title": "Contenedor textos principales",
+    "children": ["flex-layout.col#title"],
+    "props": {
+      "blockClass": "titleFootwearContainer",
+      "fullWidth": true,
+      "marginBottom": { "desktop": 9 }
+    }
+  },
+
+  "flex-layout.col#title": {
+    "children": ["rich-text#title"],
+    "props": {
+      "width": "100%",
+      "horizontalAlign": "center"
+    }
+  },
+
+  "rich-text#title": {
+    "title": "Titulo de pagina",
+    "props": {
+      "text": "# Guía de Tallas",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER"
+    }
+  },
+
+  "flex-layout.row#size-guide": {
+    "title": "Contenedor guia de tallas",
+    "children": ["size-guide"]
+  }
+}

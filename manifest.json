@@ -73,7 +73,8 @@
     "dynamo.custom-menu-static": "0.x",
     "dynamo.custom-landings": "0.x",
     "dynamo.footer-components-custom": "0.x",
-    "dynamo.product-components-custom": "0.x"
+    "dynamo.product-components-custom": "0.x",
+    "dynamo.send-free": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"

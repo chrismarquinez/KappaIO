@@ -67,5 +67,12 @@
 
 .minicartProductListContainer--minicart-product-list
   :global(.vtex-product-list-0-x-quantitySelectorIncrease) {
-  color: #ec2127;
+  width: 1.4rem;
+  color: #727273;
+  background-color: #f2f4f5;
+}
+
+.minicartProductListContainer--minicart-product-list
+  :global(.vtex-product-list-0-x-quantitySelectorDecrease) {
+  width: 1.4rem;
 }

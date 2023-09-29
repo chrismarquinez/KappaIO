@@ -124,4 +124,14 @@
 
 /* Pages */
 
+/* Home */
+
+@media screen and (max-width: 768px) {
+  .headingLevel2--shelfTitle {
+    font-size: 1.5rem;
+  }
+}
+
+/* Home */
+
 /* Responsive */
