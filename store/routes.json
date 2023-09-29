@@ -19,5 +19,8 @@
   },
   "store.custom#cambios": {
     "path": "/garantias"
+  },
+  "store.custom#guia-tallas": {
+    "path": "/guia-tallas"
   }
 }

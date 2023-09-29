@@ -277,8 +277,16 @@
   width: 100%;
 }
 
+.flexRow--minicart-product-list {
+  overflow-y: auto;
+  max-height: calc(100% - 429px);
+}
+
 .flexRow--product-list {
   margin-top: 1rem;
+}
+.flexRow--product-list:last-child {
+  margin-bottom: 1.5rem;
 }
 
 .flexRowContent--product-list {
