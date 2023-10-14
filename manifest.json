@@ -75,8 +75,7 @@
     "dynamo.footer-components-custom": "0.x",
     "dynamo.product-components-custom": "0.x",
     "dynamo.send-free": "0.x",
-    "dynamo.landing-santa-fe": "0.x",
-    "dynamo.search-result-custom": "0.x"
+    "dynamo.landing-santa-fe": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"
