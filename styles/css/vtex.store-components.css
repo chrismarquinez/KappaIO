@@ -9,7 +9,6 @@
 /* Home */
 
 .infoCardContainer--card-department {
-  /* max-width: 435px; */
   height: 435px;
   margin: 0 auto;
   padding: 0px;
@@ -43,6 +42,18 @@
 }
 
 /* PDP */
+
+/* Shelf */
+
+.discountInsideContainer {
+  background-color: #000;
+}
+
+.priceContainer {
+  flex-direction: row;
+}
+
+/* Shelf */
 
 /* Responsive */
 

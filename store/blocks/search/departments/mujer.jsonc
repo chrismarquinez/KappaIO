@@ -1,0 +1,28 @@
+{
+  "store.custom#genre-template-mujer": {
+    "blocks": [
+      "flex-layout.row#department-head",
+      "search-result-layout.customQuery#mujer"
+    ],
+    "props": {
+      "blockClass": "department"
+    }
+  },
+
+  "search-result-layout.customQuery#mujer": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "maxItemsPerPage": 10,
+        "__unstableProductOriginVtex": true,
+        "queryField": "mujer",
+        "mapField": "category-1"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop",
+      "search-result-layout.mobile",
+      "search-not-found-layout#custom"
+    ]
+  }
+}

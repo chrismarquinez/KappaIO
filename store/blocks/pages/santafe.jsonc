@@ -1,0 +1,187 @@
+{
+  "store.custom#santafe": {
+    "children": [
+      "flex-layout.row#slider-santafe",
+      "flex-layout.row#title-santafe",
+      "search-result-layout.customQuery#santafe",
+      "rich-text#title-uniforme-santafe",
+      "slider-custom-santa-fe"
+    ],
+    "props": {
+      "blockClass": "departmentTeams"
+    }
+  },
+
+  "flex-layout.row#slider-santafe": {
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["mainBannerSantaFe"]
+    }
+  },
+
+  "flex-layout.row#title-santafe": {
+    "children": ["rich-text#title-santafe", "rich-text#description-santafe"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": ["mainTitleSantaFe"]
+    }
+  },
+
+  "rich-text#title-santafe": {
+    "title": "Titulo principal",
+    "props": {
+      "text": "# SANTA FE, SOMOS GRANDEZA",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["mainTitleSantaFe"]
+    }
+  },
+
+  "rich-text#description-santafe": {
+    "title": "Descripcion",
+    "props": {
+      "text": "Viste la pasión del Independiente Santa Fe. \n Conoce el más reciente uniforme, la camiseta oficial, ropa y accesorios de los Leones.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["descriptionSantaFe"]
+    }
+  },
+
+  "rich-text#title-uniforme-santafe": {
+    "title": "Tutlos uniforme",
+    "props": {
+      "text": "## UNIFORME SANTA FE",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["mainTitleSantaFe"]
+    }
+  },
+
+  "filters": {
+    "props": {
+      "items": [
+        {
+          "title": "COMPETENCIA",
+          "description": "La camiseta de Independiente Santa Fe 2023 está inspirada en nuestra capital Bogotá, los cerros capitalinos son los protagonistas en esta indumentaria.",
+          "background": "assets/img/santaFe/filtros/competenciaDesktop.png",
+          "imageMobile": "assets/img/santaFe/filtros/competenciaMobile.png",
+          "items": [
+            {
+              "title": "Hombre"
+            },
+            {
+              "title": "Mujer"
+            },
+            {
+              "title": "Niños"
+            }
+          ]
+        },
+        {
+          "title": "ENTRENAMIENTO",
+          "description": "La indumentaria para Independiente Santa Fe 2023 cuenta con tecnología Kombat en tejido interlock y con tecnología HYDRO-WAY PROTECTION.",
+          "background": "assets/img/santaFe/filtros/entrenamientoDesktop.webp",
+          "imageMobile": "assets/img/santaFe/filtros/entrenamientoMobile.webp",
+
+          "items": [
+            {
+              "title": "Hombre"
+            },
+            {
+              "title": "Mujer"
+            }
+          ]
+        },
+        {
+          "title": "PRESENTACIÓN",
+          "description": "La colección de Santa Fe 2023 cuenta con tecnología HYDRO-WAY PROTECTION, brinda secado rápido, protección solar y transpirabilidad a los jugadores.",
+          "background": "assets/img/santaFe/filtros/presentacionDesktop.webp",
+          "imageMobile": "assets/img/santaFe/filtros/presentacionMobile.webp",
+          "items": [
+            {
+              "title": "Hombre"
+            }
+          ]
+        },
+        {
+          "title": "FANÁTICOS",
+          "description": "La línea para fanáticos fue pensada para aquellos hinchas que acompañan al león incondicionalmente, y que se sienten orgullosos de nuestro Bogotá.",
+          "background": "assets/img/santaFe/filtros/fanaticosDesktop.png",
+          "imageMobile": "assets/img/santaFe/filtros/fanaticosMobile.png",
+          "items": [
+            {
+              "title": "Hombre"
+            },
+            {
+              "title": "Mujer"
+            }
+          ]
+        }
+      ]
+      // "SearchResult": "search-result-layout.customQuery#santafe"
+    }
+  },
+
+  "search-result-layout.customQuery#santafe": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "maxItemsPerPage": 10,
+        "__unstableProductOriginVtex": true,
+        "queryField": "santa-fe",
+        "mapField": "category-1"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#teams",
+      "search-result-layout.mobile#teams",
+      "search-not-found-layout#custom"
+    ]
+  },
+
+  "slider-custom-santa-fe": {
+    "props": {
+      "items": [
+        {
+          "title": "BANDA",
+          "image": "assets/img/santaFe/uniformes/santafe-banda-2023.webp",
+          "logo": "assets/img/santaFe/uniformes/mini-logo-santafe.png"
+        },
+        {
+          "title": "LOGO",
+          "image": "assets/img/santaFe/uniformes/santafe-LOGO-2023.webp",
+          "logo": "assets/img/santaFe/uniformes/mini-logo-santafe.png"
+        },
+        {
+          "title": "TEXTURA",
+          "image": "assets/img/santaFe/uniformes/santafe-textura-2023.webp",
+          "logo": "assets/img/santaFe/uniformes/mini-logo-santafe.png"
+        },
+        {
+          "title": "DISEÑO",
+          "image": "assets/img/santaFe/uniformes/nuestro-Iniforme-secc.png",
+          "logo": "assets/img/santaFe/uniformes/mini-logo-santafe.png"
+        },
+        {
+          "title": "TECNOLOGÍA",
+          "image": "assets/img/santaFe/uniformes/santafe-tecnologia-2023.webp",
+          "logo": "assets/img/santaFe/uniformes/mini-logo-santafe.png"
+        }
+      ],
+      "texts": [
+        {
+          "title": "<h2>INDEPENDIENTE SANTA FE: CAMISETA Y UNIFORME</h2>",
+          "description": "<p>¡Somos orgullosamente bogotanos! Demuestra que eres un hincha fiel usando la nueva camiseta oficial de los leones 2023, el uniforme completo, camisetas, y las sudaderas más auténticas. Compra la <strong>camiseta oficial de Santa Fe</strong> y prepárate para sentir la pasión.</p>"
+        },
+        {
+          "title": "<h2>CAMISETA AUTÉNTICA DE INDEPENDIENTE SANTA FÉ</h2>",
+          "description": "Esta camiseta nos representa como bogotanos, como hinchas del león. Representa el amor por nuestra casa, por Bogotá. La <strong>camiseta de Santa Fe</strong> está construida en un tejido ligero y cuenta con tecnología KOMBAT que permite un secado rápido y los mantiene frescos para que puedan dejarlo todo en la cancha."
+        },
+        {
+          "title": "<h2>COLECCIONA LA INDUMENTARIA DE INDEPENDIENTE SANTA FE</h2>",
+          "description": "Kappa Kombat Pro 2023 - <strong>Independiente Santa Fe</strong> Home Kit. La nueva Piel del León, está inspirada en la historia de Santa Fe y la belleza de Bogotá: los icónicos Cerros Orientales figuran en el pecho y bordean el corazón de todos los hinchas que se declaran Orgullosamente Bogotanos. Gracias a la tecnología KOMBAT™ PRO 2023 esta nueva piel se adapta perfectamente a los movimientos del deportista y ofrece comodidad y ligereza en cada movimiento. Además, cuenta con tecnología HYDRO-WAY PROTECTION, un poliéster transpirable y absorbente que brinda a los jugadores un secado rápido, protección solar y transpirabilidad durante los partidos."
+        }
+      ]
+    }
+  }
+}

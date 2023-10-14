@@ -96,6 +96,10 @@
   bottom: 11rem;
 }
 
+.flexCol--summaryLef {
+  align-items: flex-start;
+}
+
 /* Shelf */
 
 /* Modal Newsleter */
@@ -156,6 +160,10 @@
 
 /* Departamento */
 
+.flexRow--departmentHead {
+  margin-top: 160px;
+}
+
 .flexRow--departmentHead
   :global(.vtex-rich-text-0-x-container--departmentHead-text) {
   position: absolute;
@@ -170,6 +178,14 @@
   display: flex;
   flex-direction: column;
   position: relative;
+}
+
+.flexColChild--categoriesInDepartment :global(.vtex-store-link-0-x-link) {
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  color: #0f0f0f;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 
 /* Departamento */
@@ -267,6 +283,22 @@
   color: #fff;
 }
 
+.flexRow--mainBannerSantaFe {
+  margin-top: 160px;
+  background-image: url("assets/img/santaFe/bg-santafe.webp");
+  min-height: 550px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center -25px;
+  background-size: cover;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.flexRowContent--mainTitleSantaFe {
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Pages */
 
 /* Mincart */
@@ -328,6 +360,10 @@
 
   .flexRow--container-form {
     max-height: fit-content;
+  }
+
+  .flexCol--container-form__image {
+    display: none;
   }
 }
 
@@ -415,6 +451,13 @@
     margin-right: 0;
     margin: 0 auto;
     max-width: 60%;
+  }
+
+  .flexRow--mainBannerSantaFe {
+    margin-top: 8rem;
+    min-height: 200px;
+    background-position: center 120px;
+    background-size: contain;
   }
 }
 

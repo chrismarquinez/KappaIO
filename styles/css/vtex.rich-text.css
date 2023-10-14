@@ -85,6 +85,39 @@
   color: #ffffff;
 }
 
+.heading--mainTitleSantaFe {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 0;
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+
+.paragraph--descriptionSantaFe {
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+}
+
+.container--titleNotFound {
+  margin-top: 10rem;
+}
+
+.heading--titleNotFound,
+.container--paragraphNotFound {
+  font-size: 0.8rem;
+}
+
+.container--paragraphNotFound .paragraph {
+  margin-top: 0;
+}
+
+.italic--titleNotFound {
+  font-style: normal;
+  color: #ff0000;
+}
+
 /* Pages */
 
 /* Responsive */

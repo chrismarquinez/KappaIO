@@ -1,55 +1,13 @@
 {
-  "search-result-layout#department": {
-    "blocks": [
-      "search-result-layout.mobile#department",
-      "search-result-layout.desktop#department",
-      "search-not-found-layout"
-    ]
-  },
-
-  "search-result-layout.desktop#department": {
-    "children": [
-      "flex-layout.row#department-head",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#custom",
-      "flex-layout.row#result"
-    ],
-    "props": {
-      "pagination": "infinity",
-      "preventRouteChange": false,
-      "defaultGalleryLayout": "grid"
-    }
-  },
-
-  "search-result-layout.mobile#department": {
-    "children": [
-      "flex-layout.row#department-head",
-      "flex-layout.row#searchinfomobile",
-      "flex-layout.row#searchbread",
-      "flex-layout.row#productCountMobile",
-      "flex-layout.row#fetchprevious",
-      "flex-layout.row#contentmobile",
-      "flex-layout.row#fetchmore"
-    ],
-    "props": {
-      "pagination": "show-more",
-      "mobileLayout": {
-        "mode1": "small",
-        "mode2": "normal"
-      },
-      "defaultGalleryLayout": "grid"
-    }
-  },
-
   "flex-layout.row#department-head": {
     "title": "Contenedor banner",
-    "props": {
-      "blockClass": "departmentHead"
-    },
     "children": [
       "flex-layout.col#department-head-img",
       "flex-layout.col#department-head-text"
-    ]
+    ],
+    "props": {
+      "blockClass": ["departmentHead"]
+    }
   },
 
   "flex-layout.col#department-head-img": {
@@ -115,7 +73,8 @@
         "desktop": "85%",
         "tablet": "60%",
         "mobile": "80%"
-      }
+      },
+      "blockClass": "categoriesInDepartment"
     },
     "children": ["slider-layout#categories"]
   },
@@ -131,8 +90,7 @@
       },
       "infinite": true,
       "showNavigationArrows": "mobileOnly",
-      "showPaginationDots": "never",
-      "blockClass": "categoriesInDepartment"
+      "showPaginationDots": "never"
     },
     "children": [
       "link#foo",

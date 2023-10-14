@@ -23,9 +23,12 @@
   },
 
   "store.search#department": {
-    "blocks": ["search-result-layout#department"],
+    "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -61,10 +64,28 @@
   },
 
   "search-result-layout.desktop": {
-    "children": ["flex-layout.row#searchbread", "flex-layout.row#result"],
+    "children": [
+      "flex-layout.row#searchbread",
+      "flex-layout.row#custom",
+      "flex-layout.row#result"
+    ],
     "props": {
       "pagination": "infinity",
-      "preventRouteChange": false,
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "search-result-layout.desktop#teams": {
+    "children": [
+      "filters",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#custom",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "infinity",
+      "preventRouteChange": true,
       "defaultGalleryLayout": "grid"
     }
   },
@@ -86,6 +107,7 @@
       "fullWidth": true
     }
   },
+
   "flex-layout.col#filter": {
     "children": ["filter-navigator.v3"],
     "props": {
@@ -203,6 +225,26 @@
     }
   },
 
+  "search-result-layout.mobile#teams": {
+    "children": [
+      "filters",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
   "flex-layout.row#contentmobile": {
     "children": ["search-content"],
     "props": {
@@ -249,9 +291,6 @@
       "verticalAlign": "middle"
     }
   },
-  "search-not-found-layout": {
-    "children": ["flex-layout.row#searchbread", "flex-layout.row#notfound"]
-  },
 
   "flex-layout.row#notfound": {
     "children": ["not-found"],
@@ -287,7 +326,7 @@
         }
       ],
       "ListSummary": "product-summary.shelf#listLayout",
-      "GridSummary": "product-summary.shelf#custom"
+      "GridSummary": "product-summary.shelf"
     }
   },
   "gallery-layout-switcher": {
