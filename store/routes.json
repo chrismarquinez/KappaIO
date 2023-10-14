@@ -22,5 +22,17 @@
   },
   "store.custom#guia-tallas": {
     "path": "/guia-tallas"
+  },
+  "store.custom#santafe": {
+    "path": "/santafe"
+  },
+  "store.custom#genre-template-hombre": {
+    "path": "/hombre"
+  },
+  "store.custom#genre-template-mujer": {
+    "path": "/mujer"
+  },
+  "store.custom#genre-template-ninos": {
+    "path": "/ninos"
   }
 }

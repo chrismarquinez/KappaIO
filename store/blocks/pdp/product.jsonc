@@ -154,7 +154,7 @@
       "width": "85%",
       "blockClass": ["atcContainer"]
     },
-    "children": ["add-to-cart-button#desktop"]
+    "children": ["add-to-cart-button"]
   },
 
   "flex-layout.row#product-availability": {

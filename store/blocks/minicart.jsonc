@@ -184,16 +184,9 @@
     }
   },
 
-  "add-to-cart-button#desktop": {
+  "add-to-cart-button": {
     "props": {
       "text": "COMPRAR"
-    }
-  },
-
-  "add-to-cart-button#mobile": {
-    "props": {
-      "text": "COMPRAR",
-      "onClickBehavior": "go-to-product-page"
     }
   },
 

@@ -1,0 +1,75 @@
+{
+  "search-not-found-layout#custom": {
+    "title": "Search Not Found",
+    "children": [
+      "rich-text#title-not-found",
+      "rich-text#paragraph-not-found",
+      "flex-layout.row#not-found-categories",
+      "rich-text#title-not-found-slider",
+      "flex-layout.row#recommnended-404"
+    ]
+  },
+
+  "rich-text#title-not-found": {
+    "props": {
+      "text": "# ___Oops!___ **No hemos encontrado lo que estás buscando.**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["titleNotFound"]
+    }
+  },
+
+  "rich-text#paragraph-not-found": {
+    "props": {
+      "text": "Te invitamos a seguir navegando por nuestra tienda online, **tenemos mucho más para ofrecerte:**",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["paragraphNotFound"]
+    }
+  },
+
+  "rich-text#title-not-found-slider": {
+    "props": {
+      "blockClass": "title-new-products",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "### Productos recomendados",
+      "font": "t-heading-3"
+    }
+  },
+
+  "flex-layout.row#recommnended-404": {
+    "children": ["list-context.product-list#latest-collection"],
+    "props": {
+      "blockClass": "recommnended-404"
+    }
+  },
+
+  "flex-layout.row#not-found-categories": {
+    "children": [
+      "flex-layout.col#not-found-left",
+      "flex-layout.col#not-found-right"
+    ]
+  },
+
+  "flex-layout.col#not-found-left": {
+    "children": ["image#department-hombre"]
+  },
+  "flex-layout.col#not-found-right": {
+    "children": ["image#department-mujer"]
+  },
+
+  "image#department-hombre": {
+    "props": {
+      "src": "assets/img/not-found/not-found-hombre.png",
+      "maxHeight": 350
+    }
+  },
+
+  "image#department-mujer": {
+    "props": {
+      "src": "assets/img/not-found/not-found-mujer.png",
+      "maxHeight": 350
+    }
+  }
+}

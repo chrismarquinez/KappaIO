@@ -21,6 +21,7 @@
       "blockClass": ["mainBanner"]
     }
   },
+
   "list-context.image-list#slider-home": {
     "title": "Banner Principal",
     "children": ["slider-layout#slider-home"],
@@ -39,6 +40,7 @@
       ]
     }
   },
+
   "slider-layout#slider-home": {
     "props": {
       "itemsPerPage": {
@@ -48,10 +50,11 @@
       },
       "autoplay": { "timeout": 5000, "stopOnHover": true },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
+      "showNavigationArrows": "always",
       "blockClass": "carousel"
     }
   },
+
   "rich-text#shelf-title": {
     "title": "Titulo vitrina",
     "props": {
@@ -59,19 +62,22 @@
       "blockClass": "shelfTitle"
     }
   },
+
   "flex-layout.row#shelf": {
     "title": "Contenedor vitrina",
     "children": ["list-context.product-list#latest-collection"]
   },
+
   "list-context.product-list#latest-collection": {
     "title": "Lista de productos",
-    "blocks": ["product-summary.shelf#custom"],
+    "blocks": ["product-summary.shelf"],
     "children": ["slider-layout#demo-products"],
     "props": {
       "orderBy": "OrderByTopSaleDESC",
       "category": "1"
     }
   },
+
   "slider-layout#demo-products": {
     "props": {
       "itemsPerPage": {
@@ -79,13 +85,14 @@
         "tablet": 3,
         "phone": 1
       },
-      "autoplay": { "timeout": 5000, "stopOnHover": true },
+      "autoplay": { "timeout": 99999, "stopOnHover": true },
       "infinite": true,
       "fullWidth": false,
       "blockClass": "shelf",
       "showPaginationDots": "never"
     }
   },
+
   "flex-layout.row#button-shelf": {
     "title": "Contenedor boton vitrina",
     "children": ["flex-layout.col#button-shelf"],
@@ -95,6 +102,7 @@
       "preventVerticalStretch": true
     }
   },
+
   "flex-layout.col#button-shelf": {
     "children": ["link.product#button-shelf"],
     "props": {
@@ -103,6 +111,7 @@
       "blockClass": ["col--buttonShowAll"]
     }
   },
+
   "link.product#button-shelf": {
     "title": "Boton ver todo",
     "props": {
@@ -111,6 +120,7 @@
       "label": "VER TODO"
     }
   },
+
   "rich-text#department-title": {
     "title": "Titulo departamentos",
     "props": {
@@ -118,6 +128,7 @@
       "blockClass": ["shelfTitle", "shelfTitle--border-top"]
     }
   },
+
   "flex-layout.row#departments": {
     "title": "Contenedor tarjetas departamentos",
     "props": {
@@ -131,12 +142,14 @@
       "flex-layout.col#third-department"
     ]
   },
+
   "flex-layout.col#first-department": {
     "props": {
       "width": "grow"
     },
     "children": ["info-card#firts-department"]
   },
+
   "info-card#firts-department": {
     "title": "Primer departamento",
     "props": {
@@ -150,12 +163,14 @@
       "textAlignment": "center"
     }
   },
+
   "flex-layout.col#second-department": {
     "props": {
       "width": "grow"
     },
     "children": ["info-card#second-department"]
   },
+
   "info-card#second-department": {
     "title": "Segundo departamento",
     "props": {
@@ -169,12 +184,14 @@
       "textAlignment": "center"
     }
   },
+
   "flex-layout.col#third-department": {
     "props": {
       "width": "grow"
     },
     "children": ["info-card#third-department"]
   },
+
   "info-card#third-department": {
     "title": "Tercer departamento",
     "props": {
@@ -188,6 +205,7 @@
       "textAlignment": "center"
     }
   },
+
   "rich-text#blog-title": {
     "title": "Titulo feed instagram",
     "props": {
@@ -195,6 +213,7 @@
       "blockClass": "shelfTitle"
     }
   },
+
   "flex-layout.row#feed-instagram": {
     "title": "Contenedor feed instagram",
     "props": {
@@ -202,6 +221,7 @@
     },
     "children": ["sandbox#feed-instagram"]
   },
+
   "sandbox#feed-instagram": {
     "title": "Instagram",
     "props": {

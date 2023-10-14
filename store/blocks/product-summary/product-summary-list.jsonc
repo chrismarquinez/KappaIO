@@ -28,7 +28,7 @@
     },
     "children": [
       "product-price-savings#summaryPercentage",
-      "product-price-savings#summary"
+      "product-summary-price"
     ]
   },
   "flex-layout.row#summaryListDesktop": {
@@ -55,7 +55,9 @@
   },
   "flex-layout.col#summaryDetailsListDesktop": {
     "props": {
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "horizontalAlign": "left",
+      "blockClass":["summaryLef"]
     },
     "children": [
       "product-summary-name#summaryListDesktop",
@@ -75,7 +77,6 @@
       "preventVerticalStretch": true
     },
     "children": [
-      "flex-layout.row#savingsSummaryListDesktop",
       "flex-layout.col#priceSummaryListDesktop",
       "flex-layout.row#buyButtonsSummaryListDesktop"
     ]
@@ -86,23 +87,22 @@
       "colSizing": "auto",
       "colGap": 5
     },
-    "children": ["add-to-cart-button#desktop"]
+    "children": ["add-to-cart-button"]
   },
 
   "flex-layout.col#priceSummaryListDesktop": {
-    "children": ["product-selling-price#summary", "product-list-price#summary"]
+    "children": ["product-summary-price"]
   },
 
   "stack-layout#summaryListDesktop": {
     "children": [
-      "product-summary-image#summaryListDesktop",
-      "vtex.product-highlights@2.x:product-highlights#collection"
+      "product-summary-image#summaryListDesktop"
     ]
   },
 
   "product-summary-image#summaryListDesktop": {
     "props": {
-      "showBadge": false,
+      "showBadge": true,
       "aspectRatio": "1:1",
       "maxHeight": 180,
       "blockClass": "summaryListDesktop"
@@ -125,7 +125,7 @@
   "stack-layout#summaryListMobile": {
     "children": [
       "product-summary-image#summaryListMobile",
-      "vtex.product-highlights@2.x:product-highlights#collection"
+      "vtex.product-highlights@2.x:product-highlights"
     ]
   },
 
@@ -162,7 +162,7 @@
     "props": {
       "preventVerticalStretch": true
     },
-    "children": ["product-list-price#summary", "product-selling-price#summary"]
+    "children": ["product-summary-price"]
   },
 
   "product-summary-name#summaryListMobile": {

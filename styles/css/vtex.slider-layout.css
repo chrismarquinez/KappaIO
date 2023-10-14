@@ -37,14 +37,23 @@
   padding-right: 0.5rem;
 }
 
-/* Slider categorias en departamentos */
+@media screen and (max-width: 768px) {
+  .sliderLayoutContainer--carousel .sliderArrows {
+    background: hsla(0, 0%, 100%, 0.6) !important;
+    width: 32px;
+    height: 40px;
+    padding: 5px;
+  }
 
-.slide--categoriesInDepartment :global(.vtex-store-link-0-x-link) {
-  font-size: .8rem;
-  letter-spacing: 0.2rem;
-  color: #0f0f0f;
-  text-transform: uppercase;
-  text-decoration: underline;
+  .caretIcon--carousel {
+    color: #000;
+  }
+
+  .sliderLeftArrow {
+    left: 1rem;
+  }
+
+  .sliderRightArrow  {
+    right: 1rem;
+  }
 }
-
-/* Slider categorias en departamentos */
