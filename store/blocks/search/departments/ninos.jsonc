@@ -15,7 +15,7 @@
         "orderByField": "OrderByReleaseDateDESC",
         "maxItemsPerPage": 10,
         "__unstableProductOriginVtex": true,
-        "queryField": "niños",
+        "queryField": "ninos",
         "mapField": "category-1"
       }
     },
