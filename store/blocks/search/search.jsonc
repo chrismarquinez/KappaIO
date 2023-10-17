@@ -3,6 +3,9 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "hideUnavailableItems": true,
+        "maxItemsPerPage": 10,
         "skusFilter": "ALL",
         "simulationBehavior": "skip"
       }
@@ -26,11 +29,11 @@
     "blocks": ["search-result-layout"],
     "props": {
       "context": {
-        "orderByField": "OrderByReleaseDateDESC",
-        "hideUnavailableItems": true,
-        "maxItemsPerPage": 10,
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "orderByField": "OrderByReleaseDateDESC",
+        "maxItemsPerPage": 48,
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -40,7 +43,10 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "orderByField": "OrderByReleaseDateDESC",
+        "maxItemsPerPage": 48,
+        "__unstableProductOriginVtex": true
       }
     }
   },
@@ -50,7 +56,10 @@
     "props": {
       "context": {
         "skusFilter": "ALL",
-        "simulationBehavior": "skip"
+        "simulationBehavior": "skip",
+        "orderByField": "OrderByReleaseDateDESC",
+        "maxItemsPerPage": 48,
+        "__unstableProductOriginVtex": true
       }
     }
   },
