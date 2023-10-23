@@ -145,7 +145,7 @@
 .nameContainer {
   justify-content: start;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .brandName {
@@ -154,12 +154,21 @@
   text-transform: capitalize;
   color: #0f0f0f;
   line-height: 18px;
-  min-height: 54px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+}
+
+.sellingPriceContainer .currencyContainer {
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.listPriceContainer .currencyContainer {
+  font-size: 0.9rem;
+  color: #0f0f0f;
 }
 
 .container {
