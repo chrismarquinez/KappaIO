@@ -1,5 +1,5 @@
 {
-  "vendor": "dynamo",
+  "vendor": "kappaco",
   "name": "kappacol-theme",
   "version": "5.1.13",
   "builders": {
@@ -67,15 +67,15 @@
     "vtex.sandbox": "0.x",
     "vtex.similar-products-variants": "0.x",
     "vtex.iframe": "0.x",
-    "dynamo.custom-header": "0.x",
-    "dynamo.custom-megamenu": "0.x",
-    "dynamo.forms": "0.x",
-    "dynamo.custom-menu-static": "0.x",
-    "dynamo.custom-landings": "0.x",
-    "dynamo.footer-components-custom": "0.x",
-    "dynamo.product-components-custom": "0.x",
-    "dynamo.send-free": "0.x",
-    "dynamo.landing-santa-fe": "0.x"
+    "kappaco.custom-header": "0.x",
+    "kappaco.custom-megamenu": "0.x",
+    "kappaco.forms": "0.x",
+    "kappaco.custom-menu-static": "0.x",
+    "kappaco.custom-landings": "0.x",
+    "kappaco.footer-components-custom": "0.x",
+    "kappaco.product-components-custom": "0.x",
+    "kappaco.send-free": "0.x",
+    "kappaco.landing-santa-fe": "0.x"
   },
   "peerDependencies": {
     "vtex.reviews-and-ratings": "3.x"
