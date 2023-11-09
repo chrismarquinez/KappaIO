@@ -96,6 +96,7 @@
       "product-separator",
       "similar-products-variants",
       "sku-selector",
+      "addi-infos",
       "size-guide-modal",
       "extra-product",
       "product-gifts",
@@ -105,6 +106,8 @@
       "availability-subscriber"
     ]
   },
+
+  "addi-infos": {},
 
   "flex-layout.row#product-name": {
     "props": {

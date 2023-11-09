@@ -93,17 +93,66 @@
       "showPaginationDots": "never"
     },
     "children": [
-      "link#foo",
-      "link#foo",
-      "link#foo",
-      "link#foo",
-      "link#foo",
-      "link#foo",
-      "link#foo"
+      "link#sub-categories",
+      "link#sub-categories1",
+      "link#sub-categories2",
+      "link#sub-categories3",
+      "link#sub-categories4",
+      "link#sub-categories5",
+      "link#sub-categories6"
     ]
   },
 
-  "link#foo": {
+  "link#sub-categories": {
+    "title": "Link a Sub categorias 1",
+    "props": {
+      "href": "/",
+      "label": "Accesorios"
+    }
+  },
+
+  "link#sub-categories1": {
+    "title": "Link a Sub categorias 2",
+    "props": {
+      "href": "/",
+      "label": "Accesorios"
+    }
+  },
+
+  "link#sub-categories2": {
+    "title": "Link a Sub categorias 3",
+    "props": {
+      "href": "/",
+      "label": "Accesorios"
+    }
+  },
+
+  "link#sub-categories3": {
+    "title": "Link a Sub categorias 4",
+    "props": {
+      "href": "/",
+      "label": "Accesorios"
+    }
+  },
+
+  "link#sub-categories4": {
+    "title": "Link a Sub categorias 5",
+    "props": {
+      "href": "/",
+      "label": "Accesorios"
+    }
+  },
+
+  "link#sub-categories5": {
+    "title": "Link a Sub categorias 6",
+    "props": {
+      "href": "/",
+      "label": "Accesorios"
+    }
+  },
+
+  "link#sub-categories6": {
+    "title": "Link a Sub categorias 7",
     "props": {
       "href": "/",
       "label": "Accesorios"

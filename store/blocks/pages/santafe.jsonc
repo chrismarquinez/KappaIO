@@ -47,8 +47,26 @@
     }
   },
 
+  "link#current-collection": {
+    "title": "Coleccion actual",
+    "props": {
+      "label": "VER COLECCIÓN 2023",
+      "href": "/",
+      "blockClass": ["btnCollectionCurrent"]
+    }
+  },
+
+  "link#previous-collection": {
+    "title": "Coleccion anterior",
+    "props": {
+      "label": "VER COLECCIONES ANTERIORES",
+      "href": "/",
+      "blockClass": ["btnCollectionPrevious"]
+    }
+  },
+
   "rich-text#title-uniforme-santafe": {
-    "title": "Tutlos uniforme",
+    "title": "Titulo uniforme",
     "props": {
       "text": "## UNIFORME SANTA FE",
       "textAlignment": "CENTER",
@@ -118,7 +136,6 @@
           ]
         }
       ]
-      // "SearchResult": "search-result-layout.customQuery#santafe"
     }
   },
 
