@@ -41,6 +41,9 @@
   color: #000;
 }
 
+.skuSelectorContainer {
+  margin-bottom: 1rem;
+}
 /* PDP */
 
 /* Shelf */
@@ -54,6 +57,19 @@
 }
 
 /* Shelf */
+
+/* Pages */
+
+.imageElement--cardImage {
+  display: block;
+  margin: auto;
+}
+
+.imageElement--cardImage:nth-child(n + 2) {
+  margin-top: 1rem;
+}
+
+/* Pages */
 
 /* Responsive */
 

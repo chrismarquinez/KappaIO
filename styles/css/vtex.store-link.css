@@ -13,3 +13,24 @@
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
+.buttonLink--btnRed {
+  background-color: #e20e18;
+  border-color: #e20e18;
+}
+
+.link--btnCollectionCurrent {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #e32013;
+  padding: 0.8rem 2rem;
+}
+
+.link--btnCollectionPrevious {
+  font-weight: 600;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #666666;
+  padding: 0.8rem 2rem;
+}

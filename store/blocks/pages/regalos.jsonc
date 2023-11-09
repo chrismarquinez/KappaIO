@@ -1,0 +1,230 @@
+{
+  "store.custom#regalos": {
+    "children": [
+      "flex-layout.row#slider-gifts",
+      "rich-text#main-title-gifts",
+      "rich-text#main-paragraph-gifts",
+      "flex-layout.row#buy-button-cards",
+      "rich-text#second-title-gifts",
+      "flex-layout.row#collection-cards",
+      "flex-layout.row#final-paragraph-gifts"
+    ]
+  },
+
+  "flex-layout.row#slider-gifts": {
+    "title": "Contenedor banner principal",
+    "children": ["list-context.image-list#slider-home"],
+    "props": {
+      "fullWidth": true,
+      "preventVerticalStretch": true,
+      "blockClass": ["mainBanner"]
+    }
+  },
+
+  "rich-text#main-title-gifts": {
+    "title": "Titulo principal",
+    "props": {
+      "text": "# ¡En Kappa encuentra el mejor regalo para papá!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["margintitlex1"]
+    }
+  },
+
+  "rich-text#main-paragraph-gifts": {
+    "title": "Parrafo principal",
+    "props": {
+      "text": "Aquí encontrarás el regalo perfecto para que festejar el día del padre sea al mejor estilo. Compra en Kappa y obsequia lo mejor a papá",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": ["marginparagraphx1"]
+    }
+  },
+
+  "flex-layout.row#buy-button-cards": {
+    "title": "Contenedor de tarjetas con boton de comprar",
+    "children": [
+      "flex-layout.col#buy-button-cards-1",
+      "flex-layout.col#buy-button-cards-2",
+      "flex-layout.col#buy-button-cards-3",
+      "flex-layout.col#buy-button-cards-4"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "rowGap": {
+        "mobile": 5
+      },
+      "marginTop": {
+        "desktop": 5
+      },
+      "marginBottom": {
+        "desktop": 5
+      },
+      "paddingBottom": 0
+    }
+  },
+
+  "flex-layout.col#buy-button-cards-1": {
+    "children": [
+      "image#cards-header",
+      "rich-text#title-card",
+      "link#buy-button"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#buy-button-cards-2": {
+    "children": [
+      "image#cards-header",
+      "rich-text#title-card",
+      "link#buy-button"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#buy-button-cards-3": {
+    "children": [
+      "image#cards-header",
+      "rich-text#title-card",
+      "link#buy-button"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#buy-button-cards-4": {
+    "children": [
+      "image#cards-header",
+      "rich-text#title-card",
+      "link#buy-button"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+
+  "image#cards-header": {
+    "title": "Imagen de tarjeta",
+    "props": {
+      "src": "assets/img/regalos/regalos-padre-colombia-web.webp",
+      "maxWidth": "90%",
+      "blockClass": ["cardImage"]
+    }
+  },
+
+  "rich-text#title-card": {
+    "title": "Titulo de tarjeta",
+    "props": {
+      "text": "**REGALOS DE \n TENDENCIA**",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": ["titleCardBuyBtn"]
+    }
+  },
+
+  "link#buy-button": {
+    "title": "Boton comprar tarjeta",
+    "props": {
+      "displayMode": "button",
+      "label": "COMPRAR AHORA",
+      "buttonProps": { "size": "large" },
+      "href": "/hombre",
+      "blockClass": ["btnRed"]
+    }
+  },
+
+  "rich-text#second-title-gifts": {
+    "title": "Titulo secundario",
+    "props": {
+      "text": "## ENCUENTRA REGALOS AL MEJOR PRECIO",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": ["margintitlex1"]
+    }
+  },
+
+  "flex-layout.row#collection-cards": {
+    "title": "Contenedor de imagenes por coleccion",
+    "children": [
+      "flex-layout.col#collection-cards",
+      "flex-layout.col#collection-cards-1",
+      "flex-layout.col#collection-cards-2"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "colGap": {
+        "desktop": 3
+      },
+      "marginTop": {
+        "desktop": 5
+      }
+    }
+  },
+
+  "flex-layout.col#collection-cards": {
+    "children": ["image#collection-cards"],
+    "props": {
+      "marginLeft": {
+        "mobile": 5
+      },
+      "marginRight": {
+        "mobile": 5
+      }
+    }
+  },
+
+  "flex-layout.col#collection-cards-1": {
+    "children": ["image#collection-cards"],
+    "props": {
+      "marginLeft": {
+        "mobile": 5
+      },
+      "marginRight": {
+        "mobile": 5
+      }
+    }
+  },
+
+  "flex-layout.col#collection-cards-2": {
+    "children": ["image#collection-cards"],
+    "props": {
+      "marginLeft": {
+        "mobile": 5
+      },
+      "marginRight": {
+        "mobile": 5
+      }
+    }
+  },
+
+  "image#collection-cards": {
+    "title": "Imagen colecciones",
+    "props": {
+      "maxHeight": 577,
+      "sizes": "768",
+      "src": "assets/img/regalos/regalos-hasta-100-desktop.webp",
+      "srcset": "assets/img/regalos/regalos-hasta-100-mobile.webp",
+      "link": { "url": "/" }
+    }
+  },
+
+  "flex-layout.row#final-paragraph-gifts": {
+    "title": "Contenedor parrafo final",
+    "children": ["rich-text#final-paragraph-gifts"]
+  },
+
+  "rich-text#final-paragraph-gifts": {
+    "title": "Parrafo final",
+    "props": {
+      "text": "El **día del padre** es una ocasión especial para mostrarle a ese ser querido cuánto lo aprecias. Y qué mejor manera de hacerlo que con los regalos exclusivos de Kappa. Nuestra selección cuidadosamente curada te ofrece una variedad de opciones para encontrar el obsequio perfecto que se ajuste al estilo y los gustos de papá. \n\n En Kappa, nos enorgullece brindar productos de calidad que reflejan el estilo y la elegancia. Celebra el día del padre con nosotros y encuentra los regalos perfectos que harán sonreír a papá. No pierdas la oportunidad de sorprenderlo y demostrarle cuánto te importa. ¡Haz de este día del padre un momento inolvidable con nuestra Guía de **regalos para papá** de Kappa!",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": ["finalParagraphGifts", "marginparagraphx1"]
+    }
+  }
+}

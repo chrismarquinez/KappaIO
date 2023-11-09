@@ -254,94 +254,94 @@
         "styles": {
           "heading-1": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
-            "fontWeight": "700",
-            "fontSize": "3rem",
+            "fontWeight": "600",
+            "fontSize": "2rem",
             "textTransform": "initial",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "heading-2": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "700",
-            "fontSize": "2.25rem",
+            "fontSize": "2rem",
             "textTransform": "initial",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "heading-3": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "700",
             "fontSize": "1.75rem",
             "textTransform": "initial",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "heading-4": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "1.5rem",
             "textTransform": "initial",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "heading-5": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "1.25rem",
             "textTransform": "initial",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "heading-6": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "1.25rem",
             "textTransform": "initial",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "body": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "1rem",
             "textTransform": "initial",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "small": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "0.875rem",
             "textTransform": "initial",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "mini": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "normal",
             "fontSize": "0.75rem",
             "textTransform": "initial",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "action": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "500",
             "fontSize": "1rem",
             "textTransform": "uppercase",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "action--small": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "500",
             "fontSize": "0.875rem",
             "textTransform": "uppercase",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "action--large": {
             "fontFamily": "Montserrat-Regular, arial, sans-serif",
             "fontWeight": "500",
             "fontSize": "1.25rem",
             "textTransform": "uppercase",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "code": {
             "fontFamily": "Consolas, monaco, monospace",
             "fontWeight": "normal",
             "fontSize": "1rem",
             "textTransform": "initial",
-            "letterSpacing": "0"
+            "letterSpacing": "0.1rem"
           },
           "vtex-toast-container": {
             "backgroundColor": "#f2f4f5 !important"

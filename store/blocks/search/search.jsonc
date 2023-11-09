@@ -88,6 +88,7 @@
   "search-result-layout.desktop#teams": {
     "children": [
       "filters",
+      "flex-layout.row#btn-collection-teams",
       "flex-layout.row#searchbread",
       "flex-layout.row#custom",
       "flex-layout.row#result"
@@ -97,6 +98,34 @@
       "preventRouteChange": true,
       "defaultGalleryLayout": "grid"
     }
+  },
+
+  "flex-layout.row#btn-collection-teams": {
+    "title": "Contenedor botones de colecciones",
+    "children": [
+      "flex-layout.col#btn-collection-teams-current",
+      "flex-layout.col#btn-collection-teams-previus"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "colJustify": "around",
+      "blockClass": "btnCollectionTeams",
+      "marginTop": {
+        "desktop": 9
+      },
+      "marginBottom":{
+        "desktop": 5
+      }
+    }
+  },
+
+  "flex-layout.col#btn-collection-teams-current": {
+    "children": ["link#current-collection"]
+  },
+
+  "flex-layout.col#btn-collection-teams-previus": {
+    "children": ["link#previous-collection"]
   },
 
   "flex-layout.row#searchbread": {

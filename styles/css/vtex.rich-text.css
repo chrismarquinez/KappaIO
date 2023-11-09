@@ -118,6 +118,27 @@
   color: #ff0000;
 }
 
+.paragraph--finalParagraphGifts {
+  font-size: 21px;
+  letter-spacing: 0.1rem;
+}
+
+.strong--finalParagraphGifts {
+  font-size: 11.9px;
+}
+
+.paragraph--marginparagraphx1,
+.heading--margintitlex1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.paragraph--marginparagraphy0,
+.heading--margintitley0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Pages */
 
 /* Responsive */
@@ -152,6 +173,10 @@
 
   .wrapper--whoWearText {
     margin: 1rem 0;
+  }
+
+  .paragraph--titleCardBuyBtn {
+    margin: 0;
   }
 }
 

@@ -34,5 +34,8 @@
   },
   "store.custom#genre-template-ninos": {
     "path": "/ninos"
+  },
+  "store.custom#regalos": {
+    "path": "/regalos"
   }
 }

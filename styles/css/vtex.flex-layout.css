@@ -299,6 +299,10 @@
   align-items: center;
 }
 
+.flexRowContent--btnCollectionTeams {
+  gap: 6rem;
+}
+
 /* Pages */
 
 /* Mincart */
