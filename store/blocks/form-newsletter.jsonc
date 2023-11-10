@@ -2,7 +2,8 @@
   "flex-layout.row#newsletter": {
     "children": ["flex-layout.col#image_newsletter", "flex-layout.col#form"],
     "props": {
-      "blockClass": "container-form"
+      "blockClass": "container-form",
+      "preventVerticalStretch": true
     }
   },
   "flex-layout.col#form": {
@@ -18,11 +19,13 @@
       "width": "48%"
     }
   },
+
   "list-context.image-list#welcome": {
+    "title": "Imagen PopUp bienvenida",
     "children": ["slider-layout#welcome-images"],
     "props": {
       "preload": true,
-      "height": 1000,
+      "height": 690,
       "width": "100%",
       "images": [
         {

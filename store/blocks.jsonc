@@ -48,8 +48,9 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "**PAGE NOT FOUND**",
-      "font": "t-heading-1"
+      "text": "**NO SE ENCONTRARON RESULTADOS**",
+      "font": "t-heading-1",
+      "blockClass":["textNotFound"]
     }
   }
 }

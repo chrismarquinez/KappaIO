@@ -14,7 +14,7 @@
       "fullWidth": false,
       "preventVerticalStretch": true
     },
-    "children": ["flex-layout.col#prodsum", "flex-layout.col#sku-selector"]
+    "children": ["flex-layout.col#prodsum" /*, "flex-layout.col#sku-selector"*/]
   },
 
   "product-summary-price": {
