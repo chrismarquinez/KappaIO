@@ -186,7 +186,8 @@
 
   "add-to-cart-button": {
     "props": {
-      "text": "COMPRAR"
+      "text": "COMPRAR",
+      "onClickBehavior": "go-to-product-page"
     }
   },
 
