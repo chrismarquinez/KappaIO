@@ -95,7 +95,6 @@
       "flex-layout.row#selling-list-price",
       "product-separator",
       "similar-products-variants",
-      "highlight-custom",
       "vtex.product-highlights:product-highlights#pdp",
       "sku-selector",
       "addi-infos",
