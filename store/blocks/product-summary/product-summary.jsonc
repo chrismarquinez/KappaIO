@@ -41,7 +41,10 @@
   },
 
   "stack-layout#prodsum": {
-    "children": ["product-summary-image"]
+    "children": [
+      "product-summary-image",
+      "vtex.product-highlights:product-highlights"
+    ]
   },
 
   "product-summary-image": {
@@ -53,6 +56,28 @@
         "criteria": "index",
         "index": 2
       }
+    }
+  },
+
+  "vtex.product-highlights:product-highlights": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Slim fit"]
+      }
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
     }
   },
 
