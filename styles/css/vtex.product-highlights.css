@@ -1,8 +1,18 @@
 .productHighlightWrapper--collection {
-  position: absolute;
-  top: 10px;
-  left: 11rem;
-  width: 200px;
+  position: initial !important;
+  width: fit-content !important;
+}
+
+[data-highlight-name="Guayos"] {
+  display: block !important;
+  width: 260px;
+  height: 24px;
+  margin: 1rem auto;
+  font-size: 0;
+  background-image: url("assets/img/highlights/flag-talla-guayos.png");
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .productHighlightText {
@@ -10,10 +20,4 @@
   color: white;
   border-radius: 20px;
   padding: 5px 10px;
-}
-
-@media screen and (max-width: 768px) {
-  .productHighlightWrapper--collection {
-    left: 10rem;
-  }  
 }

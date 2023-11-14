@@ -48,15 +48,15 @@
     },
     "children": [
       "flex-layout.row#product-image",
-      "product-bookmark",
+      // "product-bookmark",
+      // "vtex.product-highlights:product-highlights",
       "product-specification-badges"
     ]
   },
 
   "product-specification-badges": {
     "props": {
-      "specificationGroupName": "Group",
-      "specificationName": "On Sale",
+      "specificationGroupName": "allSpecifications",
       "visibleWhen": "True",
       "displayValue": "SPECIFICATION_NAME"
     }
@@ -95,6 +95,8 @@
       "flex-layout.row#selling-list-price",
       "product-separator",
       "similar-products-variants",
+      "highlight-custom",
+      "vtex.product-highlights:product-highlights#pdp",
       "sku-selector",
       "addi-infos",
       "size-guide-modal",
@@ -235,6 +237,28 @@
           "finalDescription": "Te gustaria 2"
         }
       ]
+    }
+  },
+
+  "vtex.product-highlights:product-highlights#pdp": {
+    "props": {
+      "type": "collection",
+      "filter": {
+        "type": "show",
+        "highlightNames": ["Guayos"]
+      }
+    },
+    "children": ["product-highlight-wrapper#pdp"]
+  },
+  "product-highlight-wrapper#pdp": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": ["product-highlight-text#pdp"]
+  },
+  "product-highlight-text#pdp": {
+    "props": {
+      "message": "{highlightName}"
     }
   }
 }
