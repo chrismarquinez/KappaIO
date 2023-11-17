@@ -64,7 +64,7 @@
       "type": "collection",
       "filter": {
         "type": "show",
-        "highlightNames": ["Slim fit"]
+        "highlightNames": ["Slim Fit", "Regular fit"]
       }
     },
     "children": ["product-highlight-wrapper"]

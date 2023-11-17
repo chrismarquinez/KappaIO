@@ -15,6 +15,38 @@
   background-size: contain;
 }
 
+[data-highlight-name="Slim Fit"] {
+  display: block !important;
+  width: 30px;
+  height: 98px;
+  font-size: 0;
+  background-image: url("assets/img/highlights/flag-slim-fit.png");
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -15% 0 0 -25%;
+  border-radius: 0 !important;
+}
+
+[data-highlight-name="Regular fit"] {
+  display: block !important;
+  width: 30px;
+  height: 98px;
+  font-size: 0;
+  background-image: url("assets/img/highlights/flag-regular-fit.png");
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -15% 0 0 -25%;
+  border-radius: 0 !important;
+}
+
 .productHighlightText {
   background-color: #000;
   color: white;

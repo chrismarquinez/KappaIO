@@ -1,0 +1,54 @@
+{
+  "store.custom#sale": {
+    "children": [
+      "flex-layout.row#min-title",
+      "search-result-layout.customQuery#sale"
+    ]
+  },
+
+  "flex-layout.row#min-title": {
+    "children": ["rich-text#main-title-sale", "rich-text#main-paragraph-sale"],
+    "props": {
+      "blockClass": "titleSaleContainer",
+      "fullWidth": true,
+      "marginBottom": { "desktop": 9 }
+    }
+  },
+
+  "rich-text#main-title-sale": {
+    "title": "Titulo principal",
+    "props": {
+      "text": "# Los mejores descuentos Kappa",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["margintitlex1"]
+    }
+  },
+
+  "rich-text#main-paragraph-sale": {
+    "title": "Parrafo principal",
+    "props": {
+      "text": "Descubre descuentos en textil, calzado y accesorios, Aprovecha hasta el 50% OFF en tus prendas favoritas y luce el mejor #SportStyle",
+      "textPosition": "CENTER",
+      "textAlignment": "CENTER",
+      "blockClass": ["marginparagraphx1"]
+    }
+  },
+
+  "search-result-layout.customQuery#sale": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "maxItemsPerPage": 10,
+        "__unstableProductOriginVtex": true,
+        "queryField": "hombre",
+        "mapField": "category-1"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#sale",
+      "search-result-layout.mobile#sale",
+      "search-not-found-layout#custom"
+    ]
+  }
+}

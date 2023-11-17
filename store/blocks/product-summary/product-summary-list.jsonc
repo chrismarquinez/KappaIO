@@ -60,8 +60,8 @@
       "blockClass":["summaryLef"]
     },
     "children": [
-      "product-summary-name#summaryListDesktop",
-      "product-summary-sku-selector#shelf"
+      "product-summary-name#summaryListDesktop"
+      // "product-summary-sku-selector#shelf"
     ]
   },
 

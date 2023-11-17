@@ -37,5 +37,8 @@
   },
   "store.custom#regalos": {
     "path": "/regalos"
+  },
+  "store.custom#sale": {
+    "path": "/sale"
   }
 }
