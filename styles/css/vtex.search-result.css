@@ -116,7 +116,8 @@
 }
 
 .container--layout--department,
-.container--layout--departmentTeams {
+.container--layout--departmentTeams,
+.container--layout--searchResultSale  {
   margin-top: 0;
 }
 

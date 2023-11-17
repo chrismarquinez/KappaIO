@@ -2,11 +2,12 @@
   "search-not-found-layout#custom": {
     "title": "Search Not Found",
     "children": [
-      "rich-text#title-not-found",
-      "rich-text#paragraph-not-found",
-      "flex-layout.row#not-found-categories",
-      "rich-text#title-not-found-slider",
-      "flex-layout.row#recommnended-404"
+      "not-found",
+      "rich-text#title-not-found"
+      // "rich-text#paragraph-not-found",
+      // "flex-layout.row#not-found-categories",
+      // "rich-text#title-not-found-slider",
+      // "flex-layout.row#recommnended-404"
     ]
   },
 

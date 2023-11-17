@@ -85,6 +85,18 @@
     }
   },
 
+  "search-result-layout.desktop#sale": {
+    "children": [
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "infinity",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid",
+      "blockClass": "searchResultSale"
+    }
+  },
+
   "search-result-layout.desktop#teams": {
     "children": [
       "filters",
@@ -264,6 +276,26 @@
   },
 
   "search-result-layout.mobile#teams": {
+    "children": [
+      "filters",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "search-result-layout.mobile#sale": {
     "children": [
       "filters",
       "flex-layout.row#searchinfomobile",

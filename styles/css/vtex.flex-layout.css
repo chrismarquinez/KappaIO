@@ -1,7 +1,8 @@
 /* Home */
 
 .flexRow--mainBanner,
-.flexRow--breadcrumb {
+.flexRow--breadcrumb,
+.flexRow--titleSaleContainer {
   margin-top: 160px;
 }
 
@@ -302,6 +303,12 @@
   gap: 6rem;
 }
 
+.flexRowContent--titleSaleContainer {
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
 /* Pages */
 
 /* Mincart */
@@ -342,7 +349,8 @@
 }
 
 @media screen and (max-width: 1025px) {
-  .flexRow--mainBanner {
+  .flexRow--mainBanner,
+  .flexRow--titleSaleContainer {
     margin-top: 144px;
   }
 }
