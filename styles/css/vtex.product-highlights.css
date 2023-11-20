@@ -15,6 +15,18 @@
   background-size: contain;
 }
 
+[data-highlight-name="Zapatos"] {
+  display: block !important;
+  width: 260px;
+  height: 24px;
+  margin: 1rem auto;
+  font-size: 0;
+  background-image: url("assets/img/highlights/flag-talla-zapatos.png");
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
 [data-highlight-name="Slim Fit"] {
   display: block !important;
   width: 30px;

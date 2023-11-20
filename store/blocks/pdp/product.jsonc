@@ -158,7 +158,7 @@
       "width": "85%",
       "blockClass": ["atcContainer"]
     },
-    "children": ["add-to-cart-button"]
+    "children": ["add-to-cart-button#pdp"]
   },
 
   "flex-layout.row#product-availability": {
@@ -244,20 +244,29 @@
       "type": "collection",
       "filter": {
         "type": "show",
-        "highlightNames": ["Guayos"]
+        "highlightNames": ["Guayos", "Zapatos"]
       }
     },
     "children": ["product-highlight-wrapper#pdp"]
   },
+
   "product-highlight-wrapper#pdp": {
     "props": {
       "blockClass": "collection"
     },
     "children": ["product-highlight-text#pdp"]
   },
+
   "product-highlight-text#pdp": {
     "props": {
       "message": "{highlightName}"
+    }
+  },
+
+  "add-to-cart-button#pdp": {
+    "title": "Boton comprar",
+    "props": {
+      "text": "COMPRAR"
     }
   }
 }
