@@ -143,6 +143,22 @@
   margin-bottom: 0;
 }
 
+.paragraph--margintitley2,
+.heading--margintitley2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.paragraph--textInitial,
+.paragraph--textFinal {
+  font-size: 15px;
+}
+
+.heading--textInitial {
+  font-size: 26px;
+  text-transform: uppercase;
+}
+
 /* Pages */
 
 /* Responsive */
