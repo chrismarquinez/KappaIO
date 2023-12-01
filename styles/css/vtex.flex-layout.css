@@ -309,6 +309,29 @@
   margin-bottom: 1rem;
 }
 
+.flexRowContent--mainBannerCali {
+  padding: 4rem 0;
+  gap: 5rem;
+}
+
+.flexRow--mainBannerCali,
+.flexRow--dropdownCali {
+  background-color: #009540;
+}
+
+.flexRow--dropdownCali {
+  padding: 2rem 1rem;
+}
+
+.flexRow--rowLogos {
+  border-bottom: 1px solid white;
+}
+
+.flexRowContent--containerMainTextCali {
+  flex-direction: column;
+  align-items: center;
+}
+
 /* Pages */
 
 /* Mincart */
@@ -469,6 +492,23 @@
     min-height: 200px;
     background-position: center 120px;
     background-size: contain;
+  }
+
+  .flexRow--dropdownCali {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .flexRowContent--dropdownCali .flexCol {
+    align-items: flex-start;
+  }
+
+  .flexRowContent--dropdownCali .flexCol {
+    align-items: flex-start;
+  }
+
+  .flexRowContent--dropdownCali .flexCol .flexColChild {
+    width: 100%;
   }
 }
 

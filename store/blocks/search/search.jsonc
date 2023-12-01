@@ -112,6 +112,20 @@
     }
   },
 
+  "search-result-layout.desktop#teams2": {
+    "children": [
+      "filters-depor-cali",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#custom",
+      "flex-layout.row#result"
+    ],
+    "props": {
+      "pagination": "infinity",
+      "preventRouteChange": true,
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
   "flex-layout.row#btn-collection-teams": {
     "title": "Contenedor botones de colecciones",
     "children": [
@@ -278,6 +292,26 @@
   "search-result-layout.mobile#teams": {
     "children": [
       "filters",
+      "flex-layout.row#searchinfomobile",
+      "flex-layout.row#searchbread",
+      "flex-layout.row#productCountMobile",
+      "flex-layout.row#fetchprevious",
+      "flex-layout.row#contentmobile",
+      "flex-layout.row#fetchmore"
+    ],
+    "props": {
+      "pagination": "show-more",
+      "mobileLayout": {
+        "mode1": "small",
+        "mode2": "normal"
+      },
+      "defaultGalleryLayout": "grid"
+    }
+  },
+
+  "search-result-layout.mobile#teams2": {
+    "children": [
+      "filters-depor-cali",
       "flex-layout.row#searchinfomobile",
       "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",

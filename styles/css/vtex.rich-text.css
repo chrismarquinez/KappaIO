@@ -159,6 +159,10 @@
   text-transform: uppercase;
 }
 
+.wrapper--white {
+  color: white;
+}
+
 /* Pages */
 
 /* Responsive */
@@ -197,6 +201,19 @@
 
   .paragraph--titleCardBuyBtn {
     margin: 0;
+  }
+
+  .heading--textDeporCali {
+    margin-bottom: 0;
+  }
+
+  .heading--textDeporCali {
+    font-size: 22px;
+  }
+
+  .paragraph--textDeporCali {
+    font-size: 12px;
+    padding: 0 0.5rem 0.5rem;
   }
 }
 

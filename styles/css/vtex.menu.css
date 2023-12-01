@@ -23,7 +23,10 @@
   display: block;
 }
 
-:global(.vtex-store-footer-2-x-footerLayout) .accordionIcon--isClosed {
+:global(.vtex-store-footer-2-x-footerLayout) .accordionIcon--isClosed,
+:global(.vtex-menu-2-x-styledLinkContent--dropdownTitle) .accordionIcon--isOpen,
+:global(.vtex-menu-2-x-styledLinkContent--dropdownTitle)
+  .accordionIcon--isClosed {
   font-size: 0;
 }
 
@@ -42,11 +45,34 @@
   transition: transform 0.5s ease;
 }
 
+:global(.vtex-menu-2-x-styledLinkContent--dropdownTitle)
+  .accordionIcon--isClosed::before,
+:global(.vtex-menu-2-x-styledLinkContent--dropdownTitle)
+  .accordionIcon--isOpen::before {
+  display: block;
+  content: "";
+  width: 23px;
+  height: 23px;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8cG9seWdvbiBwb2ludHM9IjEyIDE3LjQxNCAzLjI5MyA4LjcwNyA0LjcwNyA3LjI5MyAxMiAxNC41ODYgMTkuMjkzIDcuMjkzIDIwLjcwNyA4LjcwNyAxMiAxNy40MTQiIGZpbGw9IiNmZmZmZmYiLz4KPC9zdmc+Cg==");
+  background-size: cover;
+  transition: transform 0.5s ease;
+}
+
 :global(.vtex-store-footer-2-x-footerLayout) .accordionIcon--isOpen::before {
   transform: rotate(0);
 }
 
 :global(.vtex-store-footer-2-x-footerLayout) .accordionIcon--isOpen::before {
+  transform: rotate(180deg);
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--dropdownTitle)
+  .accordionIcon--isOpen::before {
+  transform: rotate(0);
+}
+
+:global(.vtex-menu-2-x-styledLinkContent--dropdownTitle)
+  .accordionIcon--isOpen::before {
   transform: rotate(180deg);
 }
 
@@ -66,6 +92,26 @@
 
 /* Footer */
 
+/* Pages */
+
+.styledLink--dropdownTitle {
+  color: white;
+  font-weight: 600;
+}
+
+.styledLinkContainer--dropdownTitle {
+  max-width: 500px;
+}
+
+.styledLinkContent--dropdownTitle {
+  padding: 1rem 2rem;
+  white-space: wrap;
+  padding-left: 0;
+  min-width: 500px;
+}
+
+/* Pages */
+
 /* Responsive */
 
 /* Footer */
@@ -75,6 +121,11 @@
     .menuContainer--footer-item
     .styledLinkContent {
     text-align: center;
+  }
+
+  .styledLinkContent--dropdownTitle {
+    min-width: auto;
+    padding-right: 0;
   }
 }
 

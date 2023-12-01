@@ -1,0 +1,407 @@
+{
+  "store.custom#deportivo-cali": {
+    "children": [
+      "flex-layout.row#main-cali",
+      "search-result-layout.customQuery#deportivo-cali",
+      "flex-layout.row#dropdown-cali"
+    ],
+    "props": {
+      "blockClass": "departmentTeams"
+    }
+  },
+
+  "flex-layout.row#main-cali": {
+    "title": "Contenedor Banners | Logos | Textos",
+    "children": [
+      "flex-layout.col#main-cali-left",
+      "flex-layout.col#main-cali-right"
+    ],
+    "props": {
+      "blockClass": ["mainBanner", "mainBannerCali"]
+    }
+  },
+
+  "flex-layout.col#main-cali-left": {
+    "children": ["flex-layout.row#logos", "flex-layout.row#title-cali"]
+  },
+
+  "flex-layout.col#main-cali-right": {
+    "children": ["list-context.image-list#main"],
+    "props": {
+      "verticalAlign": "middle"
+    }
+  },
+
+  "flex-layout.row#logos": {
+    "children": ["flex-layout.col#logo-left", "flex-layout.col#logo-right"],
+    "props": {
+      "blockClass": "rowLogos",
+      "horizontalAlign": "center",
+      "colJustify": "center",
+      "preserveLayoutOnMobile": true
+    }
+  },
+
+  "flex-layout.col#logo-left": {
+    "children": ["image#logo-left"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#logo-right": {
+    "children": ["image#logo-right"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.row#title-cali": {
+    "children": [
+      "flex-layout.col#title-cali",
+      "flex-layout.col#paragraph-cali"
+    ],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "containerMainTextCali"
+    }
+  },
+
+  "flex-layout.col#title-cali": {
+    "children": ["rich-text#main-title-cali"]
+  },
+
+  "flex-layout.col#paragraph-cali": {
+    "children": ["rich-text#paragraph-cali"]
+  },
+
+  "rich-text#main-title-cali": {
+    "title": "Titulo principal",
+    "props": {
+      "text": "# ¡Vamos, verdiblanco!",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["white", "textDeporCali"]
+    }
+  },
+
+  "rich-text#paragraph-cali": {
+    "title": "Parrafo principal",
+    "props": {
+      "text": "Descubre la nueva indumentaria del equipo y renueva tu armadura para acompañar incondicionalmente al Deportivo Cali. Siéntete parte del equipo y ayúdanos a seguir escribiendo esta historia.",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["white", "textDeporCali"]
+    }
+  },
+
+  "image#logo-left": {
+    "title": "Logo izquierdo",
+    "props": {
+      "src": "assets/img/deportivo-cali/logos/logoKappa.png"
+    }
+  },
+
+  "image#logo-right": {
+    "title": "Logo derecho",
+    "props": {
+      "src": "assets/img/deportivo-cali/logos/logoCali.png"
+    }
+  },
+
+  "list-context.image-list#main": {
+    "title": "Banners",
+    "children": ["slider-layout#main-images"],
+    "props": {
+      "height": 396,
+      "preload": true,
+      "images": [
+        {
+          "image": "assets/img/deportivo-cali/slider/carrusel 1.png",
+          "mobileImage": "assets/img/deportivo-cali/slider/carrusel 1.png"
+        },
+        {
+          "image": "assets/img/deportivo-cali/slider/carrusel 2.png",
+          "mobileImage": "assets/img/deportivo-cali/slider/carrusel 2.png"
+        },
+        {
+          "image": "assets/img/deportivo-cali/slider/carrusel 3.png",
+          "mobileImage": "assets/img/deportivo-cali/slider/carrusel 3.png"
+        },
+        {
+          "image": "assets/img/deportivo-cali/slider/carrusel 4.png",
+          "mobileImage": "assets/img/deportivo-cali/slider/carrusel 4.png"
+        }
+      ]
+    }
+  },
+
+  "slider-layout#main-images": {
+    "title": "Configuracion banners",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": { "stopOnHover": true, "timeout": 5000 },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "carouselCali"
+    }
+  },
+
+  "search-result-layout.customQuery#deportivo-cali": {
+    "props": {
+      "querySchema": {
+        "orderByField": "OrderByReleaseDateDESC",
+        "maxItemsPerPage": 10,
+        "__unstableProductOriginVtex": true,
+        "queryField": "Fútbol Club Cali",
+        "mapField": "category-1"
+      }
+    },
+    "blocks": [
+      "search-result-layout.desktop#teams2",
+      "search-result-layout.mobile#teams2",
+      "search-not-found-layout#custom"
+    ]
+  },
+
+  "filters-depor-cali": {
+    "props": {
+      "filters": [
+        {
+          "title": "Competencia",
+          "imageDesktop": "assets/img/deportivo-cali/filters/competencia.png"
+        },
+        {
+          "title": "Presentación",
+          "imageDesktop": "assets/img/deportivo-cali/filters/presentacion.png"
+        },
+        {
+          "title": "Entrenamiento",
+          "imageDesktop": "assets/img/deportivo-cali/filters/entrenamiento.png"
+        }
+      ]
+    }
+  },
+
+  "flex-layout.row#dropdown-cali": {
+    "title": "Contenedor desplegables",
+    "children": [
+      "flex-layout.col#dropdown-cali-left",
+      "flex-layout.col#dropdown-cali-right"
+    ],
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "dropdownCali"
+    }
+  },
+
+  "flex-layout.col#dropdown-cali-left": {
+    "children": ["vtex.menu@2.x:menu#menu-cali-left"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+
+  "flex-layout.col#dropdown-cali-right": {
+    "children": ["vtex.menu@2.x:menu#menu-cali-right"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+
+  "vtex.menu@2.x:menu#menu-cali-left": {
+    "title": "Desplegables izquierdos",
+    "children": [
+      "menu-item#menu-cali-1",
+      "menu-item#menu-cali-2",
+      "menu-item#menu-cali-3"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "vtex.menu@2.x:menu#menu-cali-right": {
+    "title": "Desplegables derechos",
+    "children": [
+      "menu-item#menu-cali-4",
+      "menu-item#menu-cali-5",
+      "menu-item#menu-cali-6"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+
+  "menu-item#menu-cali-1": {
+    "props": {
+      "id": "menu-item-firts-accordion",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["dropdownTitle"],
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "VISTE LA NUEVA INDUMENTARIA DEL DEPORTIVO CALI",
+        "text": "VISTE LA NUEVA INDUMENTARIA DEL DEPORTIVO CALI"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#menu-cali-1"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#menu-cali-1": {
+    "children": ["rich-text#menu-cali-1"]
+  },
+
+  "rich-text#menu-cali-1": {
+    "props": {
+      "text": "Contenido",
+      "blockClass": ["white"]
+    }
+  },
+
+  "menu-item#menu-cali-2": {
+    "props": {
+      "id": "menu-item-firts-accordion",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["dropdownTitle"],
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "DESCUBRE",
+        "text": "DESCUBRE"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#menu-cali-2"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#menu-cali-2": {
+    "children": ["rich-text#menu-cali-2"]
+  },
+
+  "rich-text#menu-cali-2": {
+    "props": {
+      "text": "Contenido",
+      "blockClass": ["white"]
+    }
+  },
+
+  "menu-item#menu-cali-3": {
+    "props": {
+      "id": "menu-item-firts-accordion",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["dropdownTitle"],
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "DESCUBRE",
+        "text": "DESCUBRE"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#menu-cali-3"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#menu-cali-3": {
+    "children": ["rich-text#menu-cali-3"]
+  },
+
+  "rich-text#menu-cali-3": {
+    "props": {
+      "text": "Contenido",
+      "blockClass": ["white"]
+    }
+  },
+
+  "menu-item#menu-cali-4": {
+    "props": {
+      "id": "menu-item-firts-accordion",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["dropdownTitle"],
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "PRESENTACIÓN",
+        "text": "PRESENTACIÓN"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#menu-cali-4"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#menu-cali-4": {
+    "children": ["rich-text#menu-cali-4"]
+  },
+
+  "rich-text#menu-cali-4": {
+    "props": {
+      "text": "Contenido",
+      "blockClass": ["white"]
+    }
+  },
+
+  "menu-item#menu-cali-5": {
+    "props": {
+      "id": "menu-item-firts-accordion",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["dropdownTitle"],
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "DESCUBRE",
+        "text": "DESCUBRE"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#menu-cali-5"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#menu-cali-5": {
+    "children": ["rich-text#menu-cali-5"]
+  },
+
+  "rich-text#menu-cali-5": {
+    "props": {
+      "text": "Contenido",
+      "blockClass": ["white"]
+    }
+  },
+
+  "menu-item#menu-cali-6": {
+    "props": {
+      "id": "menu-item-firts-accordion",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": ["dropdownTitle"],
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "DESCUBRE",
+        "text": "DESCUBRE"
+      }
+    },
+    "blocks": ["vtex.menu@2.x:submenu.accordion#menu-cali-6"]
+  },
+
+  "vtex.menu@2.x:submenu.accordion#menu-cali-6": {
+    "children": ["rich-text#menu-cali-6"]
+  },
+
+  "rich-text#menu-cali-6": {
+    "props": {
+      "text": "Contenido",
+      "blockClass": ["white"]
+    }
+  }
+}
