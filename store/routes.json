@@ -40,5 +40,8 @@
   },
   "store.custom#sale": {
     "path": "/sale"
+  },
+  "store.custom#deportivo-cali": {
+    "path": "/deportivo-cali"
   }
 }

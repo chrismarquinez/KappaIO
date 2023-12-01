@@ -37,6 +37,10 @@
   padding-right: 0.5rem;
 }
 
+.paginationDot--carouselCali--isActive {
+  background-color: #fff;
+}
+
 @media screen and (max-width: 768px) {
   .sliderLayoutContainer--carousel .sliderArrows {
     background: hsla(0, 0%, 100%, 0.6) !important;
