@@ -117,7 +117,7 @@
 
 .container--layout--department,
 .container--layout--departmentTeams,
-.container--layout--searchResultSale  {
+.container--layout--searchResultSale {
   margin-top: 0;
 }
 
@@ -197,6 +197,10 @@
 
   .container--layout--departmentTeams {
     margin-top: 1rem;
+  }
+
+  .filterPopupTitle {
+    font-size: 10px;
   }
 }
 

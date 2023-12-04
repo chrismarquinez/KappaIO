@@ -59,9 +59,78 @@
   border-radius: 0 !important;
 }
 
+[data-highlight-name="Jeans Talla Italina"] {
+  display: block !important;
+  width: 30px;
+  height: 98px;
+  font-size: 0;
+  background-image: url("/assets/img/highlights/flag-talla-italina.png");
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -15% 0 0 -25%;
+  border-radius: 0 !important;
+}
+
+[data-highlight-name="Jeans Talla Americana"] {
+  display: block !important;
+  width: 30px;
+  height: 98px;
+  font-size: 0;
+  background-image: url("assets/img/highlights/flag-talla-americana.png");
+  background-color: transparent !important;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -15% 0 0 -25%;
+  border-radius: 0 !important;
+}
+
 .productHighlightText {
   background-color: #000;
   color: white;
   border-radius: 20px;
   padding: 5px 10px;
+}
+
+@media (max-width: 740px) {
+  [data-highlight-name="Zapatos"] {
+    width: 20px;
+    height: 65px;
+    top: 40px;
+    left: 0px;
+  }
+
+  [data-highlight-name="Slim Fit"] {
+    width: 20px;
+    height: 65px;
+    top: 40px;
+    left: 0px;
+  }
+
+  [data-highlight-name="Regular fit"] {
+    width: 20px;
+    height: 65px;
+    top: 40px;
+    left: 0px;
+  }
+
+  [data-highlight-name="Jeans Talla Italina"] {
+    width: 20px;
+    height: 65px;
+    top: 40px;
+    left: 0px;
+  }
+
+  [data-highlight-name="Jeans Talla Americana"] {
+    width: 20px;
+    height: 65px;
+    top: 40px;
+    left: 0px;
+  }
 }
