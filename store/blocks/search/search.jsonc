@@ -65,6 +65,7 @@
   },
 
   "search-result-layout": {
+    "title": "Resultados de busqueda",
     "blocks": [
       "search-result-layout.mobile",
       "search-result-layout.desktop",
@@ -73,6 +74,7 @@
   },
 
   "search-result-layout.desktop": {
+    "title": "Version Desktop",
     "children": [
       "flex-layout.row#searchbread",
       "rich-text#initial-text",
@@ -271,12 +273,15 @@
   },
 
   "search-result-layout.mobile": {
+    "title": "Version Mobile",
     "children": [
       "flex-layout.row#searchinfomobile",
+      "rich-text#initial-text",
       "flex-layout.row#searchbread",
       "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
+      "rich-text#final-text",
       "flex-layout.row#fetchmore"
     ],
     "props": {
@@ -492,7 +497,7 @@
       "text": "Texto final",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "blockClass":["textFinal"]
+      "blockClass": ["textFinal"]
     }
   }
 }

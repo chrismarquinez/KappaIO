@@ -64,7 +64,12 @@
       "type": "collection",
       "filter": {
         "type": "show",
-        "highlightNames": ["Slim Fit", "Regular fit"]
+        "highlightNames": [
+          "Slim Fit",
+          "Regular fit",
+          "Jeans Talla Americana",
+          "Jeans Talla Italiana"
+        ]
       }
     },
     "children": ["product-highlight-wrapper"]

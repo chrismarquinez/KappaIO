@@ -228,7 +228,7 @@
 }
 
 .flexRow--highlightsSliderContainer :global(.vtex-rich-text-0-x-wrapper) {
-  padding: 0 2.5rem;
+  padding: 0 5%;
 }
 
 .flexRow--highlightsSliderContainer :global(.vtex-rich-text-0-x-headingLevel3),
