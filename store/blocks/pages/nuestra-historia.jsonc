@@ -1,0 +1,72 @@
+{
+  "store.custom#nuestra-historia": {
+      "children": [
+          "timeline-ourhistory"
+      ]
+  },
+  "timeline-ourhistory": {
+      "title": "Nuestra Historia",
+      "props": {
+          "pageTitle": "Nuestra Historia",
+          "mainBanner": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/db411a50-52b5-456c-97c3-aa367563d7af___4b4348c38dca1b87571ff1b8e17741ee.jpg",
+          "timelineHistory": [
+              {
+                  "year": "1950s",
+                  "pretitle": "La década de 1950",
+                  "title": "El nacimiento de ícono",
+                  "description": "En 1950, New Era era el único fabricante de gorras independiente que suministraba gorras a los equipos de béisbol de las grandes ligas. Su impresionante lista de clientes incluía a muchos de los 16 equipos de la época, como los Brooklyn Dodgers®, Cincinnati Reds®, Cleveland Indians® y Detroit Tigers®. En 1954, Harold diseñó la gorra estilo 59FIFTY ajustada de New Era, dándole un aspecto más contemporáneo.",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/7e823714-2980-42cf-b039-177e8f0954e2___52248d01788dca39735712f0badaaee1.png"
+              },
+              {
+                  "year": "1960s",
+                  "pretitle": "La década de 1960",
+                  "title": "Allanando el camino",
+                  "description": "Para adaptarse mejor a la empresa en crecimiento, Harold, que ahora lidera el cargo, abrió una planta de fabricación en Derby, Nueva York, cerca de la casa de la familia. La ubicación se convertiría en el productor exclusivo de la icónica gorra 59FIFTY®. Después de haber demostrado su valía, MLB invitó a New Era a vender directamente a cada equipo en sus reuniones anuales de invierno. Este fue un paso fundamental en el camino de la marca hacia la exclusividad con la liga.",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/87b74de9-753e-489b-a68b-b56663499787___256e23da9e5367eb3b586f6f0e4b42de.png"
+              },
+              {
+                  "year": "1970s",
+                  "pretitle": "La década de 1970",
+                  "title": "LA próxima generación",
+                  "description": "En 1972, el hijo de Harold, David, fue nombrado presidente, 14 años después de que comenzara a trabajar para la empresa. Unos años más tarde, Chris Koch, el hijo de David, continuó con la tradición y comenzó a trabajar en la planta de fabricación de Derby para su abuelo y su padre.",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/6ca0a527-e015-4487-94ad-c95bd1011511___07527e3031b4008b391458730800c967.png"
+              },
+              {
+                  "year": "1980s",
+                  "pretitle": "La década de 1980",
+                  "title": "Adelante y hacia arriba",
+                  "description": "Guiados por la visión de David Koch, la década de 1980 se convirtió en una década de crecimiento constante. La empresa producía gorras para deportes universitarios, AAA y ligas internacionales de béisbol y comenzó a vender gorras a los aficionados al deporte.",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/0f3fc2a2-0959-475a-9a59-a530f6c8c6d1___0fa6c904966db1c368393dda6746b197.png"
+              },
+              {
+                  "year": "1990s",
+                  "pretitle": "La década de 1990",
+                  "title": "El uno, dos golpes",
+                  "description": "Al ser nombrado proveedor exclusivo de gorras para el campo de las Grandes Ligas de Béisbol en 1993 y experimentar su primer roce con gorras de moda personalizadas en 1996 con Spike Lee, New Era estaba dando forma a un futuro de creatividad y colaboración.",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/374ea3ef-3369-4862-9808-a36f7b5349f2___2ec9aacafb43df1e077944e529c1ad43.png"
+              },
+              {
+                  "year": "2000s",
+                  "pretitle": "Los 2000",
+                  "title": "Vaya global o vaya a casa",
+                  "description": "La visión que marcó el crecimiento de New Era en las décadas de 1920 y 1930 demostró estar viva y coleando en la primera parte del nuevo milenio. Los esfuerzos de globalización de la compañía continuaron con la apertura de oficinas en Europa, Japón y Australia en un período de dos años.",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/7e2ef034-5f30-44b9-9aca-ce43bae7525a___64545f211ee3e51b2c38ae1f845f8d96.png"
+              },
+              {
+                  "year": "2010s",
+                  "pretitle": "La década de 2010",
+                  "title": "En el Campo",
+                  "description": "Después de décadas como la gorra oficial en el campo de la MLB, New Era se propuso completar su exclusividad con las ligas deportivas más grandes del país. En 2012, New Era se convirtió en la gorra oficial de la NFL y, en 2016, se convirtió en la gorra oficial en la cancha de la NBA; convirtiendo a New Era en la única marca en la historia del deporte que tiene derechos exclusivos sobre la cabeza en el campo, fuera de la cancha y en la cancha para las tres principales ligas de EE. UU. al mismo tiempo.",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/03e047a1-db8c-4cef-a48b-1ca81f09e31f___95eabc25105b6c30f4acad36c1df26b9.jpg"
+              },
+              {
+                  "year": "2020s",
+                  "pretitle": "Los 2020",
+                  "title": "Apto para la gloria",
+                  "description": "Mirando hacia atrás a nuestros primeros 100 años, reconocemos una cosa, y es que apenas estamos comenzando. Hemos superado los altibajos, siempre centrados en la calidad y la gran narración. En 2020 renovamos nuestro compromiso de fabricar excelentes productos, construir relaciones sólidas y cambiar el juego en el mundo del deporte y la cultura. Con el icónico 59FIFTY como nuestra base, daremos vida a nuevos productos y experiencias emocionantes a nivel mundial y, como siempre, con autenticidad.",
+                  "image": "https://neweraco.vtexassets.com/assets/vtex.file-manager-graphql/images/a72ab9b1-97d4-410d-b816-10836528cdb2___afdae2531f2cbc409123bf95b94b7e41.jpg"
+              }
+          ]
+      }
+  }
+}
