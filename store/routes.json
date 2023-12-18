@@ -43,5 +43,8 @@
   },
   "store.custom#deportivo-cali": {
     "path": "/deportivo-cali"
+  },
+  "store.custom#nuestra-historia": {
+    "path": "/nuestra-historia"
   }
 }
