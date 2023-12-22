@@ -1,50 +1,66 @@
 {
   "store.custom#about-us": {
-    "path": "/about-us"
+    "path": "/about-us",
+    "isSitemapEntry": true
   },
   "store.custom#faq": {
-    "path": "/faq"
+    "path": "/faq",
+    "isSitemapEntry": true
   },
   "store.custom#terminos-y-condiciones": {
-    "path": "/terminos-y-condiciones"
+    "path": "/terminos-y-condiciones",
+    "isSitemapEntry": true
   },
   "store.custom#calzado": {
-    "path": "/kappa-calzado"
+    "path": "/kappa-calzado",
+    "isSitemapEntry": true
   },
   "store.custom#envios": {
-    "path": "/envios"
+    "path": "/envios",
+    "isSitemapEntry": true
   },
   "store.custom#contacto": {
-    "path": "/contacto"
+    "path": "/contacto",
+    "isSitemapEntry": true
   },
   "store.custom#cambios": {
-    "path": "/garantias"
+    "path": "/cambios",
+    "isSitemapEntry": true
   },
   "store.custom#guia-tallas": {
-    "path": "/guia-tallas"
+    "path": "/guia-tallas",
+    "isSitemapEntry": true
   },
   "store.custom#santafe": {
-    "path": "/santafe"
+    "path": "/santafe",
+    "isSitemapEntry": true
   },
   "store.custom#genre-template-hombre": {
-    "path": "/hombre"
+    "path": "/hombre",
+    "isSitemapEntry": true
   },
   "store.custom#genre-template-mujer": {
-    "path": "/mujer"
+    "path": "/mujer",
+    "isSitemapEntry": true
   },
   "store.custom#genre-template-ninos": {
-    "path": "/ninos"
+    "path": "/ninos",
+    "isSitemapEntry": true
   },
   "store.custom#regalos": {
-    "path": "/regalos"
+    "path": "/regalos",
+    "isSitemapEntry": true
   },
   "store.custom#sale": {
-    "path": "/sale"
+    "path": "/sale",
+    "isSitemapEntry": true
   },
   "store.custom#deportivo-cali": {
-    "path": "/deportivo-cali"
+    "path": "/deportivo-cali",
+    "isSitemapEntry": true
   },
   "store.custom#nuestra-historia": {
-    "path": "/nuestra-historia"
+    "path": "/nuestra-historia",
+    "isSitemapEntry": true
   }
 }

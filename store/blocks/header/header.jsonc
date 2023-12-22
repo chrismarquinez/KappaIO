@@ -8,7 +8,8 @@
       "Login": "login",
       "LoginContent": "login-content#default",
       "Minicart": "minicart.v2",
-      "WelcomeModal": "flex-layout.row#newsletter"
+      "WelcomeModal": "flex-layout.row#newsletter",
+      "MetaData": "meta-data"
     }
   },
 
@@ -52,6 +53,23 @@
   "search-bar": {
     "props": {
       "placeholder": "Digite aquí"
+    }
+  },
+
+  "meta-data": {
+    "props": {
+      "items": [
+        {
+          "name": "meta-data-1",
+          "content": "meta-data-1",
+          "isOpenGraph": true
+        },
+        {
+          "name": "meta-data-2",
+          "content": "meta-data-2",
+          "isOpenGraph": false
+        }
+      ]
     }
   }
 }
