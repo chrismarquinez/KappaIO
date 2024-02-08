@@ -1,0 +1,82 @@
+{
+  "store.custom#nosotros": {
+    "title": "Banner Principal",
+    "blocks": [
+      "flex-layout.row#Nosotros",
+      "flex-layout.row#Nosotros1",
+       "rich-text#Tex2",
+       "rich-text#Tex3",
+       "rich-text#Tex4",
+       "rich-text#Tex5",
+       "rich-text#Tex6",
+       "rich-text#Tex7"
+    ]
+  },
+  "flex-layout.row#Nosotros": {
+    "props": {
+      "blockClass": "BannerNosotros"
+    },
+    "children": ["flex-layout.col#Titulo"]
+  },
+  "flex-layout.col#Titulo": {
+    "children": ["rich-text#Nosotros"],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#Nosotros": {
+    "props": {
+      "text": "### NOSOTROS ",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "BannerText"
+    }
+  },
+  "flex-layout.row#Nosotros1": {
+    "props": {
+      "blockClass": "Prueba"
+    }
+  },
+
+"rich-text#Tex2": {
+  "props": {
+    "text": "Kappa® es la marca de ropa deportiva dedicada a personas activas y dinámicas, que, cuando practican deporte, necesitan indumentaria técnica y funcional con un diseño moderno, estilo atractivo y colorido. Las colecciones Kappa® incluyen calzado deportivo y accesorios diseñados para garantizar el mejor rendimiento.",
+    "blockClass": "nosotrosTexto"
+  }
+},
+"rich-text#Tex3": {
+  "props": {
+    "text": "La Historia",
+    "blockClass": "nosotrosText01"
+  }
+},
+
+"rich-text#Tex4": {
+  "props": {
+    "text": "La marca Kappa®, junto con el logo Omini, fueron creados en 1978 cuando Marco Boglione, un joven jefe de ventas y mercadeo - convenció a Mauricio Vitale – gerente de la compañía, Maglificio Calzificio Torinese - de crear una línea deportiva que perteneciera a la creciente marca Robe di Kappa®.",
+    "blockClass": "nosotrosText02"
+  }
+}
+,
+"rich-text#Tex5": {
+  "props": {
+    "text": "En 1979 Kappa® (llamado Robe di Kappa Sport en ese momento) patrocinó por primera vez en Italia al famoso equipo de futbol Juventus. Cinco años más tarde la marca ganó popularidad a nivel mundial, ya que, durante los juegos olímpicos de Los Ángeles en 1984, los atletas estadounidenses utilizaron atuendos deportivos de Kappa®.",
+    "blockClass": "nosotrosText02"
+  }
+}
+,
+"rich-text#Tex6": {
+  "props": {
+    "text": "Actualmente Kappa® es patrocinador global de deportes tales como futbol, rugby, basketball, volleyball, rally, ski, golf, esgrima y artes marciales, así como de numerosas federaciones deportivas ubicadas principalmente en Italia.",
+    "blockClass": "nosotrosText02"
+  }
+}
+,
+"rich-text#Tex7": {
+  "props": {
+    "text": "El logo Authentic identifica las colecciones de Kappa® donde el estilo y el diseño que ha definido el éxito de la marca Kappa® de los años setenta y ochenta son reinterpretados con nuevos detalles estilísticos para los amantes de productos deportivos y casuales.",
+    "blockClass": "nosotrosText02"
+  }
+}
+
+}
